@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 
-
-
 typedef struct Node {
   Node next;
   int priority;
@@ -10,6 +8,8 @@ typedef struct Node {
   int start_time;
   int cpu_time;
   int io_count;
+  int io_blocks_left;
+  int cpu_completed;
   int completion_time;
   int time_slice;
 } Node;
@@ -29,28 +29,68 @@ void * pushExponential(Queue* q, Node n) {
 Node pop(Queue* q) {
 }
 
-void * runExponential(int count, Node n) {
-  int done = count + n.time_slice;
-  while count < done {
-    if (io_done) {
-      if ((done - count) < n.time_slice / 2) {
+void * runExponential(int* clock, Node n) {
+  //context
+  clock++;
+
+  int done = clock + n.time_slice;
+  int block_time = n.cpu_time / n.io_blocks_left;
+  int next_io = block_time;
+  while (clock < done && cpu_completed < cpu_time || n.io_blocks_left > 0) {
+    //interrupt
+    if (new_process) {
+      new_process = 0;
+      if ((done - clock) < n.time_slice / 2) {
         if (n.priority < 8) {
           n.priority += 1;
         }
         n.time_slice = n.time_slice / 2;
       }
+      break;
     }
-    count++;
+    if (cpu_completed < cpu_time) {
+      clock++;
+    }
+    //IO
+    if (nextio == 0 || cpu_completed == cpu_time) {
+      int done_io = clock + 10;
+      if (n.io_blocks_left > 0) {
+        while (clock < done_io) {
+          clock++
+        }
+        nextio = block_time;
+        n.io_blocks_left--;
+      }
+      if (n.io_blocks_left > 0 && cpu_completed == cpu_time) {
+        break;
+      }
+    }
+    nextio--;
   }
-  if (n.priority > 1) {
-    n.priority -= 1;
+  if (clock == done) {
+    if (n.priority > 1) {
+      n.priority -= 1;
+    }
+    n.time_slice = n.time_slice * 2;
   }
-  n.time_slice = n.time_slice * 2;
+  //context
+  clock++;
 }
 
-void * runSTCF(Node n)  {
+Node read_trace_line() {
+  Node *n = (Node*) malloc(sizeof(Node));
+  //n.name = get(name)
+  //n.start_time = get(start)
+  //n.cpu_time = get(cpu) * 1000
+  //n.io_count = get(io)
+  n.io_blocks_left = trunc((n.io_count + 8191) / 8192);
+  n.completion_time = 0;
+  n.time_slice = 10;
 }
 
 int main() {
-  return 0
+  //pop
+  //run
+  //IO ? IO : push
+  return 0;
 }

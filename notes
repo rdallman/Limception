@@ -1,0 +1,12 @@
+
+pop
+run
+  calc io_blocks
+  io_block_time = clock + io_block
+  nextio = io_block_time
+  while clock < done
+    if nextio == 0
+      IO
+      nextio = io_block_time
+    clock ++
+    nextio -- 
