@@ -181,6 +181,8 @@ int run(int clock, Node *n) {
 //}
 
 int main(int argc, char *argv[]) {
+  printf("start");
+  /*
   wq.size = 0;
   wq.head = NULL;
   wq.tail = NULL;
@@ -250,6 +252,7 @@ int main(int argc, char *argv[]) {
         wq.push_wait(&wq, n);
       }
     }
+    printf("added everything");
   }
 
   // wait for things to go down
@@ -267,8 +270,11 @@ int main(int argc, char *argv[]) {
   if(pthread_join(ready, NULL)) {
     printf("Could not join thread\n");
   }
+  printf("%s", dq.head->name);
   //pop
   //run
   //cpu_time != compl_time?  push(ready)
+  */
   return 0;
+
 }
