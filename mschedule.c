@@ -87,7 +87,8 @@ void * exponentialHold() {
   int time;
   while(wq.peek(&wq)){
     gettimeofday(&holder, NULL);
-    time = holder.tv_sec;
+    time = holder.tv_usec;
+    time -= time % 10;
     printf("\n%d", time);
     if(time == wq.head->start_time) {
       printf("%d", time);
@@ -231,7 +232,7 @@ int main(int argc, char *argv[]) {
         strcpy(n->name, temp);
       }
       else if(k == 1) {
-        a = atof(temp);
+        a = atoi(temp);
         n->start_time = a;
       }
       else if(k == 2) {
