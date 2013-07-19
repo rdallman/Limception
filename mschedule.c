@@ -83,12 +83,11 @@ Queue wq, rq, dq; //wait queue, ready queue
 int new_process;
 
 void * exponentialHold() {
-  struct timeval holder;
+  struct timeval tv;
   int time;
   while(wq.peek(&wq)){
-    gettimeofday(&holder, NULL);
-    time = holder.tv_usec;
-    time -= time % 10;
+    gettimeofday(&tv, NULL);
+    time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
     printf("\n%d", time);
     if(time == wq.head->start_time) {
       printf("%d", time);
