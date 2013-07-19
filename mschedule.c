@@ -27,7 +27,7 @@ typedef struct Queue {
   Node *tail;
   int size;
 
-  void (*pushWait) (struct Queue* q, Node *n);
+  void (*push_wait) (struct Queue* q, Node *n);
   int (*peek) (struct Queue* q);
   void (*push_exponential) (struct Queue* q, Node *n);
   void (*push_stcf) (struct Queue* q, Node *n);
@@ -64,14 +64,14 @@ Node * peek(Queue* q){
   return q->head;
 }
 
-void * pushWait(Queue* q, Node *n){
+void * push_wait(Queue* q, Node *n){
   Node *insert = q->head; //malloc??
     printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
-  if(q->size > 0) {
+  if(q->peek(&q)) {
     int m = 0;
     while (insert->start_time >= n->start_time) {
-        m++;
-        insert = insert->next;
+      m++;
+      insert = insert->next;
     }
   } else {
     q->head = n;
@@ -79,7 +79,7 @@ void * pushWait(Queue* q, Node *n){
   q->size++;
 }
 
-Queue wq, rq; //wait queue, ready queue
+Queue wq, rq, dq; //wait queue, ready queue
 int new_process;
 
 void exponentialHold() {
@@ -91,6 +91,24 @@ void exponentialHold() {
     if(time == wq.head->start_time) {
       printf("%d", time);
       rq.push_exponential(&rq, &wq.head);
+    }
+  }
+}
+
+void exponentialReady() {
+  int clock = 0;
+  int wait = 0;
+  while (wq.peek(&wq) || rq.peek(&rq)) {
+    clock++;
+    wait++;
+    if (rq.peek(&rq)) {
+      Node worker = rq.pop(&rq);
+      clock = run(clock, &worker);
+      if (worker.cpu_time == worker.completion_time) {
+        dq.push_wait(&dq, &worker);
+      } else {
+        rq.push_wait(&rq, &worker);
+      }
     }
   }
 }
@@ -166,7 +184,7 @@ int main(int argc, char *argv[]) {
   wq.size = 0;
   wq.head = NULL;
   wq.tail = NULL;
-  wq.pushWait = &pushWait;
+  wq.push_wait = &push_wait;
   wq.peek = &peek;
 
   rq.size = 0;
@@ -174,6 +192,12 @@ int main(int argc, char *argv[]) {
   rq.tail = NULL;
   rq.push_exponential = &push_exponential;
   rq.peek = &peek;
+
+  dq.size = 0;
+  dq.head = NULL;
+  dq.tail = NULL;
+  dq.push_wait = &push_wait;
+  dq.peek = &peek;
 
   FILE *file = fopen(argv[1], "r");
   fseek(file, 0, SEEK_END);
@@ -210,7 +234,7 @@ int main(int argc, char *argv[]) {
       }
       else if(k == 2) {
         a = atof(temp);
-        n->cpu_time = a * 1000;
+        n->cpu_time = a * 100;
       }
       else if (k == 3) {
         a = atof(temp);
@@ -223,17 +247,24 @@ int main(int argc, char *argv[]) {
         } else {
           n->time_slice = n->cpu_time;
         }
-        wq.pushWait(&wq, n);
+        wq.push_wait(&wq, n);
       }
     }
   }
 
   // wait for things to go down
   pthread_t waiting;
-  if(pthread_create(&waiting, NULL, &exponentialHold, NULL)){
+  pthread_t ready;
+  if (pthread_create(&waiting, NULL, &exponentialHold, NULL)){
+    printf("Could not create thread \n");
+  }
+  if (pthread_create(&ready, NULL, &exponentialReady, NULL)) {
     printf("Could not create thread \n");
   }
   if(pthread_join(waiting, NULL)){
+    printf("Could not join thread\n");
+  }
+  if(pthread_join(ready, NULL)) {
     printf("Could not join thread\n");
   }
   //pop
