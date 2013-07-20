@@ -35,13 +35,21 @@ typedef struct Queue {
 } Queue;
 
 void * push_exponential(Queue* q, Node *n) {
-  Node *insert = q->head;
-  while (insert->priority >= n->priority) {
-    insert = insert->next;
+  /*
+  if (q->head) {
+    Node *insert = q->head;
+    while (insert->next && insert->priority >= n->priority) {
+      insert = insert->next;
+    }
+    Node *next = insert;
+    insert = n;
+    n->next = insert;
+  } else {
+    n->next = NULL;
+    q->head = n;
   }
-  Node* next = insert;
-  insert = n;
-  n->next = next;
+  */
+  printf("idiot");
 }
 
 void * push_stcf(Queue* q, Node *n) {
@@ -89,9 +97,12 @@ void * exponentialHold() {
     gettimeofday(&tv, NULL);
     time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
     printf("\n%d", time);
+    if (wq.peek(&wq)) {
+      rq.push_exponential(&rq, wq.pop(&wq));
+    }
     if(time == wq.head->start_time) {
       printf("%d", time);
-      rq.push_exponential(&rq, &wq.head);
+      rq.push_exponential(&rq, wq.pop(&wq));
     }
   }
 }
