@@ -27,11 +27,11 @@ typedef struct Queue {
   Node *tail;
   int size;
 
-  void (*push_wait) (struct Queue* q, Node *n);
-  Node *(*peek) (struct Queue* q);
-  void (*push_exponential) (struct Queue* q, Node *n);
-  void (*push_stcf) (struct Queue* q, Node *n);
+  void *(*push_wait) (struct Queue* q, Node* n);
   Node *(*pop) (struct Queue* q);
+  Node *(*peek) (struct Queue* q);
+  void *(*push_exponential) (struct Queue* q, Node* n);
+  void *(*push_stcf) (struct Queue* q, Node *n);
 } Queue;
 
 void * push_exponential(Queue* q, Node *n) {
@@ -62,19 +62,19 @@ void * push_stcf(Queue* q, Node *n) {
   n->next = next;
 }
 
-Node * pop(Queue* q) {
-  //Node* head = q->head;
-  //q->head = head->next;
-  return q->head;
-}
-
 Node * peek(Queue* q){
   return q->head;
 }
 
+Node * pop(Queue* q) {
+  Node *head = q->head;
+  q->head = head->next;
+  return head;
+}
+
 void * push_wait(Queue* q, Node *n){
   Node *insert = q->head; //malloc??
-  //printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
+  printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
   if(q->peek(q)) {
     int m = 0;
     while (insert->next && insert->next->start_time >= n->start_time) {
@@ -84,11 +84,12 @@ void * push_wait(Queue* q, Node *n){
     Node *next = insert->next;
     insert->next = n;
     n->next = next;
-    printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
+    //printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", q->head->next->name, n->start_time, n->cpu_time, n->io_count);
   } else {
     q->head = n;
   }
   q->size++;
+  printf("%d", q->size);
 }
 
 Queue wq, rq, dq; //wait queue, ready queue
@@ -101,9 +102,8 @@ void * exponentialHold() {
     gettimeofday(&tv, NULL);
     time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
     printf("\n%d", time);
-    if (wq.peek(&wq)) {
-      wq.pop(&wq);
-    }
+    //Node *worker = wq.pop(&wq);
+    //printf("%s", worker->name);
     if(time == wq.head->start_time) {
       printf("%d", time);
       rq.push_exponential(&rq, wq.pop(&wq));
@@ -202,18 +202,22 @@ int main(int argc, char *argv[]) {
   wq.tail = NULL;
   wq.push_wait = &push_wait;
   wq.peek = &peek;
+  wq.pop = &pop;
 
   rq.size = 0;
   rq.head = NULL;
   rq.tail = NULL;
   rq.push_exponential = &push_exponential;
   rq.peek = &peek;
+  rq.pop = &pop;
 
   dq.size = 0;
   dq.head = NULL;
   dq.tail = NULL;
   dq.push_wait = &push_wait;
   dq.peek = &peek;
+  dq.pop = &pop;
+
 
 
   FILE *file = fopen(argv[1], "r");
