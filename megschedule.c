@@ -62,6 +62,7 @@ void * push_stcf(Queue* q, Node *n) {
 }
 
 Node * peek(Queue* q){
+  printf("PEEK, SIZE: %d\n", q->size);
   return q->head;
 }
 
@@ -72,9 +73,18 @@ Node * pop(Queue* q) {
 }
 
 void * push_wait(Queue* q, Node *n){
-  Node *insert = q->head; //malloc??
+
+printf("NNNNNNNN %s", n->name);
+
+
+
+
+
+
+  Node *insert = q->head; //malloc?? 
   printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
   if(q->peek(q)) {
+      printf("push_wait if\n");
     int m = 0;
     while (insert->next && insert->next->start_time >= n->start_time) {
       m++;
@@ -85,7 +95,10 @@ void * push_wait(Queue* q, Node *n){
     n->next = next;
     //printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", q->head->next->name, n->start_time, n->cpu_time, n->io_count);
   } else {
-    q->head = n;
+   
+   printf("push_wait Else %d \n", q->size);
+   q->head = n;
+    
     n->next = NULL;
   }
   q->size++;
@@ -101,6 +114,7 @@ void * exponentialHold() {
   while(wq.peek(&wq)){
     gettimeofday(&tv, NULL);
     time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
+    printf("\n%d", time);
     //Node *worker = wq.pop(&wq);
     //printf("%s", worker->name);
     if(time == wq.peek(&wq)->start_time) {
@@ -114,9 +128,6 @@ void * exponentialReady() {
   int clock = 0;
   int wait = 0;
   while (wq.peek(&wq) || rq.peek(&rq)) {
-    if (dq.peek(&dq)) {
-      exit(0);
-    }
     clock++;
     wait++;
     if (rq.peek(&rq)) {
@@ -152,7 +163,6 @@ int run(int clock, Node *n) {
       break;
     }
     if (n->cpu_completed < n->cpu_time) {
-      printf("%d", n->cpu_completed);
       clock++;
     }
     //IO
@@ -222,7 +232,7 @@ int main(int argc, char *argv[]) {
   dq.pop = &pop;
 
 
-
+/*
   FILE *file = fopen(argv[1], "r");
   fseek(file, 0, SEEK_END);
   long fsize = ftell(file);
@@ -241,14 +251,6 @@ int main(int argc, char *argv[]) {
     if (token == NULL) {
       break;
     }
-    //get current time + x
-    struct timeval tv;
-    int time;
-    gettimeofday(&tv, NULL);
-    time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
-    printf("current%d", time);
-    time += 10000 + j*1000;
-
     Node *n = (Node*)malloc(sizeof(Node));
     n->name = malloc(11);
 
@@ -261,11 +263,8 @@ int main(int argc, char *argv[]) {
         strcpy(n->name, temp);
       }
       else if(k == 1) {
-        /* actual
         a = atoi(temp);
         n->start_time = a;
-        *//*testing*/ 
-        n->start_time = time;
       }
       else if(k == 2) {
         a = atof(temp);
@@ -276,7 +275,6 @@ int main(int argc, char *argv[]) {
         n->io_count = a;
         n->io_blocks_left = trunc((n->io_count + 8191) / 8192);
         n->completion_time = 0;
-        n->cpu_completed= 0;
         int exp = 1;
         if (exp) {
           n->time_slice = 10;
@@ -287,6 +285,52 @@ int main(int argc, char *argv[]) {
       }
     }
   }
+*/
+
+ struct timeval tv;
+  int time;
+    gettimeofday(&tv, NULL);
+    time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000) + 2000;
+    //printf("MAIN \n%d", time);
+
+    char * temp, temp2, temp3;
+    temp = "Java";
+   temp2 = "httpd";
+  temp3 = "FVqmTaskBar"; 
+
+    Node *n = (Node*)malloc(sizeof(Node));
+    n->name = malloc(11);
+    strcpy(n->name, temp);
+    n->start_time = time;
+    n->cpu_time = 41;
+    n->time_slice = 12742;
+    wq.push_wait(&wq, &n);
+    
+    Node *m = (Node*)malloc(sizeof(Node));
+    m->name = malloc(11);
+    strcpy(m->name, temp2);
+    m->start_time = time+1000;
+    m->cpu_time = 62;
+    m->time_slice = 22452;
+     wq.push_wait(&wq,&m);
+    
+
+    Node *k = (Node*)malloc(sizeof(Node));
+    k->name = malloc(11);
+    strcpy(k->name, temp3);
+    k->start_time = time+2000;
+    k->cpu_time = 84;
+    k->time_slice = 3217;
+ wq.push_wait(&wq, &k);
+
+
+
+
+
+
+
+
+
 
   // wait for things to go down
   pthread_t waiting;
