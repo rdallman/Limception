@@ -104,7 +104,7 @@ void * exponentialHold() {
     //Node *worker = wq.pop(&wq);
     //printf("%s", worker->name);
     if(time == wq.peek(&wq)->start_time) {
-      printf("%d", time);
+      //printf("%d", time);
       rq.push_exponential(&rq, wq.pop(&wq));
     }
   }
@@ -114,18 +114,15 @@ void * exponentialReady() {
   int clock = 0;
   int wait = 0;
   while (wq.peek(&wq) || rq.peek(&rq)) {
-    if (dq.peek(&dq)) {
-      exit(0);
-    }
     clock++;
     wait++;
     if (rq.peek(&rq)) {
       Node *worker = rq.pop(&rq);
-      clock = run(clock, &worker);
+      clock = run(clock, worker);
       if (worker->cpu_time == worker->completion_time) {
         dq.push_wait(&dq, &worker);
       } else {
-        rq.push_wait(&rq, &worker);
+        rq.push_exponential(&rq, &worker);
       }
     }
   }
@@ -137,10 +134,16 @@ int run(int clock, Node *n) {
 
   //make sure this works for STCF
   int done = clock + n->time_slice;
+  printf("current: %d", clock);
+  printf("done in: %d", done);
+  /*
   int block_time = n->cpu_time / n->io_blocks_left;
+  printf("%d", block_time);
   int next_io = block_time;
-  while (clock < done && n->cpu_completed < n->cpu_time || n->io_blocks_left > 0) {
+  */
+  while (clock < done && n->cpu_completed < n->cpu_time) {
     //interrupt
+    /*
     if (new_process) {
       new_process = 0;
       if ((done - clock) < (n->time_slice / 2)) {
@@ -151,11 +154,14 @@ int run(int clock, Node *n) {
       }
       break;
     }
+    */
     if (n->cpu_completed < n->cpu_time) {
       printf("%d", n->cpu_completed);
+      n->cpu_completed++;
       clock++;
     }
     //IO
+    /*
     if (next_io == 0 || n->cpu_completed == n->cpu_time) {
       int done_io = clock + 10;
       if (n->io_blocks_left > 0) {
@@ -170,14 +176,16 @@ int run(int clock, Node *n) {
       }
     }
     next_io--;
+    */
   }
-  //exponential
+  /*exponential
   if (clock == done) {
     if (n->priority > 1) {
       n->priority -= 1;
     }
     n->time_slice = n->time_slice * 2;
   }
+  */
   //context
   clock++;
   return clock;
@@ -247,7 +255,7 @@ int main(int argc, char *argv[]) {
     gettimeofday(&tv, NULL);
     time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
     printf("current%d", time);
-    time += 10000 + j*1000;
+    time += 1000 + j*100;
 
     Node *n = (Node*)malloc(sizeof(Node));
     n->name = malloc(11);
@@ -268,11 +276,11 @@ int main(int argc, char *argv[]) {
         n->start_time = time;
       }
       else if(k == 2) {
-        a = atof(temp);
+        a = atoi(temp);
         n->cpu_time = a * 100;
       }
       else {
-        a = atof(temp);
+        a = atoi(temp);
         n->io_count = a;
         n->io_blocks_left = trunc((n->io_count + 8191) / 8192);
         n->completion_time = 0;
