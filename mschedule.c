@@ -63,9 +63,9 @@ void * push_stcf(Queue* q, Node *n) {
 }
 
 Node * pop(Queue* q) {
-  Node* head = q->head;
-  q->head = head->next;
-  return head;
+  //Node* head = q->head;
+  //q->head = head->next;
+  return q->head;
 }
 
 Node * peek(Queue* q){
@@ -74,13 +74,17 @@ Node * peek(Queue* q){
 
 void * push_wait(Queue* q, Node *n){
   Node *insert = q->head; //malloc??
-  printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
+  //printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
   if(q->peek(q)) {
     int m = 0;
-    while (insert->start_time >= n->start_time) {
+    while (insert->next && insert->next->start_time >= n->start_time) {
       m++;
       insert = insert->next;
     }
+    Node *next = insert->next;
+    insert->next = n;
+    n->next = next;
+    printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
   } else {
     q->head = n;
   }
@@ -98,7 +102,7 @@ void * exponentialHold() {
     time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
     printf("\n%d", time);
     if (wq.peek(&wq)) {
-      rq.push_exponential(&rq, wq.pop(&wq));
+      wq.pop(&wq);
     }
     if(time == wq.head->start_time) {
       printf("%d", time);
