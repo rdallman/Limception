@@ -35,20 +35,19 @@ typedef struct Queue {
 } Queue;
 
 void * push_exponential(Queue* q, Node *n) {
-  /*
-  if (q->head) {
+  if(q->peek(q)) {
     Node *insert = q->head;
-    while (insert->next && insert->priority >= n->priority) {
+    while (insert->next && insert->next->priority >= n->priority) {
       insert = insert->next;
     }
-    Node *next = insert;
-    insert = n;
-    n->next = insert;
+    Node *next = insert->next;
+    insert->next = n;
+    n->next = next;
   } else {
-    n->next = NULL;
     q->head = n;
+    n->next = NULL;
   }
-  */
+  q->size++;
   printf("idiot");
 }
 
@@ -87,6 +86,7 @@ void * push_wait(Queue* q, Node *n){
     //printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", q->head->next->name, n->start_time, n->cpu_time, n->io_count);
   } else {
     q->head = n;
+    n->next = NULL;
   }
   q->size++;
   printf("%d", q->size);
@@ -104,7 +104,7 @@ void * exponentialHold() {
     printf("\n%d", time);
     //Node *worker = wq.pop(&wq);
     //printf("%s", worker->name);
-    if(time == wq.head->start_time) {
+    if(time == wq.peek(&wq)->start_time) {
       printf("%d", time);
       rq.push_exponential(&rq, wq.pop(&wq));
     }
