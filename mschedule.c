@@ -17,8 +17,9 @@ typedef struct Node {
   int cpu_time;
   int io_count;
   int io_blocks_left;
+  int io_block_time;
+  int io_block_next;
   int cpu_completed;
-  int completion_time;
   int time_slice;
 } Node;
 
@@ -76,7 +77,7 @@ void * push_wait(Queue* q, Node *n){
   printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
   if(q->peek(q)) {
     int m = 0;
-    while (insert->next && insert->next->start_time >= n->start_time) {
+    while (insert->next && insert->next->start_time <= n->start_time) {
       m++;
       insert = insert->next;
     }
@@ -112,14 +113,14 @@ void * exponentialReady() {
   int clock = 0;
   int wait = 0;
   while (wq.peek(&wq) || rq.peek(&rq)) {
-    //clock++;
-    //wait++;
+    clock++;
+    wait++;
     if (rq.peek(&rq)) {
       Node *worker = rq.pop(&rq);
       clock = run(clock, worker);
-      //printf(" %d", worker->completion_time);
-      //printf(" / %d", worker->cpu_time);
-      //printf("\n");
+      printf(" %d", worker->cpu_completed);
+      printf(" / %d", worker->cpu_time);
+      printf("\n");
       if (worker->cpu_time == worker->cpu_completed) {
         //dq.push_wait(&dq, &worker);
         printf("done");
@@ -156,8 +157,8 @@ int run(int clock, Node *n) {
     }
     */
     if (n->cpu_completed < n->cpu_time) {
-      printf("total %d", n->cpu_completed);
-      printf("done / %d", n->cpu_time);
+      //printf("total %d", n->cpu_completed);
+      //printf("comp / %d", n->cpu_time);
       n->cpu_completed++;
       clock++;
     }
@@ -284,7 +285,6 @@ int main(int argc, char *argv[]) {
         a = atoi(temp);
         n->io_count = a;
         n->io_blocks_left = trunc((n->io_count + 8191) / 8192);
-        n->completion_time = 0;
         n->cpu_completed= 0;
         int exp = 1;
         if (exp) {
