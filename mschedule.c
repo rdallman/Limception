@@ -48,7 +48,6 @@ void * push_exponential(Queue* q, Node *n) {
     n->next = NULL;
   }
   q->size++;
-  printf("idiot");
 }
 
 void * push_stcf(Queue* q, Node *n) {
@@ -89,7 +88,6 @@ void * push_wait(Queue* q, Node *n){
     n->next = NULL;
   }
   q->size++;
-  printf("%d", q->size);
 }
 
 Queue wq, rq, dq; //wait queue, ready queue
@@ -104,7 +102,6 @@ void * exponentialHold() {
     //Node *worker = wq.pop(&wq);
     //printf("%s", worker->name);
     if(time == wq.peek(&wq)->start_time) {
-      //printf("%d", time);
       rq.push_exponential(&rq, wq.pop(&wq));
     }
   }
@@ -119,10 +116,14 @@ void * exponentialReady() {
     if (rq.peek(&rq)) {
       Node *worker = rq.pop(&rq);
       clock = run(clock, worker);
-      if (worker->cpu_time == worker->completion_time) {
-        dq.push_wait(&dq, &worker);
+      //printf(" %d", worker->completion_time);
+      //printf(" / %d", worker->cpu_time);
+      //printf("\n");
+      if (worker->cpu_time == worker->cpu_completed) {
+        //dq.push_wait(&dq, &worker);
+        printf("done");
       } else {
-        rq.push_exponential(&rq, &worker);
+        rq.push_exponential(&rq, worker);
       }
     }
   }
@@ -134,8 +135,6 @@ int run(int clock, Node *n) {
 
   //make sure this works for STCF
   int done = clock + n->time_slice;
-  printf("current: %d", clock);
-  printf("done in: %d", done);
   /*
   int block_time = n->cpu_time / n->io_blocks_left;
   printf("%d", block_time);
@@ -156,7 +155,7 @@ int run(int clock, Node *n) {
     }
     */
     if (n->cpu_completed < n->cpu_time) {
-      printf("%d", n->cpu_completed);
+      printf(" %d", n->cpu_completed);
       n->cpu_completed++;
       clock++;
     }
@@ -254,8 +253,8 @@ int main(int argc, char *argv[]) {
     int time;
     gettimeofday(&tv, NULL);
     time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
-    printf("current%d", time);
-    time += 1000 + j*100;
+    //printf("current%d", time);
+    time += 1000 + j*1000;
 
     Node *n = (Node*)malloc(sizeof(Node));
     n->name = malloc(11);
