@@ -67,6 +67,7 @@ Node * peek(Queue* q){
 Node * pop(Queue* q) {
   Node *head = q->head;
   q->head = head->next;
+  q->size--;
   return head;
 }
 
@@ -111,8 +112,8 @@ void * exponentialReady() {
   int clock = 0;
   int wait = 0;
   while (wq.peek(&wq) || rq.peek(&rq)) {
-    clock++;
-    wait++;
+    //clock++;
+    //wait++;
     if (rq.peek(&rq)) {
       Node *worker = rq.pop(&rq);
       clock = run(clock, worker);
@@ -155,7 +156,8 @@ int run(int clock, Node *n) {
     }
     */
     if (n->cpu_completed < n->cpu_time) {
-      printf(" %d", n->cpu_completed);
+      printf("total %d", n->cpu_completed);
+      printf("done / %d", n->cpu_time);
       n->cpu_completed++;
       clock++;
     }
@@ -254,7 +256,7 @@ int main(int argc, char *argv[]) {
     gettimeofday(&tv, NULL);
     time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
     //printf("current%d", time);
-    time += 1000 + j*1000;
+    time += 1000 + j*100;
 
     Node *n = (Node*)malloc(sizeof(Node));
     n->name = malloc(11);
@@ -276,7 +278,7 @@ int main(int argc, char *argv[]) {
       }
       else if(k == 2) {
         a = atoi(temp);
-        n->cpu_time = a * 100;
+        n->cpu_time = a * 1000;
       }
       else {
         a = atoi(temp);
