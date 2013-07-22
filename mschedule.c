@@ -121,7 +121,7 @@ void * exponentialReady() {
       printf(" %d", worker->cpu_completed);
       printf(" / %d", worker->cpu_time);
       printf("\n");
-      if (worker->cpu_time == worker->cpu_completed) {
+      if (worker->cpu_time == worker->cpu_completed && !worker->io_blocks_left) {
         //dq.push_wait(&dq, &worker);
         printf("done");
       } else {
@@ -137,12 +137,7 @@ int run(int clock, Node *n) {
 
   //make sure this works for STCF
   int done = clock + n->time_slice;
-  /*
-  int block_time = n->cpu_time / n->io_blocks_left;
-  printf("%d", block_time);
-  int next_io = block_time;
-  */
-  while (clock < done && n->cpu_completed < n->cpu_time) {
+  while ((clock < done && n->cpu_completed < n->cpu_time) || n->io_blocks_left) {
     //interrupt
     /*
     if (new_process) {
@@ -161,24 +156,23 @@ int run(int clock, Node *n) {
       //printf("comp / %d", n->cpu_time);
       n->cpu_completed++;
       clock++;
+      n->io_block_next--;
     }
     //IO
-    /*
-    if (next_io == 0 || n->cpu_completed == n->cpu_time) {
-      int done_io = clock + 10;
-      if (n->io_blocks_left > 0) {
+    if (!n->io_block_next || n->cpu_completed == n->cpu_time) {
+      if (n->io_blocks_left) {
+        int done_io = clock + 10;
+        printf("IO");
         while (clock < done_io) {
           clock++;
         }
-        next_io = block_time;
+        n->io_block_next = n->io_block_time;
         n->io_blocks_left--;
       }
-      if (n->io_blocks_left > 0 && n->cpu_completed == n->cpu_time) {
+      if (n->io_blocks_left && n->cpu_completed == n->cpu_time) {
         return clock;
       }
     }
-    next_io--;
-    */
   }
   /*exponential
   if (clock == done) {
@@ -286,6 +280,9 @@ int main(int argc, char *argv[]) {
         n->io_count = a;
         n->io_blocks_left = trunc((n->io_count + 8191) / 8192);
         n->cpu_completed= 0;
+        n->io_block_time = n->cpu_time / n->io_blocks_left;
+        n->io_block_next = n->io_block_time;
+        printf("\nblock time: %d", n->io_blocks_left);
         int exp = 1;
         if (exp) {
           n->time_slice = 10;
