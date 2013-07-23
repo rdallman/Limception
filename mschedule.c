@@ -104,6 +104,9 @@ void * exponentialHold() {
     //Node *worker = wq.pop(&wq);
     //printf("%s", worker->name);
     if(time == wq.peek(&wq)->start_time) {
+
+      printf("\nThis\n %s", wq.peek(&wq)->name);
+
       rq.push_exponential(&rq, wq.pop(&wq));
     }
   }
@@ -112,16 +115,29 @@ void * exponentialHold() {
 void * exponentialReady() {
   int clock = 0;
   int wait = 0;
+
+  if (rq.peek(&rq)){
+printf("EXPO READY %s", rq.peek(&rq)->name);}
+
+
   while (wq.peek(&wq) || rq.peek(&rq)) {
+    if (rq.peek(&rq)) {
+      printf("PEEK%s", rq.peek(&rq)->name);
+    }
     clock++;
     wait++;
     if (rq.peek(&rq)) {
       Node *worker = rq.pop(&rq);
+
+
+      printf("before RUN with %s", worker->name);
+
+
       clock = run(clock, worker);
       printf(" %d", worker->cpu_completed);
       printf(" / %d", worker->cpu_time);
       printf("\n");
-      if (worker->cpu_time == worker->cpu_completed && !worker->io_blocks_left) {
+      if (worker->cpu_time == worker->cpu_completed) {
         //dq.push_wait(&dq, &worker);
         printf("done");
       } else {
@@ -135,9 +151,14 @@ int run(int clock, Node *n) {
   //context
   clock++;
 
+
+printf("INSIDE RUN WITH %s", n->name);
+
+
+
   //make sure this works for STCF
   int done = clock + n->time_slice;
-  while ((clock < done && n->cpu_completed < n->cpu_time) || n->io_blocks_left) {
+  while (clock < done) {
     //interrupt
     /*
     if (new_process) {
@@ -159,29 +180,32 @@ int run(int clock, Node *n) {
       n->io_block_next--;
     }
     //IO
-    if (!n->io_block_next || n->cpu_completed == n->cpu_time) {
-      if (n->io_blocks_left) {
+    if (n->io_block_next == 0 || n->cpu_completed == n->cpu_time) {
+      if (n->io_blocks_left > 0) {
         int done_io = clock + 10;
-        printf("IO");
+        printf("\nIO blocks left %d", n->io_blocks_left);
+        printf("\n");
         while (clock < done_io) {
           clock++;
         }
         n->io_block_next = n->io_block_time;
         n->io_blocks_left--;
       }
-      if (n->io_blocks_left && n->cpu_completed == n->cpu_time) {
+      if (n->io_blocks_left > 0 && n->cpu_completed == n->cpu_time) {
         return clock;
       }
     }
+    if (n->cpu_completed == n->cpu_time) {
+      break;
+    }
   }
-  /*exponential
   if (clock == done) {
+    printf("timeslice");
     if (n->priority > 1) {
       n->priority -= 1;
     }
     n->time_slice = n->time_slice * 2;
   }
-  */
   //context
   clock++;
   return clock;
@@ -279,6 +303,8 @@ int main(int argc, char *argv[]) {
         a = atoi(temp);
         n->io_count = a;
         n->io_blocks_left = trunc((n->io_count + 8191) / 8192);
+        printf("io blocks left = %d+8191 div 8192 = %d", n->io_count, n->io_blocks_left);
+        n->priority = 1;
         n->cpu_completed= 0;
         n->io_block_time = n->cpu_time / n->io_blocks_left;
         n->io_block_next = n->io_block_time;
