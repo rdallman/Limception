@@ -1,7 +1,5 @@
 //http://stackoverflow.com/questions/14002954/c-programming-how-to-read-the-whole-file-contents-into-a-buffer
 //http://linux.die.net/man/3/strtok_r
-//
-//OLD VERSION...
 #define _XOPEN_SOURCE 600
 #include <time.h>
 #include <sys/time.h>
@@ -35,7 +33,6 @@ typedef struct Queue {
   Node *(*pop) (struct Queue* q);
   Node *(*peek) (struct Queue* q);
   void *(*push_exponential) (struct Queue* q, Node* n);
-  void *(*push_stcf) (struct Queue* q, Node *n);
 } Queue;
 
 int mClock;
@@ -45,22 +42,6 @@ void * push_exponential(Queue* q, Node *n) {
   if(q->peek(q)) {
     Node *insert = q->head;
     while (insert->next && insert->next->priority >= n->priority) {
-      insert = insert->next;
-    }
-    Node *next = insert->next;
-    insert->next = n;
-    n->next = next;
-  } else {
-    q->head = n;
-    n->next = NULL;
-  }
-  q->size++;
-}
-
-void * push_stcf(Queue* q, Node *n) {
-  if(q->peek(q)) {
-    Node *insert = q->head;
-    while (insert->next && insert->next->cpu_time >= n->cpu_time) {
       insert = insert->next;
     }
     Node *next = insert->next;
@@ -148,7 +129,7 @@ void * exponentialReady() {
       printf(" / %d", worker->cpu_time);
       printf("\n");
       if (worker->cpu_time == worker->cpu_completed) {
-        //dq.push_wait(&dq, &worker);
+        dq.push_wait(&dq, worker);
         struct timeval tv;
         int time;
         gettimeofday(&tv, NULL);
@@ -245,7 +226,6 @@ int main(int argc, char *argv[]) {
   rq.head = NULL;
   rq.tail = NULL;
   rq.push_exponential = &push_exponential;
-  rq.push_stcf = &push_stcf;
   rq.peek = &peek;
   rq.pop = &pop;
 
@@ -316,12 +296,7 @@ int main(int argc, char *argv[]) {
         n->io_block_time = n->cpu_time / n->io_blocks_left;
         n->io_block_next = n->io_block_time;
         printf("\nblock time: %d", n->io_blocks_left);
-        int exp = 1;
-        if (exp) {
-          n->time_slice = 10;
-        } else {
-          n->time_slice = n->cpu_time * 100;
-        }
+        n->time_slice = 10;
         wq.push_wait(&wq, n);
       }
     }

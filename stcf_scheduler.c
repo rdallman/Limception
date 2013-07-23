@@ -1,7 +1,5 @@
 //http://stackoverflow.com/questions/14002954/c-programming-how-to-read-the-whole-file-contents-into-a-buffer
 //http://linux.die.net/man/3/strtok_r
-//
-//OLD VERSION...
 #define _XOPEN_SOURCE 600
 #include <time.h>
 #include <sys/time.h>
@@ -34,28 +32,11 @@ typedef struct Queue {
   void *(*push_wait) (struct Queue* q, Node* n);
   Node *(*pop) (struct Queue* q);
   Node *(*peek) (struct Queue* q);
-  void *(*push_exponential) (struct Queue* q, Node* n);
   void *(*push_stcf) (struct Queue* q, Node *n);
 } Queue;
 
 int mClock;
 int mWait;
-
-void * push_exponential(Queue* q, Node *n) {
-  if(q->peek(q)) {
-    Node *insert = q->head;
-    while (insert->next && insert->next->priority >= n->priority) {
-      insert = insert->next;
-    }
-    Node *next = insert->next;
-    insert->next = n;
-    n->next = next;
-  } else {
-    q->head = n;
-    n->next = NULL;
-  }
-  q->size++;
-}
 
 void * push_stcf(Queue* q, Node *n) {
   if(q->peek(q)) {
@@ -103,28 +84,26 @@ void * push_wait(Queue* q, Node *n){
   q->size++;
 }
 
-Queue wq, rq, dq; //wait queue, ready queue
+Queue wq, rq, dq; //wait queue, ready queue, done queue
 int new_process;
 
-void * exponentialHold() {
+void * stcfHold() {
   struct timeval tv;
   int time;
   while(wq.peek(&wq)){
     gettimeofday(&tv, NULL);
     time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
-    //Node *worker = wq.pop(&wq);
-    //printf("%s", worker->name);
     if(time == wq.peek(&wq)->start_time) {
 
       printf("\nThis\n %s", wq.peek(&wq)->name);
 
-      rq.push_exponential(&rq, wq.pop(&wq));
+      rq.push_stcf(&rq, wq.pop(&wq));
       new_process = 1;
     }
   }
 }
 
-void * exponentialReady() {
+void * stcfReady() {
   mClock = 0;
   mWait = 0;
 
@@ -157,7 +136,7 @@ void * exponentialReady() {
 
         printf("done");
       } else {
-        rq.push_exponential(&rq, worker);
+        rq.push_stcf(&rq, worker);
       }
     }
   }
@@ -166,17 +145,11 @@ void * exponentialReady() {
 int run(int clock, Node *n) {
 
   //make sure this works for STCF
-  int done = clock + n->time_slice;
+  int done = clock + n->cpu_time;
   while (clock < done) {
     //interrupt
     if (new_process) {
       new_process = 0;
-      if ((done - clock) < n->time_slice / 2) {
-        if (n->priority < 8) {
-          n->priority += 1;
-        }
-        n->time_slice = n->time_slice / 2;
-      }
       printf("INTERRUPT");
       break;
     }
@@ -207,31 +180,8 @@ int run(int clock, Node *n) {
       break;
     }
   }
-  if (clock == done) {
-    printf("timeslice");
-    if (n->priority > 1) {
-      n->priority -= 1;
-    }
-    n->time_slice = n->time_slice * 2;
-  }
   return clock;
 }
-
-//Node read_trace_line() {
- // Node *n = (Node*) malloc(sizeof(Node));
-  //n.name = get(name)
-  //n.start_time = get(start)
-  //n.cpu_time = get(cpu) * 1000
-  //n.io_count = get(io)
- // n->io_blocks_left = trunc((n->io_count + 8191) / 8192);
- // n->completion_time = 0;
- // int exp = 1;
- // if (exp) {
- //   n->time_slice = 10;
- // } else {
- //   n->time_slice = n->cpu_time;
- // }
-//}
 
 int main(int argc, char *argv[]) {
   wq.size = 0;
@@ -244,7 +194,6 @@ int main(int argc, char *argv[]) {
   rq.size = 0;
   rq.head = NULL;
   rq.tail = NULL;
-  rq.push_exponential = &push_exponential;
   rq.push_stcf = &push_stcf;
   rq.peek = &peek;
   rq.pop = &pop;
@@ -316,12 +265,6 @@ int main(int argc, char *argv[]) {
         n->io_block_time = n->cpu_time / n->io_blocks_left;
         n->io_block_next = n->io_block_time;
         printf("\nblock time: %d", n->io_blocks_left);
-        int exp = 1;
-        if (exp) {
-          n->time_slice = 10;
-        } else {
-          n->time_slice = n->cpu_time * 100;
-        }
         wq.push_wait(&wq, n);
       }
     }
@@ -330,10 +273,10 @@ int main(int argc, char *argv[]) {
   // wait for things to go down
   pthread_t waiting;
   pthread_t ready;
-  if (pthread_create(&waiting, NULL, &exponentialHold, NULL)){
+  if (pthread_create(&waiting, NULL, &stcfHold, NULL)){
     printf("Could not create thread \n");
   }
-  if (pthread_create(&ready, NULL, &exponentialReady, NULL)) {
+  if (pthread_create(&ready, NULL, &stcfReady, NULL)) {
     printf("Could not create thread \n");
   }
   if(pthread_join(waiting, NULL)){

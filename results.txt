@@ -1,120 +1,64 @@
 io blocks left = 12742+8191 div 8192 = 2
-block time: 2Pushing: java	start_time: 9840465	cpu_time: 41000	io_count: 12742
+block time: 2Pushing: java	start_time: 17773517	cpu_time: 41000	io_count: 12742
 io blocks left = 22452+8191 div 8192 = 3
-block time: 3Pushing: httpd	start_time: 9840565	cpu_time: 62000	io_count: 22452
+block time: 3Pushing: httpd	start_time: 17773617	cpu_time: 62000	io_count: 22452
 io blocks left = 3217+8191 div 8192 = 1
-block time: 1Pushing: FvqmTaskBar	start_time: 9840665	cpu_time: 84000	io_count: 3217
+block time: 1Pushing: FvqmTaskBar	start_time: 17773717	cpu_time: 84000	io_count: 3217
 io blocks left = 8241+8191 div 8192 = 2
-block time: 2Pushing: spectre	start_time: 9840765	cpu_time: 143000	io_count: 8241
+block time: 2Pushing: spectre	start_time: 17773817	cpu_time: 143000	io_count: 8241
 io blocks left = 142762+8191 div 8192 = 18
-block time: 18Pushing: da_ic.exe	start_time: 9840865	cpu_time: 423000	io_count: 142762
+block time: 18Pushing: da_ic.exe	start_time: 17773917	cpu_time: 423000	io_count: 142762
 
 This
- javabefore RUN with javaINSIDE RUN WITH javatimeslice 10 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH javatimeslice 30 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH javatimeslice 70 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH javatimeslice 150 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH javatimeslice 310 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH javatimeslice 630 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH javatimeslice 1270 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH javatimeslice 2550 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH javatimeslice 5110 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH javatimeslice 10230 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH javatimeslice 20470 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH java
+ javabefore RUN with javaINTERRUPT 0 / 41000
+PEEKjavabefore RUN with java
 IO blocks left 2
-timeslice 40940 / 41000
-PEEKjavabefore RUN with javaINSIDE RUN WITH java
+timeslice 40990 / 41000
+PEEKjavabefore RUN with java
 IO blocks left 1
  41000 / 41000
 done
 This
- httpdPEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 10 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 30 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 70 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 150 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 310 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 630 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 1270 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 2550 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 5110 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 10230 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpdtimeslice 20470 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpd
+ httpdPEEKhttpdbefore RUN with httpdINTERRUPT 0 / 62000
+PEEKhttpdbefore RUN with httpd
 IO blocks left 3
-timeslice 40940 / 62000
-PEEKhttpdbefore RUN with httpdINSIDE RUN WITH httpd
-IO blocks left 2
 
+IO blocks left 2
+timeslice 61980 / 62000
+PEEKhttpdbefore RUN with httpd
 IO blocks left 1
  62000 / 62000
 done
 This
- FvqmTaskBarPEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 10 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 30 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 70 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 150 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 310 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 630 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 1270 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 2550 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 5110 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 10230 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 20470 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 40950 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBartimeslice 81910 / 84000
-PEEKFvqmTaskBarbefore RUN with FvqmTaskBarINSIDE RUN WITH FvqmTaskBar
+ FvqmTaskBarPEEKFvqmTaskBarbefore RUN with FvqmTaskBarINTERRUPT 0 / 84000
+PEEKFvqmTaskBarbefore RUN with FvqmTaskBar
 IO blocks left 1
  84000 / 84000
 done
 This
- spectrePEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 10 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 30 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 70 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 150 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 310 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 630 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 1270 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 2550 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 5110 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 10230 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 20470 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectretimeslice 40950 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectre
+ spectrePEEKspectrebefore RUN with spectreINTERRUPT 0 / 143000
+PEEKspectrebefore RUN with spectre
 IO blocks left 2
-timeslice 81900 / 143000
-PEEKspectrebefore RUN with spectreINSIDE RUN WITH spectre
+timeslice 142990 / 143000
+PEEKspectrebefore RUN with spectre
 IO blocks left 1
  143000 / 143000
 done
 This
- da_ic.exePEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 10 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 30 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 70 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 150 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 310 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 630 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 1270 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 2550 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 5110 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 10230 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exetimeslice 20470 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exe
+ da_ic.exePEEKda_ic.exebefore RUN with da_ic.exeINTERRUPT 0 / 423000
+PEEKda_ic.exebefore RUN with da_ic.exe
 IO blocks left 18
-timeslice 40940 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exe
+
 IO blocks left 17
 
 IO blocks left 16
-timeslice 81880 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exe
+
 IO blocks left 15
 
 IO blocks left 14
 
 IO blocks left 13
-timeslice 163770 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exe
+
 IO blocks left 12
 
 IO blocks left 11
@@ -128,8 +72,7 @@ IO blocks left 8
 IO blocks left 7
 
 IO blocks left 6
-timeslice 327540 / 423000
-PEEKda_ic.exebefore RUN with da_ic.exeINSIDE RUN WITH da_ic.exe
+
 IO blocks left 5
 
 IO blocks left 4
@@ -137,7 +80,8 @@ IO blocks left 4
 IO blocks left 3
 
 IO blocks left 2
-
+timeslice 422830 / 423000
+PEEKda_ic.exebefore RUN with da_ic.exe
 IO blocks left 1
  423000 / 423000
 done
