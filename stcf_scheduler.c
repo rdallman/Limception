@@ -127,14 +127,14 @@ void * done_queue() {
     }
   }
   printf("\n\nPERFORMANCE METRICS\n\n");
-  double avg_compl_time = total_compl_time / jobs;
+  double avg_compl_time = (double) total_compl_time / (double) jobs;
   printf("AVG COMPLETION TIME\t\t%f", avg_compl_time);
   printf("\nMIN COMPLETION TIME\t\t%d", min_compl_time);
   printf("\nMAX COMPLETION TIME\t\t%d", max_compl_time);
-  double jobs_per_sec = jobs / mClock;
-  printf("\nTHROUGHPUT\t\t%f", jobs_per_sec);
+  double jobs_per_sec = (double) jobs / (double) mClock;
+  printf("\nTHROUGHPUT\t\t%d", jobs_per_sec);
   printf("\nJOBS\t\t%d", jobs);
-  double percent_wasted = mWait / mClock;
+  double percent_wasted = (double) mWait / (double) mClock;
   printf("\nUTILIZATION\t\t%d / %d (%f%) wasted", mWait, mClock, percent_wasted);
 }
 
