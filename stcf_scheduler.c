@@ -8,6 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+int node_counter;
+int stop;
 
 typedef struct Node {
   struct Node *next;
@@ -103,6 +105,39 @@ void * stcfHold() {
   }
 }
 
+void * done_queue() {
+  while (dq.size != node_counter) {
+    //running
+  }
+  int total_compl_time = 0;
+  int jobs = 0;
+  int max_compl_time = 0;
+  int min_compl_time = -1;
+  while (dq.peek(&dq)) {
+    exit(1);
+    Node* n = dq.pop(&dq);
+    total_compl_time += n->completion_time;
+    jobs++;
+    if (n->completion_time > max_compl_time) {
+      max_compl_time = n->completion_time;
+    }
+    if (n->completion_time < min_compl_time || min_compl_time == -1) {
+      min_compl_time = n->completion_time;
+    }
+  }
+  printf("\n\nPERFORMANCE METRICS\n\n");
+  int avg_compl_time = total_compl_time / jobs;
+  printf("AVG COMPLETION TIME\t\t%s", avg_compl_time);
+  printf("\nMIN COMPLETION TIME\t\t%s", max_compl_time);
+  printf("\nMAX COMPLETION TIME\t\t%s", min_compl_time);
+  int jobs_per_sec = jobs / mClock;
+  printf("\nTHROUGHPUT\t\t%s", jobs_per_sec);
+  int percent_wasted = mWait / mClock;
+  printf("\nUTILIZATION\t\t%s / %s (%s%) wasted", mWait, mClock, percent_wasted);
+
+  stop = 1;
+}
+
 void * stcfReady() {
   mClock = 0;
   mWait = 0;
@@ -111,10 +146,8 @@ void * stcfReady() {
   printf("EXPO READY %s", rq.peek(&rq)->name);}
 
 
-  while (wq.peek(&wq) || rq.peek(&rq)) {
-    if (rq.peek(&rq)) {
-      printf("PEEK%s", rq.peek(&rq)->name);
-    }
+  //while (wq.peek(&wq) || rq.peek(&rq)) {
+  while (!stop) {
     mClock++;
     mWait++;
     if (rq.peek(&rq)) {
@@ -122,17 +155,21 @@ void * stcfReady() {
 
       printf("before RUN with %s", worker->name);
 
+      mClock++;
+      mWait++;
       mClock = run(mClock, worker);
+      mClock++;
+      mWait++;
       printf(" %d", worker->cpu_completed);
       printf(" / %d", worker->cpu_time);
       printf("\n");
       if (worker->cpu_time == worker->cpu_completed) {
-        //dq.push_wait(&dq, &worker);
+        dq.push_wait(&dq, worker);
         struct timeval tv;
         int time;
         gettimeofday(&tv, NULL);
         time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
-        worker->completion_time = time;
+        worker->completion_time = time - worker->start_time;
 
         printf("done");
       } else {
@@ -204,6 +241,7 @@ int main(int argc, char *argv[]) {
   dq.push_wait = &push_wait;
   dq.peek = &peek;
   dq.pop = &pop;
+  node_counter = 0;
 
 
 
@@ -266,6 +304,7 @@ int main(int argc, char *argv[]) {
         n->io_block_next = n->io_block_time;
         printf("\nblock time: %d", n->io_blocks_left);
         wq.push_wait(&wq, n);
+        node_counter++;
       }
     }
   }
@@ -273,17 +312,24 @@ int main(int argc, char *argv[]) {
   // wait for things to go down
   pthread_t waiting;
   pthread_t ready;
+  pthread_t finished;
   if (pthread_create(&waiting, NULL, &stcfHold, NULL)){
     printf("Could not create thread \n");
   }
   if (pthread_create(&ready, NULL, &stcfReady, NULL)) {
     printf("Could not create thread \n");
   }
+  if (pthread_create(&finished, NULL, &done_queue, NULL)) {
+    printf("bad thread");
+  }
   if(pthread_join(waiting, NULL)){
     printf("Could not join thread\n");
   }
   if(pthread_join(ready, NULL)) {
     printf("Could not join thread\n");
+  }
+  if (pthread_join(finished, NULL)) {
+    printf("bad join");
   }
   //printf("%s", dq.head->name);
   //pop

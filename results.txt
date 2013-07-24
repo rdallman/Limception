@@ -1,253 +1,222 @@
 io blocks left = 23894+8191 div 8192 = 3
-block time: 3Pushing: init	start_time: 3447509	cpu_time: 57000	io_count: 23894
+block time: 3Pushing: init	start_time: 8257853	cpu_time: 57000	io_count: 23894
 io blocks left = 4389+8191 div 8192 = 1
-block time: 1Pushing: syslogd	start_time: 3447609	cpu_time: 17000	io_count: 4389
+block time: 1Pushing: syslogd	start_time: 8257953	cpu_time: 17000	io_count: 4389
 io blocks left = 218746+8191 div 8192 = 27
-block time: 27Pushing: keyserv	start_time: 3447709	cpu_time: 48000	io_count: 218746
+block time: 27Pushing: keyserv	start_time: 8258053	cpu_time: 48000	io_count: 218746
 io blocks left = 328+8191 div 8192 = 1
-block time: 1Pushing: devfsadm	start_time: 3447809	cpu_time: 21000	io_count: 328
+block time: 1Pushing: devfsadm	start_time: 8258153	cpu_time: 21000	io_count: 328
 io blocks left = 12928+8191 div 8192 = 2
-block time: 2Pushing: automountd	start_time: 3447909	cpu_time: 61000	io_count: 12928
+block time: 2Pushing: automountd	start_time: 8258253	cpu_time: 61000	io_count: 12928
 io blocks left = 5427+8191 div 8192 = 1
-block time: 1Pushing: utmpd	start_time: 3448009	cpu_time: 82000	io_count: 5427
+block time: 1Pushing: utmpd	start_time: 8258353	cpu_time: 82000	io_count: 5427
 io blocks left = 548+8191 div 8192 = 1
-block time: 1Pushing: rpcbind	start_time: 3448109	cpu_time: 38000	io_count: 548
+block time: 1Pushing: rpcbind	start_time: 8258453	cpu_time: 38000	io_count: 548
 io blocks left = 9734+8191 div 8192 = 2
-block time: 2Pushing: ttsession	start_time: 3448209	cpu_time: 76000	io_count: 9734
+block time: 2Pushing: ttsession	start_time: 8258553	cpu_time: 76000	io_count: 9734
 io blocks left = 7634+8191 div 8192 = 1
-block time: 1Pushing: rpc.rstatd	start_time: 3448309	cpu_time: 46000	io_count: 7634
+block time: 1Pushing: rpc.rstatd	start_time: 8258653	cpu_time: 46000	io_count: 7634
 io blocks left = 12456+8191 div 8192 = 2
-block time: 2Pushing: obServer	start_time: 3448409	cpu_time: 25000	io_count: 12456
+block time: 2Pushing: obServer	start_time: 8258753	cpu_time: 25000	io_count: 12456
 io blocks left = 43125+8191 div 8192 = 6
-block time: 6Pushing: Xvnc	start_time: 3448509	cpu_time: 76000	io_count: 43125
+block time: 6Pushing: Xvnc	start_time: 8258853	cpu_time: 76000	io_count: 43125
 io blocks left = 2643+8191 div 8192 = 1
-block time: 1Pushing: mwrpcss	start_time: 3448609	cpu_time: 132000	io_count: 2643
+block time: 1Pushing: mwrpcss	start_time: 8258953	cpu_time: 132000	io_count: 2643
 io blocks left = 643+8191 div 8192 = 1
-block time: 1Pushing: xntpd	start_time: 3448709	cpu_time: 34000	io_count: 643
+block time: 1Pushing: xntpd	start_time: 8259053	cpu_time: 34000	io_count: 643
 io blocks left = 215+8191 div 8192 = 1
-block time: 1Pushing: lockd	start_time: 3448809	cpu_time: 12000	io_count: 215
+block time: 1Pushing: lockd	start_time: 8259153	cpu_time: 12000	io_count: 215
 io blocks left = 22987+8191 div 8192 = 3
-block time: 3Pushing: Xsession	start_time: 3448909	cpu_time: 74000	io_count: 22987
+block time: 3Pushing: Xsession	start_time: 8259253	cpu_time: 74000	io_count: 22987
 io blocks left = 6523+8191 div 8192 = 1
-block time: 1Pushing: ttymon	start_time: 3449009	cpu_time: 35000	io_count: 6523
+block time: 1Pushing: ttymon	start_time: 8259353	cpu_time: 35000	io_count: 6523
 io blocks left = 9634+8191 div 8192 = 2
-block time: 2Pushing: xload	start_time: 3449109	cpu_time: 23000	io_count: 9634
+block time: 2Pushing: xload	start_time: 8259453	cpu_time: 23000	io_count: 9634
 io blocks left = 532+8191 div 8192 = 1
-block time: 1Pushing: xclock	start_time: 3449209	cpu_time: 8000	io_count: 532
+block time: 1Pushing: xclock	start_time: 8259553	cpu_time: 8000	io_count: 532
 io blocks left = 1543+8191 div 8192 = 1
-block time: 1Pushing: ypbind	start_time: 3449309	cpu_time: 95000	io_count: 1543
+block time: 1Pushing: ypbind	start_time: 8259653	cpu_time: 95000	io_count: 1543
 io blocks left = 4534+8191 div 8192 = 1
-block time: 1Pushing: java	start_time: 3449409	cpu_time: 43000	io_count: 4534
+block time: 1Pushing: java	start_time: 8259753	cpu_time: 43000	io_count: 4534
 io blocks left = 76345+8191 div 8192 = 10
-block time: 10Pushing: eldo.exe	start_time: 3449509	cpu_time: 754000	io_count: 76345
+block time: 10Pushing: eldo.exe	start_time: 8259853	cpu_time: 754000	io_count: 76345
 io blocks left = 8543+8191 div 8192 = 2
-block time: 2Pushing: top-sun4u-5.8	start_time: 3449609	cpu_time: 85000	io_count: 8543
+block time: 2Pushing: top-sun4u-5.8	start_time: 8259953	cpu_time: 85000	io_count: 8543
 io blocks left = 2315+8191 div 8192 = 1
-block time: 1Pushing: sshd	start_time: 3449709	cpu_time: 59000	io_count: 2315
+block time: 1Pushing: sshd	start_time: 8260053	cpu_time: 59000	io_count: 2315
 io blocks left = 8237+8191 div 8192 = 2
-block time: 2Pushing: csh	start_time: 3449809	cpu_time: 43000	io_count: 8237
+block time: 2Pushing: csh	start_time: 8260153	cpu_time: 43000	io_count: 8237
 io blocks left = 4392+8191 div 8192 = 1
-block time: 1Pushing: in.rwhod	start_time: 3449909	cpu_time: 32000	io_count: 4392
+block time: 1Pushing: in.rwhod	start_time: 8260253	cpu_time: 32000	io_count: 4392
 io blocks left = 1432+8191 div 8192 = 1
-block time: 1Pushing: nscd	start_time: 3450009	cpu_time: 54000	io_count: 1432
+block time: 1Pushing: nscd	start_time: 8260353	cpu_time: 54000	io_count: 1432
 io blocks left = 5423+8191 div 8192 = 1
-block time: 1Pushing: sshd	start_time: 3450109	cpu_time: 82000	io_count: 5423
+block time: 1Pushing: sshd	start_time: 8260453	cpu_time: 82000	io_count: 5423
 io blocks left = 1431+8191 div 8192 = 1
-block time: 1Pushing: run_wdb_server	start_time: 3450209	cpu_time: 34000	io_count: 1431
+block time: 1Pushing: run_wdb_server	start_time: 8260553	cpu_time: 34000	io_count: 1431
 io blocks left = 312+8191 div 8192 = 1
-block time: 1Pushing: vold	start_time: 3450310	cpu_time: 12000	io_count: 312
+block time: 1Pushing: vold	start_time: 8260653	cpu_time: 12000	io_count: 312
 io blocks left = 421+8191 div 8192 = 1
-block time: 1Pushing: dtwm	start_time: 3450410	cpu_time: 3000	io_count: 421
+block time: 1Pushing: dtwm	start_time: 8260753	cpu_time: 3000	io_count: 421
 io blocks left = 351422+8191 div 8192 = 43
-block time: 43Pushing: leonardo	start_time: 3450510	cpu_time: 120000	io_count: 351422
+block time: 43Pushing: leonardo	start_time: 8260853	cpu_time: 120000	io_count: 351422
 io blocks left = 3251+8191 div 8192 = 1
-block time: 1Pushing: spectre	start_time: 3450610	cpu_time: 261000	io_count: 3251
+block time: 1Pushing: spectre	start_time: 8260953	cpu_time: 261000	io_count: 3251
 io blocks left = 12742+8191 div 8192 = 2
-block time: 2Pushing: java	start_time: 3450710	cpu_time: 41000	io_count: 12742
+block time: 2Pushing: java	start_time: 8261053	cpu_time: 41000	io_count: 12742
 io blocks left = 22452+8191 div 8192 = 3
-block time: 3Pushing: httpd	start_time: 3450810	cpu_time: 62000	io_count: 22452
+block time: 3Pushing: httpd	start_time: 8261153	cpu_time: 62000	io_count: 22452
 io blocks left = 3217+8191 div 8192 = 1
-block time: 1Pushing: FvwmTaskBar	start_time: 3450910	cpu_time: 84000	io_count: 3217
+block time: 1Pushing: FvwmTaskBar	start_time: 8261253	cpu_time: 84000	io_count: 3217
 io blocks left = 8241+8191 div 8192 = 2
-block time: 2Pushing: spectre	start_time: 3451010	cpu_time: 143000	io_count: 8241
+block time: 2Pushing: spectre	start_time: 8261353	cpu_time: 143000	io_count: 8241
 io blocks left = 142762+8191 div 8192 = 18
-block time: 18Pushing: da_ic.exe	start_time: 3451110	cpu_time: 423000	io_count: 142762
+block time: 18Pushing: da_ic.exe	start_time: 8261453	cpu_time: 423000	io_count: 142762
 io blocks left = 20837+8191 div 8192 = 3
-block time: 3Pushing: java	start_time: 3451210	cpu_time: 82000	io_count: 20837
+block time: 3Pushing: java	start_time: 8261553	cpu_time: 82000	io_count: 20837
 io blocks left = 2876+8191 div 8192 = 1
-block time: 1Pushing: Xvnc	start_time: 3451310	cpu_time: 23000	io_count: 2876
+block time: 1Pushing: Xvnc	start_time: 8261653	cpu_time: 23000	io_count: 2876
 io blocks left = 83+8191 div 8192 = 1
-block time: 1Pushing: cdsNameServer	start_time: 3451410	cpu_time: 12000	io_count: 83
+block time: 1Pushing: cdsNameServer	start_time: 8261753	cpu_time: 12000	io_count: 83
 io blocks left = 7264+8191 div 8192 = 1
-block time: 1Pushing: spectre	start_time: 3451510	cpu_time: 164000	io_count: 7264
+block time: 1Pushing: spectre	start_time: 8261853	cpu_time: 164000	io_count: 7264
 io blocks left = 726+8191 div 8192 = 1
-block time: 1Pushing: automountd	start_time: 3451610	cpu_time: 73000	io_count: 726
+block time: 1Pushing: automountd	start_time: 8261953	cpu_time: 73000	io_count: 726
 io blocks left = 13721+8191 div 8192 = 2
-block time: 2Pushing: cron	start_time: 3451710	cpu_time: 38000	io_count: 13721
+block time: 2Pushing: cron	start_time: 8262053	cpu_time: 38000	io_count: 13721
 io blocks left = 6433+8191 div 8192 = 1
-block time: 1Pushing: color_xterm	start_time: 3451810	cpu_time: 49000	io_count: 6433
+block time: 1Pushing: color_xterm	start_time: 8262153	cpu_time: 49000	io_count: 6433
 io blocks left = 26541+8191 div 8192 = 4
-block time: 4Pushing: inetd	start_time: 3451910	cpu_time: 177000	io_count: 26541
+block time: 4Pushing: inetd	start_time: 8262253	cpu_time: 177000	io_count: 26541
 io blocks left = 9244+8191 div 8192 = 2
-block time: 2Pushing: java	start_time: 3452010	cpu_time: 52000	io_count: 9244
+block time: 2Pushing: java	start_time: 8262353	cpu_time: 52000	io_count: 9244
 io blocks left = 832+8191 div 8192 = 1
-block time: 1Pushing: sdtperfmeter	start_time: 3452110	cpu_time: 28000	io_count: 832
+block time: 1Pushing: sdtperfmeter	start_time: 8262453	cpu_time: 28000	io_count: 832
 io blocks left = 22943+8191 div 8192 = 3
-block time: 3Pushing: run_wdb_server	start_time: 3452210	cpu_time: 72000	io_count: 22943
+block time: 3Pushing: run_wdb_server	start_time: 8262553	cpu_time: 72000	io_count: 22943
 io blocks left = 2183+8191 div 8192 = 1
-block time: 1Pushing: httpd	start_time: 3452310	cpu_time: 32000	io_count: 2183
+block time: 1Pushing: httpd	start_time: 8262653	cpu_time: 32000	io_count: 2183
 io blocks left = 7241+8191 div 8192 = 1
-block time: 1Pushing: mwrpcss	start_time: 3452410	cpu_time: 73000	io_count: 7241
+block time: 1Pushing: mwrpcss	start_time: 8262753	cpu_time: 73000	io_count: 7241
 io blocks left = 5286+8191 div 8192 = 1
-block time: 1Pushing: httpd	start_time: 3452510	cpu_time: 81000	io_count: 5286
+block time: 1Pushing: httpd	start_time: 8262853	cpu_time: 81000	io_count: 5286
 io blocks left = 9031+8191 div 8192 = 2
-block time: 2Pushing: csh	start_time: 3452610	cpu_time: 18000	io_count: 9031
+block time: 2Pushing: csh	start_time: 8262953	cpu_time: 18000	io_count: 9031
 io blocks left = 27413+8191 div 8192 = 4
-block time: 4Pushing: eldo	start_time: 3452710	cpu_time: 331000	io_count: 27413
+block time: 4Pushing: eldo	start_time: 8263053	cpu_time: 331000	io_count: 27413
 io blocks left = 7263+8191 div 8192 = 1
-block time: 1Pushing: httpd	start_time: 3452810	cpu_time: 27000	io_count: 7263
+block time: 1Pushing: httpd	start_time: 8263153	cpu_time: 27000	io_count: 7263
 io blocks left = 2841+8191 div 8192 = 1
-block time: 1Pushing: sh	start_time: 3452910	cpu_time: 62000	io_count: 2841
+block time: 1Pushing: sh	start_time: 8263253	cpu_time: 62000	io_count: 2841
 io blocks left = 3924+8191 div 8192 = 1
-block time: 1Pushing: mwrpcss	start_time: 3453010	cpu_time: 32000	io_count: 3924
+block time: 1Pushing: mwrpcss	start_time: 8263353	cpu_time: 32000	io_count: 3924
 io blocks left = 8271+8191 div 8192 = 2
-block time: 2Pushing: csh	start_time: 3453110	cpu_time: 28000	io_count: 8271
+block time: 2Pushing: csh	start_time: 8263453	cpu_time: 28000	io_count: 8271
 io blocks left = 73921+8191 div 8192 = 10
-block time: 10Pushing: httpd	start_time: 3453210	cpu_time: 108000	io_count: 73921
+block time: 10Pushing: httpd	start_time: 8263553	cpu_time: 108000	io_count: 73921
 io blocks left = 3132+8191 div 8192 = 1
-block time: 1Pushing: sh	start_time: 3453310	cpu_time: 8000	io_count: 3132
+block time: 1Pushing: sh	start_time: 8263653	cpu_time: 8000	io_count: 3132
 io blocks left = 18627+8191 div 8192 = 3
-block time: 3Pushing: mwrpcss	start_time: 3453410	cpu_time: 82000	io_count: 18627
+block time: 3Pushing: mwrpcss	start_time: 8263753	cpu_time: 82000	io_count: 18627
 io blocks left = 6211+8191 div 8192 = 1
-block time: 1Pushing: sh	start_time: 3453510	cpu_time: 38000	io_count: 6211
+block time: 1Pushing: sh	start_time: 8263853	cpu_time: 38000	io_count: 6211
 io blocks left = 2731+8191 div 8192 = 1
-block time: 1Pushing: dtsession	start_time: 3453610	cpu_time: 32000	io_count: 2731
+block time: 1Pushing: dtsession	start_time: 8263953	cpu_time: 32000	io_count: 2731
 io blocks left = 8277+8191 div 8192 = 2
-block time: 2Pushing: sshd	start_time: 3453710	cpu_time: 12000	io_count: 8277
+block time: 2Pushing: sshd	start_time: 8264053	cpu_time: 12000	io_count: 8277
 io blocks left = 1732+8191 div 8192 = 1
-block time: 1Pushing: bash	start_time: 3453810	cpu_time: 72000	io_count: 1732
+block time: 1Pushing: bash	start_time: 8264153	cpu_time: 72000	io_count: 1732
 io blocks left = 1687+8191 div 8192 = 1
-block time: 1Pushing: csh	start_time: 3453910	cpu_time: 62000	io_count: 1687
+block time: 1Pushing: csh	start_time: 8264253	cpu_time: 62000	io_count: 1687
 io blocks left = 9271+8191 div 8192 = 2
-block time: 2Pushing: sh	start_time: 3454010	cpu_time: 32000	io_count: 9271
+block time: 2Pushing: sh	start_time: 8264353	cpu_time: 32000	io_count: 9271
 io blocks left = 8872+8191 div 8192 = 2
-block time: 2Pushing: mwrpcss	start_time: 3454110	cpu_time: 17000	io_count: 8872
+block time: 2Pushing: mwrpcss	start_time: 8264453	cpu_time: 17000	io_count: 8872
 io blocks left = 288476+8191 div 8192 = 36
-block time: 36Pushing: lpd	start_time: 3454210	cpu_time: 72000	io_count: 288476
+block time: 36Pushing: lpd	start_time: 8264553	cpu_time: 72000	io_count: 288476
 io blocks left = 3282+8191 div 8192 = 1
-block time: 1Pushing: sdt_shell	start_time: 3454310	cpu_time: 24000	io_count: 3282
+block time: 1Pushing: sdt_shell	start_time: 8264653	cpu_time: 24000	io_count: 3282
 io blocks left = 9172+8191 div 8192 = 2
-block time: 2Pushing: powerd	start_time: 3454410	cpu_time: 72000	io_count: 9172
+block time: 2Pushing: powerd	start_time: 8264753	cpu_time: 72000	io_count: 9172
 io blocks left = 4728+8191 div 8192 = 1
-block time: 1Pushing: java	start_time: 3454510	cpu_time: 36000	io_count: 4728
+block time: 1Pushing: java	start_time: 8264853	cpu_time: 36000	io_count: 4728
 io blocks left = 821+8191 div 8192 = 1
-block time: 1Pushing: sh	start_time: 3454610	cpu_time: 28000	io_count: 821
+block time: 1Pushing: sh	start_time: 8264953	cpu_time: 28000	io_count: 821
 io blocks left = 7321+8191 div 8192 = 1
-block time: 1Pushing: mwrpcss	start_time: 3454710	cpu_time: 123000	io_count: 7321
+block time: 1Pushing: mwrpcss	start_time: 8265053	cpu_time: 123000	io_count: 7321
 io blocks left = 9232+8191 div 8192 = 2
-block time: 2Pushing: httpd	start_time: 3454810	cpu_time: 32000	io_count: 9232
+block time: 2Pushing: httpd	start_time: 8265153	cpu_time: 32000	io_count: 9232
 io blocks left = 283+8191 div 8192 = 1
-block time: 1Pushing: statd	start_time: 3454910	cpu_time: 17000	io_count: 283
+block time: 1Pushing: statd	start_time: 8265253	cpu_time: 17000	io_count: 283
 io blocks left = 42281+8191 div 8192 = 6
-block time: 6Pushing: fvwm95	start_time: 3455010	cpu_time: 273000	io_count: 42281
+block time: 6Pushing: fvwm95	start_time: 8265353	cpu_time: 273000	io_count: 42281
 io blocks left = 10363+8191 div 8192 = 2
-block time: 2Pushing: sh	start_time: 3455110	cpu_time: 26000	io_count: 10363
+block time: 2Pushing: sh	start_time: 8265453	cpu_time: 26000	io_count: 10363
 io blocks left = 3748+8191 div 8192 = 1
-block time: 1Pushing: mwrpcss	start_time: 3455210	cpu_time: 84000	io_count: 3748
+block time: 1Pushing: mwrpcss	start_time: 8265553	cpu_time: 84000	io_count: 3748
 io blocks left = 17321+8191 div 8192 = 3
-block time: 3Pushing: FvwmButtons	start_time: 3455310	cpu_time: 143000	io_count: 17321
+block time: 3Pushing: FvwmButtons	start_time: 8265653	cpu_time: 143000	io_count: 17321
 io blocks left = 26883+8191 div 8192 = 4
-block time: 4Pushing: xterm	start_time: 3455410	cpu_time: 36000	io_count: 26883
+block time: 4Pushing: xterm	start_time: 8265753	cpu_time: 36000	io_count: 26883
 io blocks left = 372+8191 div 8192 = 1
-block time: 1Pushing: FvwmPager	start_time: 3455510	cpu_time: 17000	io_count: 372
+block time: 1Pushing: FvwmPager	start_time: 8265853	cpu_time: 17000	io_count: 372
 io blocks left = 2327+8191 div 8192 = 1
-block time: 1Pushing: bash	start_time: 3455610	cpu_time: 82000	io_count: 2327
+block time: 1Pushing: bash	start_time: 8265953	cpu_time: 82000	io_count: 2327
 io blocks left = 3281+8191 div 8192 = 1
-block time: 1Pushing: syseventd	start_time: 3455710	cpu_time: 37000	io_count: 3281
+block time: 1Pushing: syseventd	start_time: 8266053	cpu_time: 37000	io_count: 3281
 io blocks left = 8936+8191 div 8192 = 2
-block time: 2Pushing: screen	start_time: 3455810	cpu_time: 62000	io_count: 8936
+block time: 2Pushing: screen	start_time: 8266153	cpu_time: 62000	io_count: 8936
 io blocks left = 1328+8191 div 8192 = 1
-block time: 1Pushing: clsbd	start_time: 3455910	cpu_time: 23000	io_count: 1328
+block time: 1Pushing: clsbd	start_time: 8266253	cpu_time: 23000	io_count: 1328
 io blocks left = 6612+8191 div 8192 = 1
-block time: 1Pushing: sac	start_time: 3456010	cpu_time: 73000	io_count: 6612
+block time: 1Pushing: sac	start_time: 8266353	cpu_time: 73000	io_count: 6612
 io blocks left = 19837+8191 div 8192 = 3
-block time: 3Pushing: csh	start_time: 3456110	cpu_time: 25000	io_count: 19837
+block time: 3Pushing: csh	start_time: 8266453	cpu_time: 25000	io_count: 19837
 io blocks left = 321883+8191 div 8192 = 40
-block time: 40Pushing: run_wdb_server	start_time: 3456210	cpu_time: 177000	io_count: 321883
+block time: 40Pushing: run_wdb_server	start_time: 8266553	cpu_time: 177000	io_count: 321883
 io blocks left = 7283+8191 div 8192 = 1
-block time: 1Pushing: ezwave.csh	start_time: 3456310	cpu_time: 32000	io_count: 7283
+block time: 1Pushing: ezwave.csh	start_time: 8266653	cpu_time: 32000	io_count: 7283
 io blocks left = 247267+8191 div 8192 = 31
-block time: 31Pushing: dsdm	start_time: 3456410	cpu_time: 231000	io_count: 247267
+block time: 31Pushing: dsdm	start_time: 8266753	cpu_time: 231000	io_count: 247267
 io blocks left = 3681+8191 div 8192 = 1
-block time: 1Pushing: sh	start_time: 3456510	cpu_time: 18000	io_count: 3681
+block time: 1Pushing: sh	start_time: 8266853	cpu_time: 18000	io_count: 3681
 io blocks left = 8374+8191 div 8192 = 2
-block time: 2Pushing: mwrpcss	start_time: 3456610	cpu_time: 62000	io_count: 8374
+block time: 2Pushing: mwrpcss	start_time: 8266953	cpu_time: 62000	io_count: 8374
 io blocks left = 32123+8191 div 8192 = 4
-block time: 4Pushing: httpd	start_time: 3456710	cpu_time: 27000	io_count: 32123
+block time: 4Pushing: httpd	start_time: 8267053	cpu_time: 27000	io_count: 32123
 
 This
  initbefore RUN with initINTERRUPT 0 / 57000
-before RUN with inittimeslice 10 / 57000
-before RUN with inittimeslice 30 / 57000
-before RUN with inittimeslice 70 / 57000
-before RUN with inittimeslice 150 / 57000
-before RUN with inittimeslice 310 / 57000
-before RUN with inittimeslice 630 / 57000
-before RUN with inittimeslice 1270 / 57000
-before RUN with inittimeslice 2550 / 57000
-before RUN with inittimeslice 5110 / 57000
-before RUN with inittimeslice 10230 / 57000
 before RUN with init
 IO blocks left 3
-timeslice 20460 / 57000
-before RUN with init
+
 IO blocks left 2
-timeslice 40930 / 57000
+ 56980 / 57000
 before RUN with init
 IO blocks left 1
  57000 / 57000
-Pushing: init	start_time: 3447509	cpu_time: 57000	io_count: 23894
+Pushing: init	start_time: 8257853	cpu_time: 57000	io_count: 23894
 done
 This
  syslogdbefore RUN with syslogdINTERRUPT 0 / 17000
-before RUN with syslogdtimeslice 10 / 17000
-before RUN with syslogdtimeslice 30 / 17000
-before RUN with syslogdtimeslice 70 / 17000
-before RUN with syslogdtimeslice 150 / 17000
-before RUN with syslogdtimeslice 310 / 17000
-before RUN with syslogdtimeslice 630 / 17000
-before RUN with syslogdtimeslice 1270 / 17000
-before RUN with syslogdtimeslice 2550 / 17000
-before RUN with syslogdtimeslice 5110 / 17000
-before RUN with syslogdtimeslice 10230 / 17000
 before RUN with syslogd
 IO blocks left 1
  17000 / 17000
-Pushing: syslogd	start_time: 3447609	cpu_time: 17000	io_count: 4389
+Pushing: syslogd	start_time: 8257953	cpu_time: 17000	io_count: 4389
 done
 This
  keyservbefore RUN with keyservINTERRUPT 0 / 48000
-before RUN with keyservtimeslice 10 / 48000
-before RUN with keyservtimeslice 30 / 48000
-before RUN with keyservtimeslice 70 / 48000
-before RUN with keyservtimeslice 150 / 48000
-before RUN with keyservtimeslice 310 / 48000
-before RUN with keyservtimeslice 630 / 48000
-before RUN with keyservtimeslice 1270 / 48000
 before RUN with keyserv
 IO blocks left 27
-timeslice 2540 / 48000
-before RUN with keyserv
+
 IO blocks left 26
-timeslice 5090 / 48000
-before RUN with keyserv
+
 IO blocks left 25
 
 IO blocks left 24
 
 IO blocks left 23
-timeslice 10180 / 48000
-before RUN with keyserv
+
 IO blocks left 22
 
 IO blocks left 21
@@ -259,8 +228,7 @@ IO blocks left 19
 IO blocks left 18
 
 IO blocks left 17
-timeslice 20360 / 48000
-before RUN with keyserv
+
 IO blocks left 16
 
 IO blocks left 15
@@ -282,8 +250,7 @@ IO blocks left 8
 IO blocks left 7
 
 IO blocks left 6
-timeslice 40730 / 48000
-before RUN with keyserv
+
 IO blocks left 5
 
 IO blocks left 4
@@ -291,374 +258,170 @@ IO blocks left 4
 IO blocks left 3
 
 IO blocks left 2
-
+ 47740 / 48000
+before RUN with keyserv
 IO blocks left 1
  48000 / 48000
-Pushing: keyserv	start_time: 3447709	cpu_time: 48000	io_count: 218746
+Pushing: keyserv	start_time: 8258053	cpu_time: 48000	io_count: 218746
 done
 This
  devfsadmbefore RUN with devfsadmINTERRUPT 0 / 21000
-before RUN with devfsadmtimeslice 10 / 21000
-before RUN with devfsadmtimeslice 30 / 21000
-before RUN with devfsadmtimeslice 70 / 21000
-before RUN with devfsadmtimeslice 150 / 21000
-before RUN with devfsadmtimeslice 310 / 21000
-before RUN with devfsadmtimeslice 630 / 21000
-before RUN with devfsadmtimeslice 1270 / 21000
-before RUN with devfsadmtimeslice 2550 / 21000
-before RUN with devfsadmtimeslice 5110 / 21000
-before RUN with devfsadmtimeslice 10230 / 21000
-before RUN with devfsadmtimeslice 20470 / 21000
 before RUN with devfsadm
 IO blocks left 1
  21000 / 21000
-Pushing: devfsadm	start_time: 3447809	cpu_time: 21000	io_count: 328
+Pushing: devfsadm	start_time: 8258153	cpu_time: 21000	io_count: 328
 done
 This
  automountdbefore RUN with automountdINTERRUPT 0 / 61000
-before RUN with automountdtimeslice 10 / 61000
-before RUN with automountdtimeslice 30 / 61000
-before RUN with automountdtimeslice 70 / 61000
-before RUN with automountdtimeslice 150 / 61000
-before RUN with automountdtimeslice 310 / 61000
-before RUN with automountdtimeslice 630 / 61000
-before RUN with automountdtimeslice 1270 / 61000
-before RUN with automountdtimeslice 2550 / 61000
-before RUN with automountdtimeslice 5110 / 61000
-before RUN with automountdtimeslice 10230 / 61000
-before RUN with automountdtimeslice 20470 / 61000
 before RUN with automountd
 IO blocks left 2
-timeslice 40940 / 61000
+ 60990 / 61000
 before RUN with automountd
 IO blocks left 1
  61000 / 61000
-Pushing: automountd	start_time: 3447909	cpu_time: 61000	io_count: 12928
+Pushing: automountd	start_time: 8258253	cpu_time: 61000	io_count: 12928
 done
 This
  utmpdbefore RUN with utmpdINTERRUPT 0 / 82000
-before RUN with utmpdtimeslice 10 / 82000
-before RUN with utmpdtimeslice 30 / 82000
-before RUN with utmpdtimeslice 70 / 82000
-before RUN with utmpdtimeslice 150 / 82000
-before RUN with utmpdtimeslice 310 / 82000
-before RUN with utmpdtimeslice 630 / 82000
-before RUN with utmpdtimeslice 1270 / 82000
-before RUN with utmpdtimeslice 2550 / 82000
-before RUN with utmpdtimeslice 5110 / 82000
-before RUN with utmpdtimeslice 10230 / 82000
-before RUN with utmpdtimeslice 20470 / 82000
-before RUN with utmpdtimeslice 40950 / 82000
-before RUN with utmpdtimeslice 81910 / 82000
 before RUN with utmpd
 IO blocks left 1
  82000 / 82000
-Pushing: utmpd	start_time: 3448009	cpu_time: 82000	io_count: 5427
+Pushing: utmpd	start_time: 8258353	cpu_time: 82000	io_count: 5427
 done
 This
  rpcbindbefore RUN with rpcbindINTERRUPT 0 / 38000
-before RUN with rpcbindtimeslice 10 / 38000
-before RUN with rpcbindtimeslice 30 / 38000
-before RUN with rpcbindtimeslice 70 / 38000
-before RUN with rpcbindtimeslice 150 / 38000
-before RUN with rpcbindtimeslice 310 / 38000
-before RUN with rpcbindtimeslice 630 / 38000
-before RUN with rpcbindtimeslice 1270 / 38000
-before RUN with rpcbindtimeslice 2550 / 38000
-before RUN with rpcbindtimeslice 5110 / 38000
-before RUN with rpcbindtimeslice 10230 / 38000
-before RUN with rpcbindtimeslice 20470 / 38000
 before RUN with rpcbind
 IO blocks left 1
  38000 / 38000
-Pushing: rpcbind	start_time: 3448109	cpu_time: 38000	io_count: 548
+Pushing: rpcbind	start_time: 8258453	cpu_time: 38000	io_count: 548
 done
 This
  ttsessionbefore RUN with ttsessionINTERRUPT 0 / 76000
-before RUN with ttsessiontimeslice 10 / 76000
-before RUN with ttsessiontimeslice 30 / 76000
-before RUN with ttsessiontimeslice 70 / 76000
-before RUN with ttsessiontimeslice 150 / 76000
-before RUN with ttsessiontimeslice 310 / 76000
-before RUN with ttsessiontimeslice 630 / 76000
-before RUN with ttsessiontimeslice 1270 / 76000
-before RUN with ttsessiontimeslice 2550 / 76000
-before RUN with ttsessiontimeslice 5110 / 76000
-before RUN with ttsessiontimeslice 10230 / 76000
-before RUN with ttsessiontimeslice 20470 / 76000
 before RUN with ttsession
 IO blocks left 2
-timeslice 40940 / 76000
+ 75990 / 76000
 before RUN with ttsession
 IO blocks left 1
  76000 / 76000
-Pushing: ttsession	start_time: 3448209	cpu_time: 76000	io_count: 9734
+Pushing: ttsession	start_time: 8258553	cpu_time: 76000	io_count: 9734
 done
 This
  rpc.rstatdbefore RUN with rpc.rstatdINTERRUPT 0 / 46000
-before RUN with rpc.rstatdtimeslice 10 / 46000
-before RUN with rpc.rstatdtimeslice 30 / 46000
-before RUN with rpc.rstatdtimeslice 70 / 46000
-before RUN with rpc.rstatdtimeslice 150 / 46000
-before RUN with rpc.rstatdtimeslice 310 / 46000
-before RUN with rpc.rstatdtimeslice 630 / 46000
-before RUN with rpc.rstatdtimeslice 1270 / 46000
-before RUN with rpc.rstatdtimeslice 2550 / 46000
-before RUN with rpc.rstatdtimeslice 5110 / 46000
-before RUN with rpc.rstatdtimeslice 10230 / 46000
-before RUN with rpc.rstatdtimeslice 20470 / 46000
-before RUN with rpc.rstatdtimeslice 40950 / 46000
 before RUN with rpc.rstatd
 IO blocks left 1
  46000 / 46000
-Pushing: rpc.rstatd	start_time: 3448309	cpu_time: 46000	io_count: 7634
+Pushing: rpc.rstatd	start_time: 8258653	cpu_time: 46000	io_count: 7634
 done
 This
  obServerbefore RUN with obServerINTERRUPT 0 / 25000
-before RUN with obServertimeslice 10 / 25000
-before RUN with obServertimeslice 30 / 25000
-before RUN with obServertimeslice 70 / 25000
-before RUN with obServertimeslice 150 / 25000
-before RUN with obServertimeslice 310 / 25000
-before RUN with obServertimeslice 630 / 25000
-before RUN with obServertimeslice 1270 / 25000
-before RUN with obServertimeslice 2550 / 25000
-before RUN with obServertimeslice 5110 / 25000
-before RUN with obServertimeslice 10230 / 25000
 before RUN with obServer
 IO blocks left 2
-timeslice 20460 / 25000
+ 24990 / 25000
 before RUN with obServer
 IO blocks left 1
  25000 / 25000
-Pushing: obServer	start_time: 3448409	cpu_time: 25000	io_count: 12456
+Pushing: obServer	start_time: 8258753	cpu_time: 25000	io_count: 12456
 done
 This
  Xvncbefore RUN with XvncINTERRUPT 0 / 76000
-before RUN with Xvnctimeslice 10 / 76000
-before RUN with Xvnctimeslice 30 / 76000
-before RUN with Xvnctimeslice 70 / 76000
-before RUN with Xvnctimeslice 150 / 76000
-before RUN with Xvnctimeslice 310 / 76000
-before RUN with Xvnctimeslice 630 / 76000
-before RUN with Xvnctimeslice 1270 / 76000
-before RUN with Xvnctimeslice 2550 / 76000
-before RUN with Xvnctimeslice 5110 / 76000
-before RUN with Xvnctimeslice 10230 / 76000
 before RUN with Xvnc
 IO blocks left 6
-timeslice 20460 / 76000
-before RUN with Xvnc
+
 IO blocks left 5
 
 IO blocks left 4
-timeslice 40920 / 76000
-before RUN with Xvnc
+
 IO blocks left 3
 
 IO blocks left 2
-
+ 75950 / 76000
+before RUN with Xvnc
 IO blocks left 1
  76000 / 76000
-Pushing: Xvnc	start_time: 3448509	cpu_time: 76000	io_count: 43125
+Pushing: Xvnc	start_time: 8258853	cpu_time: 76000	io_count: 43125
 done
 This
  mwrpcssbefore RUN with mwrpcssINTERRUPT 0 / 132000
-before RUN with mwrpcsstimeslice 10 / 132000
-before RUN with mwrpcsstimeslice 30 / 132000
-before RUN with mwrpcsstimeslice 70 / 132000
-before RUN with mwrpcsstimeslice 150 / 132000
-before RUN with mwrpcsstimeslice 310 / 132000
-before RUN with mwrpcsstimeslice 630 / 132000
-before RUN with mwrpcsstimeslice 1270 / 132000
-before RUN with mwrpcsstimeslice 2550 / 132000
-before RUN with mwrpcsstimeslice 5110 / 132000
-before RUN with mwrpcsstimeslice 10230 / 132000
-before RUN with mwrpcsstimeslice 20470 / 132000
-before RUN with mwrpcsstimeslice 40950 / 132000
-before RUN with mwrpcsstimeslice 81910 / 132000
 before RUN with mwrpcss
 IO blocks left 1
  132000 / 132000
-Pushing: mwrpcss	start_time: 3448609	cpu_time: 132000	io_count: 2643
+Pushing: mwrpcss	start_time: 8258953	cpu_time: 132000	io_count: 2643
 done
 This
  xntpdbefore RUN with xntpdINTERRUPT 0 / 34000
-before RUN with xntpdtimeslice 10 / 34000
-before RUN with xntpdtimeslice 30 / 34000
-before RUN with xntpdtimeslice 70 / 34000
-before RUN with xntpdtimeslice 150 / 34000
-before RUN with xntpdtimeslice 310 / 34000
-before RUN with xntpdtimeslice 630 / 34000
-before RUN with xntpdtimeslice 1270 / 34000
-before RUN with xntpdtimeslice 2550 / 34000
-before RUN with xntpdtimeslice 5110 / 34000
-before RUN with xntpdtimeslice 10230 / 34000
-before RUN with xntpdtimeslice 20470 / 34000
 before RUN with xntpd
 IO blocks left 1
  34000 / 34000
-Pushing: xntpd	start_time: 3448709	cpu_time: 34000	io_count: 643
+Pushing: xntpd	start_time: 8259053	cpu_time: 34000	io_count: 643
 done
 This
  lockdbefore RUN with lockdINTERRUPT 0 / 12000
-before RUN with lockdtimeslice 10 / 12000
-before RUN with lockdtimeslice 30 / 12000
-before RUN with lockdtimeslice 70 / 12000
-before RUN with lockdtimeslice 150 / 12000
-before RUN with lockdtimeslice 310 / 12000
-before RUN with lockdtimeslice 630 / 12000
-before RUN with lockdtimeslice 1270 / 12000
-before RUN with lockdtimeslice 2550 / 12000
-before RUN with lockdtimeslice 5110 / 12000
-before RUN with lockdtimeslice 10230 / 12000
 before RUN with lockd
 IO blocks left 1
  12000 / 12000
-Pushing: lockd	start_time: 3448809	cpu_time: 12000	io_count: 215
+Pushing: lockd	start_time: 8259153	cpu_time: 12000	io_count: 215
 done
 This
  Xsessionbefore RUN with XsessionINTERRUPT 0 / 74000
-before RUN with Xsessiontimeslice 10 / 74000
-before RUN with Xsessiontimeslice 30 / 74000
-before RUN with Xsessiontimeslice 70 / 74000
-before RUN with Xsessiontimeslice 150 / 74000
-before RUN with Xsessiontimeslice 310 / 74000
-before RUN with Xsessiontimeslice 630 / 74000
-before RUN with Xsessiontimeslice 1270 / 74000
-before RUN with Xsessiontimeslice 2550 / 74000
-before RUN with Xsessiontimeslice 5110 / 74000
-before RUN with Xsessiontimeslice 10230 / 74000
-before RUN with Xsessiontimeslice 20470 / 74000
 before RUN with Xsession
 IO blocks left 3
-timeslice 40940 / 74000
-before RUN with Xsession
-IO blocks left 2
 
+IO blocks left 2
+ 73980 / 74000
+before RUN with Xsession
 IO blocks left 1
  74000 / 74000
-Pushing: Xsession	start_time: 3448909	cpu_time: 74000	io_count: 22987
+Pushing: Xsession	start_time: 8259253	cpu_time: 74000	io_count: 22987
 done
 This
  ttymonbefore RUN with ttymonINTERRUPT 0 / 35000
-before RUN with ttymontimeslice 10 / 35000
-before RUN with ttymontimeslice 30 / 35000
-before RUN with ttymontimeslice 70 / 35000
-before RUN with ttymontimeslice 150 / 35000
-before RUN with ttymontimeslice 310 / 35000
-before RUN with ttymontimeslice 630 / 35000
-before RUN with ttymontimeslice 1270 / 35000
-before RUN with ttymontimeslice 2550 / 35000
-before RUN with ttymontimeslice 5110 / 35000
-before RUN with ttymontimeslice 10230 / 35000
-before RUN with ttymontimeslice 20470 / 35000
 before RUN with ttymon
 IO blocks left 1
  35000 / 35000
-Pushing: ttymon	start_time: 3449009	cpu_time: 35000	io_count: 6523
+Pushing: ttymon	start_time: 8259353	cpu_time: 35000	io_count: 6523
 done
 This
  xloadbefore RUN with xloadINTERRUPT 0 / 23000
-before RUN with xloadtimeslice 10 / 23000
-before RUN with xloadtimeslice 30 / 23000
-before RUN with xloadtimeslice 70 / 23000
-before RUN with xloadtimeslice 150 / 23000
-before RUN with xloadtimeslice 310 / 23000
-before RUN with xloadtimeslice 630 / 23000
-before RUN with xloadtimeslice 1270 / 23000
-before RUN with xloadtimeslice 2550 / 23000
-before RUN with xloadtimeslice 5110 / 23000
-before RUN with xloadtimeslice 10230 / 23000
 before RUN with xload
 IO blocks left 2
-timeslice 20460 / 23000
+ 22990 / 23000
 before RUN with xload
 IO blocks left 1
  23000 / 23000
-Pushing: xload	start_time: 3449109	cpu_time: 23000	io_count: 9634
+Pushing: xload	start_time: 8259453	cpu_time: 23000	io_count: 9634
 done
 This
  xclockbefore RUN with xclockINTERRUPT 0 / 8000
-before RUN with xclocktimeslice 10 / 8000
-before RUN with xclocktimeslice 30 / 8000
-before RUN with xclocktimeslice 70 / 8000
-before RUN with xclocktimeslice 150 / 8000
-before RUN with xclocktimeslice 310 / 8000
-before RUN with xclocktimeslice 630 / 8000
-before RUN with xclocktimeslice 1270 / 8000
-before RUN with xclocktimeslice 2550 / 8000
-before RUN with xclocktimeslice 5110 / 8000
 before RUN with xclock
 IO blocks left 1
  8000 / 8000
-Pushing: xclock	start_time: 3449209	cpu_time: 8000	io_count: 532
+Pushing: xclock	start_time: 8259553	cpu_time: 8000	io_count: 532
 done
 This
  ypbindbefore RUN with ypbindINTERRUPT 0 / 95000
-before RUN with ypbindtimeslice 10 / 95000
-before RUN with ypbindtimeslice 30 / 95000
-before RUN with ypbindtimeslice 70 / 95000
-before RUN with ypbindtimeslice 150 / 95000
-before RUN with ypbindtimeslice 310 / 95000
-before RUN with ypbindtimeslice 630 / 95000
-before RUN with ypbindtimeslice 1270 / 95000
-before RUN with ypbindtimeslice 2550 / 95000
-before RUN with ypbindtimeslice 5110 / 95000
-before RUN with ypbindtimeslice 10230 / 95000
-before RUN with ypbindtimeslice 20470 / 95000
-before RUN with ypbindtimeslice 40950 / 95000
-before RUN with ypbindtimeslice 81910 / 95000
 before RUN with ypbind
 IO blocks left 1
  95000 / 95000
-Pushing: ypbind	start_time: 3449309	cpu_time: 95000	io_count: 1543
+Pushing: ypbind	start_time: 8259653	cpu_time: 95000	io_count: 1543
 done
 This
  javabefore RUN with javaINTERRUPT 0 / 43000
-before RUN with javatimeslice 10 / 43000
-before RUN with javatimeslice 30 / 43000
-before RUN with javatimeslice 70 / 43000
-before RUN with javatimeslice 150 / 43000
-before RUN with javatimeslice 310 / 43000
-before RUN with javatimeslice 630 / 43000
-before RUN with javatimeslice 1270 / 43000
-before RUN with javatimeslice 2550 / 43000
-before RUN with javatimeslice 5110 / 43000
-before RUN with javatimeslice 10230 / 43000
-before RUN with javatimeslice 20470 / 43000
-before RUN with javatimeslice 40950 / 43000
 before RUN with java
 IO blocks left 1
  43000 / 43000
-Pushing: java	start_time: 3449409	cpu_time: 43000	io_count: 4534
+Pushing: java	start_time: 8259753	cpu_time: 43000	io_count: 4534
 done
 This
  eldo.exebefore RUN with eldo.exeINTERRUPT 0 / 754000
-before RUN with eldo.exetimeslice 10 / 754000
-before RUN with eldo.exetimeslice 30 / 754000
-before RUN with eldo.exetimeslice 70 / 754000
-before RUN with eldo.exetimeslice 150 / 754000
-before RUN with eldo.exetimeslice 310 / 754000
-before RUN with eldo.exetimeslice 630 / 754000
-before RUN with eldo.exetimeslice 1270 / 754000
-before RUN with eldo.exetimeslice 2550 / 754000
-before RUN with eldo.exetimeslice 5110 / 754000
-before RUN with eldo.exetimeslice 10230 / 754000
-before RUN with eldo.exetimeslice 20470 / 754000
-before RUN with eldo.exetimeslice 40950 / 754000
 before RUN with eldo.exe
 IO blocks left 10
-timeslice 81900 / 754000
-before RUN with eldo.exe
+
 IO blocks left 9
-timeslice 163810 / 754000
-before RUN with eldo.exe
+
 IO blocks left 8
 
 IO blocks left 7
-timeslice 327630 / 754000
-before RUN with eldo.exe
+
 IO blocks left 6
 
 IO blocks left 5
@@ -666,202 +429,92 @@ IO blocks left 5
 IO blocks left 4
 
 IO blocks left 3
-timeslice 655270 / 754000
-before RUN with eldo.exe
-IO blocks left 2
 
+IO blocks left 2
+ 753910 / 754000
+before RUN with eldo.exe
 IO blocks left 1
  754000 / 754000
-Pushing: eldo.exe	start_time: 3449509	cpu_time: 754000	io_count: 76345
+Pushing: eldo.exe	start_time: 8259853	cpu_time: 754000	io_count: 76345
 done
 This
  top-sun4u-5.8before RUN with top-sun4u-5.8INTERRUPT 0 / 85000
-before RUN with top-sun4u-5.8timeslice 10 / 85000
-before RUN with top-sun4u-5.8timeslice 30 / 85000
-before RUN with top-sun4u-5.8timeslice 70 / 85000
-before RUN with top-sun4u-5.8timeslice 150 / 85000
-before RUN with top-sun4u-5.8timeslice 310 / 85000
-before RUN with top-sun4u-5.8timeslice 630 / 85000
-before RUN with top-sun4u-5.8timeslice 1270 / 85000
-before RUN with top-sun4u-5.8timeslice 2550 / 85000
-before RUN with top-sun4u-5.8timeslice 5110 / 85000
-before RUN with top-sun4u-5.8timeslice 10230 / 85000
-before RUN with top-sun4u-5.8timeslice 20470 / 85000
-before RUN with top-sun4u-5.8timeslice 40950 / 85000
 before RUN with top-sun4u-5.8
 IO blocks left 2
-timeslice 81900 / 85000
+ 84990 / 85000
 before RUN with top-sun4u-5.8
 IO blocks left 1
  85000 / 85000
-Pushing: top-sun4u-5.8	start_time: 3449609	cpu_time: 85000	io_count: 8543
+Pushing: top-sun4u-5.8	start_time: 8259953	cpu_time: 85000	io_count: 8543
 done
 This
  sshdbefore RUN with sshdINTERRUPT 0 / 59000
-before RUN with sshdtimeslice 10 / 59000
-before RUN with sshdtimeslice 30 / 59000
-before RUN with sshdtimeslice 70 / 59000
-before RUN with sshdtimeslice 150 / 59000
-before RUN with sshdtimeslice 310 / 59000
-before RUN with sshdtimeslice 630 / 59000
-before RUN with sshdtimeslice 1270 / 59000
-before RUN with sshdtimeslice 2550 / 59000
-before RUN with sshdtimeslice 5110 / 59000
-before RUN with sshdtimeslice 10230 / 59000
-before RUN with sshdtimeslice 20470 / 59000
-before RUN with sshdtimeslice 40950 / 59000
 before RUN with sshd
 IO blocks left 1
  59000 / 59000
-Pushing: sshd	start_time: 3449709	cpu_time: 59000	io_count: 2315
+Pushing: sshd	start_time: 8260053	cpu_time: 59000	io_count: 2315
 done
 This
  cshbefore RUN with cshINTERRUPT 0 / 43000
-before RUN with cshtimeslice 10 / 43000
-before RUN with cshtimeslice 30 / 43000
-before RUN with cshtimeslice 70 / 43000
-before RUN with cshtimeslice 150 / 43000
-before RUN with cshtimeslice 310 / 43000
-before RUN with cshtimeslice 630 / 43000
-before RUN with cshtimeslice 1270 / 43000
-before RUN with cshtimeslice 2550 / 43000
-before RUN with cshtimeslice 5110 / 43000
-before RUN with cshtimeslice 10230 / 43000
-before RUN with cshtimeslice 20470 / 43000
 before RUN with csh
 IO blocks left 2
-timeslice 40940 / 43000
+ 42990 / 43000
 before RUN with csh
 IO blocks left 1
  43000 / 43000
-Pushing: csh	start_time: 3449809	cpu_time: 43000	io_count: 8237
+Pushing: csh	start_time: 8260153	cpu_time: 43000	io_count: 8237
 done
 This
  in.rwhodbefore RUN with in.rwhodINTERRUPT 0 / 32000
-before RUN with in.rwhodtimeslice 10 / 32000
-before RUN with in.rwhodtimeslice 30 / 32000
-before RUN with in.rwhodtimeslice 70 / 32000
-before RUN with in.rwhodtimeslice 150 / 32000
-before RUN with in.rwhodtimeslice 310 / 32000
-before RUN with in.rwhodtimeslice 630 / 32000
-before RUN with in.rwhodtimeslice 1270 / 32000
-before RUN with in.rwhodtimeslice 2550 / 32000
-before RUN with in.rwhodtimeslice 5110 / 32000
-before RUN with in.rwhodtimeslice 10230 / 32000
-before RUN with in.rwhodtimeslice 20470 / 32000
 before RUN with in.rwhod
 IO blocks left 1
  32000 / 32000
-Pushing: in.rwhod	start_time: 3449909	cpu_time: 32000	io_count: 4392
+Pushing: in.rwhod	start_time: 8260253	cpu_time: 32000	io_count: 4392
 done
 This
  nscdbefore RUN with nscdINTERRUPT 0 / 54000
-before RUN with nscdtimeslice 10 / 54000
-before RUN with nscdtimeslice 30 / 54000
-before RUN with nscdtimeslice 70 / 54000
-before RUN with nscdtimeslice 150 / 54000
-before RUN with nscdtimeslice 310 / 54000
-before RUN with nscdtimeslice 630 / 54000
-before RUN with nscdtimeslice 1270 / 54000
-before RUN with nscdtimeslice 2550 / 54000
-before RUN with nscdtimeslice 5110 / 54000
-before RUN with nscdtimeslice 10230 / 54000
-before RUN with nscdtimeslice 20470 / 54000
-before RUN with nscdtimeslice 40950 / 54000
 before RUN with nscd
 IO blocks left 1
  54000 / 54000
-Pushing: nscd	start_time: 3450009	cpu_time: 54000	io_count: 1432
+Pushing: nscd	start_time: 8260353	cpu_time: 54000	io_count: 1432
 done
 This
  sshdbefore RUN with sshdINTERRUPT 0 / 82000
-before RUN with sshdtimeslice 10 / 82000
-before RUN with sshdtimeslice 30 / 82000
-before RUN with sshdtimeslice 70 / 82000
-before RUN with sshdtimeslice 150 / 82000
-before RUN with sshdtimeslice 310 / 82000
-before RUN with sshdtimeslice 630 / 82000
-before RUN with sshdtimeslice 1270 / 82000
-before RUN with sshdtimeslice 2550 / 82000
-before RUN with sshdtimeslice 5110 / 82000
-before RUN with sshdtimeslice 10230 / 82000
-before RUN with sshdtimeslice 20470 / 82000
-before RUN with sshdtimeslice 40950 / 82000
-before RUN with sshdtimeslice 81910 / 82000
 before RUN with sshd
 IO blocks left 1
  82000 / 82000
-Pushing: sshd	start_time: 3450109	cpu_time: 82000	io_count: 5423
+Pushing: sshd	start_time: 8260453	cpu_time: 82000	io_count: 5423
 done
 This
  run_wdb_serverbefore RUN with run_wdb_serverINTERRUPT 0 / 34000
-before RUN with run_wdb_servertimeslice 10 / 34000
-before RUN with run_wdb_servertimeslice 30 / 34000
-before RUN with run_wdb_servertimeslice 70 / 34000
-before RUN with run_wdb_servertimeslice 150 / 34000
-before RUN with run_wdb_servertimeslice 310 / 34000
-before RUN with run_wdb_servertimeslice 630 / 34000
-before RUN with run_wdb_servertimeslice 1270 / 34000
-before RUN with run_wdb_servertimeslice 2550 / 34000
-before RUN with run_wdb_servertimeslice 5110 / 34000
-before RUN with run_wdb_servertimeslice 10230 / 34000
-before RUN with run_wdb_servertimeslice 20470 / 34000
 before RUN with run_wdb_server
 IO blocks left 1
  34000 / 34000
-Pushing: run_wdb_server	start_time: 3450209	cpu_time: 34000	io_count: 1431
+Pushing: run_wdb_server	start_time: 8260553	cpu_time: 34000	io_count: 1431
 done
 This
  voldbefore RUN with voldINTERRUPT 0 / 12000
-before RUN with voldtimeslice 10 / 12000
-before RUN with voldtimeslice 30 / 12000
-before RUN with voldtimeslice 70 / 12000
-before RUN with voldtimeslice 150 / 12000
-before RUN with voldtimeslice 310 / 12000
-before RUN with voldtimeslice 630 / 12000
-before RUN with voldtimeslice 1270 / 12000
-before RUN with voldtimeslice 2550 / 12000
-before RUN with voldtimeslice 5110 / 12000
-before RUN with voldtimeslice 10230 / 12000
 before RUN with vold
 IO blocks left 1
  12000 / 12000
-Pushing: vold	start_time: 3450310	cpu_time: 12000	io_count: 312
+Pushing: vold	start_time: 8260653	cpu_time: 12000	io_count: 312
 done
 This
  dtwmbefore RUN with dtwmINTERRUPT 0 / 3000
-before RUN with dtwmtimeslice 10 / 3000
-before RUN with dtwmtimeslice 30 / 3000
-before RUN with dtwmtimeslice 70 / 3000
-before RUN with dtwmtimeslice 150 / 3000
-before RUN with dtwmtimeslice 310 / 3000
-before RUN with dtwmtimeslice 630 / 3000
-before RUN with dtwmtimeslice 1270 / 3000
-before RUN with dtwmtimeslice 2550 / 3000
 before RUN with dtwm
 IO blocks left 1
  3000 / 3000
-Pushing: dtwm	start_time: 3450410	cpu_time: 3000	io_count: 421
+Pushing: dtwm	start_time: 8260753	cpu_time: 3000	io_count: 421
 done
 This
  leonardobefore RUN with leonardoINTERRUPT 0 / 120000
-before RUN with leonardotimeslice 10 / 120000
-before RUN with leonardotimeslice 30 / 120000
-before RUN with leonardotimeslice 70 / 120000
-before RUN with leonardotimeslice 150 / 120000
-before RUN with leonardotimeslice 310 / 120000
-before RUN with leonardotimeslice 630 / 120000
-before RUN with leonardotimeslice 1270 / 120000
-before RUN with leonardotimeslice 2550 / 120000
 before RUN with leonardo
 IO blocks left 43
-timeslice 5100 / 120000
-before RUN with leonardo
+
 IO blocks left 42
 
 IO blocks left 41
-timeslice 10200 / 120000
-before RUN with leonardo
+
 IO blocks left 40
 
 IO blocks left 39
@@ -869,8 +522,7 @@ IO blocks left 39
 IO blocks left 38
 
 IO blocks left 37
-timeslice 20400 / 120000
-before RUN with leonardo
+
 IO blocks left 36
 
 IO blocks left 35
@@ -884,8 +536,7 @@ IO blocks left 32
 IO blocks left 31
 
 IO blocks left 30
-timeslice 40810 / 120000
-before RUN with leonardo
+
 IO blocks left 29
 
 IO blocks left 28
@@ -915,8 +566,7 @@ IO blocks left 17
 IO blocks left 16
 
 IO blocks left 15
-timeslice 81620 / 120000
-before RUN with leonardo
+
 IO blocks left 14
 
 IO blocks left 13
@@ -942,147 +592,73 @@ IO blocks left 4
 IO blocks left 3
 
 IO blocks left 2
-
+ 119580 / 120000
+before RUN with leonardo
 IO blocks left 1
  120000 / 120000
-Pushing: leonardo	start_time: 3450510	cpu_time: 120000	io_count: 351422
+Pushing: leonardo	start_time: 8260853	cpu_time: 120000	io_count: 351422
 done
 This
  spectrebefore RUN with spectreINTERRUPT 0 / 261000
-before RUN with spectretimeslice 10 / 261000
-before RUN with spectretimeslice 30 / 261000
-before RUN with spectretimeslice 70 / 261000
-before RUN with spectretimeslice 150 / 261000
-before RUN with spectretimeslice 310 / 261000
-before RUN with spectretimeslice 630 / 261000
-before RUN with spectretimeslice 1270 / 261000
-before RUN with spectretimeslice 2550 / 261000
-before RUN with spectretimeslice 5110 / 261000
-before RUN with spectretimeslice 10230 / 261000
-before RUN with spectretimeslice 20470 / 261000
-before RUN with spectretimeslice 40950 / 261000
-before RUN with spectretimeslice 81910 / 261000
-before RUN with spectretimeslice 163830 / 261000
 before RUN with spectre
 IO blocks left 1
  261000 / 261000
-Pushing: spectre	start_time: 3450610	cpu_time: 261000	io_count: 3251
+Pushing: spectre	start_time: 8260953	cpu_time: 261000	io_count: 3251
 done
 This
  javabefore RUN with javaINTERRUPT 0 / 41000
-before RUN with javatimeslice 10 / 41000
-before RUN with javatimeslice 30 / 41000
-before RUN with javatimeslice 70 / 41000
-before RUN with javatimeslice 150 / 41000
-before RUN with javatimeslice 310 / 41000
-before RUN with javatimeslice 630 / 41000
-before RUN with javatimeslice 1270 / 41000
-before RUN with javatimeslice 2550 / 41000
-before RUN with javatimeslice 5110 / 41000
-before RUN with javatimeslice 10230 / 41000
-before RUN with javatimeslice 20470 / 41000
 before RUN with java
 IO blocks left 2
-timeslice 40940 / 41000
+ 40990 / 41000
 before RUN with java
 IO blocks left 1
  41000 / 41000
-Pushing: java	start_time: 3450710	cpu_time: 41000	io_count: 12742
+Pushing: java	start_time: 8261053	cpu_time: 41000	io_count: 12742
 done
 This
  httpdbefore RUN with httpdINTERRUPT 0 / 62000
-before RUN with httpdtimeslice 10 / 62000
-before RUN with httpdtimeslice 30 / 62000
-before RUN with httpdtimeslice 70 / 62000
-before RUN with httpdtimeslice 150 / 62000
-before RUN with httpdtimeslice 310 / 62000
-before RUN with httpdtimeslice 630 / 62000
-before RUN with httpdtimeslice 1270 / 62000
-before RUN with httpdtimeslice 2550 / 62000
-before RUN with httpdtimeslice 5110 / 62000
-before RUN with httpdtimeslice 10230 / 62000
-before RUN with httpdtimeslice 20470 / 62000
 before RUN with httpd
 IO blocks left 3
-timeslice 40940 / 62000
-before RUN with httpd
-IO blocks left 2
 
+IO blocks left 2
+ 61980 / 62000
+before RUN with httpd
 IO blocks left 1
  62000 / 62000
-Pushing: httpd	start_time: 3450810	cpu_time: 62000	io_count: 22452
+Pushing: httpd	start_time: 8261153	cpu_time: 62000	io_count: 22452
 done
 This
  FvwmTaskBarbefore RUN with FvwmTaskBarINTERRUPT 0 / 84000
-before RUN with FvwmTaskBartimeslice 10 / 84000
-before RUN with FvwmTaskBartimeslice 30 / 84000
-before RUN with FvwmTaskBartimeslice 70 / 84000
-before RUN with FvwmTaskBartimeslice 150 / 84000
-before RUN with FvwmTaskBartimeslice 310 / 84000
-before RUN with FvwmTaskBartimeslice 630 / 84000
-before RUN with FvwmTaskBartimeslice 1270 / 84000
-before RUN with FvwmTaskBartimeslice 2550 / 84000
-before RUN with FvwmTaskBartimeslice 5110 / 84000
-before RUN with FvwmTaskBartimeslice 10230 / 84000
-before RUN with FvwmTaskBartimeslice 20470 / 84000
-before RUN with FvwmTaskBartimeslice 40950 / 84000
-before RUN with FvwmTaskBartimeslice 81910 / 84000
 before RUN with FvwmTaskBar
 IO blocks left 1
  84000 / 84000
-Pushing: FvwmTaskBar	start_time: 3450910	cpu_time: 84000	io_count: 3217
+Pushing: FvwmTaskBar	start_time: 8261253	cpu_time: 84000	io_count: 3217
 done
 This
  spectrebefore RUN with spectreINTERRUPT 0 / 143000
-before RUN with spectretimeslice 10 / 143000
-before RUN with spectretimeslice 30 / 143000
-before RUN with spectretimeslice 70 / 143000
-before RUN with spectretimeslice 150 / 143000
-before RUN with spectretimeslice 310 / 143000
-before RUN with spectretimeslice 630 / 143000
-before RUN with spectretimeslice 1270 / 143000
-before RUN with spectretimeslice 2550 / 143000
-before RUN with spectretimeslice 5110 / 143000
-before RUN with spectretimeslice 10230 / 143000
-before RUN with spectretimeslice 20470 / 143000
-before RUN with spectretimeslice 40950 / 143000
 before RUN with spectre
 IO blocks left 2
-timeslice 81900 / 143000
+ 142990 / 143000
 before RUN with spectre
 IO blocks left 1
  143000 / 143000
-Pushing: spectre	start_time: 3451010	cpu_time: 143000	io_count: 8241
+Pushing: spectre	start_time: 8261353	cpu_time: 143000	io_count: 8241
 done
 This
  da_ic.exebefore RUN with da_ic.exeINTERRUPT 0 / 423000
-before RUN with da_ic.exetimeslice 10 / 423000
-before RUN with da_ic.exetimeslice 30 / 423000
-before RUN with da_ic.exetimeslice 70 / 423000
-before RUN with da_ic.exetimeslice 150 / 423000
-before RUN with da_ic.exetimeslice 310 / 423000
-before RUN with da_ic.exetimeslice 630 / 423000
-before RUN with da_ic.exetimeslice 1270 / 423000
-before RUN with da_ic.exetimeslice 2550 / 423000
-before RUN with da_ic.exetimeslice 5110 / 423000
-before RUN with da_ic.exetimeslice 10230 / 423000
-before RUN with da_ic.exetimeslice 20470 / 423000
 before RUN with da_ic.exe
 IO blocks left 18
-timeslice 40940 / 423000
-before RUN with da_ic.exe
+
 IO blocks left 17
 
 IO blocks left 16
-timeslice 81880 / 423000
-before RUN with da_ic.exe
+
 IO blocks left 15
 
 IO blocks left 14
 
 IO blocks left 13
-timeslice 163770 / 423000
-before RUN with da_ic.exe
+
 IO blocks left 12
 
 IO blocks left 11
@@ -1096,8 +672,7 @@ IO blocks left 8
 IO blocks left 7
 
 IO blocks left 6
-timeslice 327540 / 423000
-before RUN with da_ic.exe
+
 IO blocks left 5
 
 IO blocks left 4
@@ -1105,437 +680,197 @@ IO blocks left 4
 IO blocks left 3
 
 IO blocks left 2
-
+ 422830 / 423000
+before RUN with da_ic.exe
 IO blocks left 1
  423000 / 423000
-Pushing: da_ic.exe	start_time: 3451110	cpu_time: 423000	io_count: 142762
+Pushing: da_ic.exe	start_time: 8261453	cpu_time: 423000	io_count: 142762
 done
 This
  javabefore RUN with javaINTERRUPT 0 / 82000
-before RUN with javatimeslice 10 / 82000
-before RUN with javatimeslice 30 / 82000
-before RUN with javatimeslice 70 / 82000
-before RUN with javatimeslice 150 / 82000
-before RUN with javatimeslice 310 / 82000
-before RUN with javatimeslice 630 / 82000
-before RUN with javatimeslice 1270 / 82000
-before RUN with javatimeslice 2550 / 82000
-before RUN with javatimeslice 5110 / 82000
-before RUN with javatimeslice 10230 / 82000
-before RUN with javatimeslice 20470 / 82000
 before RUN with java
 IO blocks left 3
-timeslice 40940 / 82000
-before RUN with java
+
 IO blocks left 2
-timeslice 81890 / 82000
+ 81980 / 82000
 before RUN with java
 IO blocks left 1
  82000 / 82000
-Pushing: java	start_time: 3451210	cpu_time: 82000	io_count: 20837
+Pushing: java	start_time: 8261553	cpu_time: 82000	io_count: 20837
 done
 This
  Xvncbefore RUN with XvncINTERRUPT 0 / 23000
-before RUN with Xvnctimeslice 10 / 23000
-before RUN with Xvnctimeslice 30 / 23000
-before RUN with Xvnctimeslice 70 / 23000
-before RUN with Xvnctimeslice 150 / 23000
-before RUN with Xvnctimeslice 310 / 23000
-before RUN with Xvnctimeslice 630 / 23000
-before RUN with Xvnctimeslice 1270 / 23000
-before RUN with Xvnctimeslice 2550 / 23000
-before RUN with Xvnctimeslice 5110 / 23000
-before RUN with Xvnctimeslice 10230 / 23000
-before RUN with Xvnctimeslice 20470 / 23000
 before RUN with Xvnc
 IO blocks left 1
  23000 / 23000
-Pushing: Xvnc	start_time: 3451310	cpu_time: 23000	io_count: 2876
+Pushing: Xvnc	start_time: 8261653	cpu_time: 23000	io_count: 2876
 done
 This
  cdsNameServerbefore RUN with cdsNameServerINTERRUPT 0 / 12000
-before RUN with cdsNameServertimeslice 10 / 12000
-before RUN with cdsNameServertimeslice 30 / 12000
-before RUN with cdsNameServertimeslice 70 / 12000
-before RUN with cdsNameServertimeslice 150 / 12000
-before RUN with cdsNameServertimeslice 310 / 12000
-before RUN with cdsNameServertimeslice 630 / 12000
-before RUN with cdsNameServertimeslice 1270 / 12000
-before RUN with cdsNameServertimeslice 2550 / 12000
-before RUN with cdsNameServertimeslice 5110 / 12000
-before RUN with cdsNameServertimeslice 10230 / 12000
 before RUN with cdsNameServer
 IO blocks left 1
  12000 / 12000
-Pushing: cdsNameServer	start_time: 3451410	cpu_time: 12000	io_count: 83
+Pushing: cdsNameServer	start_time: 8261753	cpu_time: 12000	io_count: 83
 done
 This
  spectrebefore RUN with spectreINTERRUPT 0 / 164000
-before RUN with spectretimeslice 10 / 164000
-before RUN with spectretimeslice 30 / 164000
-before RUN with spectretimeslice 70 / 164000
-before RUN with spectretimeslice 150 / 164000
-before RUN with spectretimeslice 310 / 164000
-before RUN with spectretimeslice 630 / 164000
-before RUN with spectretimeslice 1270 / 164000
-before RUN with spectretimeslice 2550 / 164000
-before RUN with spectretimeslice 5110 / 164000
-before RUN with spectretimeslice 10230 / 164000
-before RUN with spectretimeslice 20470 / 164000
-before RUN with spectretimeslice 40950 / 164000
-before RUN with spectretimeslice 81910 / 164000
-before RUN with spectretimeslice 163830 / 164000
 before RUN with spectre
 IO blocks left 1
  164000 / 164000
-Pushing: spectre	start_time: 3451510	cpu_time: 164000	io_count: 7264
+Pushing: spectre	start_time: 8261853	cpu_time: 164000	io_count: 7264
 done
 This
  automountdbefore RUN with automountdINTERRUPT 0 / 73000
-before RUN with automountdtimeslice 10 / 73000
-before RUN with automountdtimeslice 30 / 73000
-before RUN with automountdtimeslice 70 / 73000
-before RUN with automountdtimeslice 150 / 73000
-before RUN with automountdtimeslice 310 / 73000
-before RUN with automountdtimeslice 630 / 73000
-before RUN with automountdtimeslice 1270 / 73000
-before RUN with automountdtimeslice 2550 / 73000
-before RUN with automountdtimeslice 5110 / 73000
-before RUN with automountdtimeslice 10230 / 73000
-before RUN with automountdtimeslice 20470 / 73000
-before RUN with automountdtimeslice 40950 / 73000
 before RUN with automountd
 IO blocks left 1
  73000 / 73000
-Pushing: automountd	start_time: 3451610	cpu_time: 73000	io_count: 726
+Pushing: automountd	start_time: 8261953	cpu_time: 73000	io_count: 726
 done
 This
  cronbefore RUN with cronINTERRUPT 0 / 38000
-before RUN with crontimeslice 10 / 38000
-before RUN with crontimeslice 30 / 38000
-before RUN with crontimeslice 70 / 38000
-before RUN with crontimeslice 150 / 38000
-before RUN with crontimeslice 310 / 38000
-before RUN with crontimeslice 630 / 38000
-before RUN with crontimeslice 1270 / 38000
-before RUN with crontimeslice 2550 / 38000
-before RUN with crontimeslice 5110 / 38000
-before RUN with crontimeslice 10230 / 38000
 before RUN with cron
 IO blocks left 2
-timeslice 20460 / 38000
+ 37990 / 38000
 before RUN with cron
 IO blocks left 1
  38000 / 38000
-Pushing: cron	start_time: 3451710	cpu_time: 38000	io_count: 13721
+Pushing: cron	start_time: 8262053	cpu_time: 38000	io_count: 13721
 done
 This
  color_xtermbefore RUN with color_xtermINTERRUPT 0 / 49000
-before RUN with color_xtermtimeslice 10 / 49000
-before RUN with color_xtermtimeslice 30 / 49000
-before RUN with color_xtermtimeslice 70 / 49000
-before RUN with color_xtermtimeslice 150 / 49000
-before RUN with color_xtermtimeslice 310 / 49000
-before RUN with color_xtermtimeslice 630 / 49000
-before RUN with color_xtermtimeslice 1270 / 49000
-before RUN with color_xtermtimeslice 2550 / 49000
-before RUN with color_xtermtimeslice 5110 / 49000
-before RUN with color_xtermtimeslice 10230 / 49000
-before RUN with color_xtermtimeslice 20470 / 49000
-before RUN with color_xtermtimeslice 40950 / 49000
 before RUN with color_xterm
 IO blocks left 1
  49000 / 49000
-Pushing: color_xterm	start_time: 3451810	cpu_time: 49000	io_count: 6433
+Pushing: color_xterm	start_time: 8262153	cpu_time: 49000	io_count: 6433
 done
 This
  inetdbefore RUN with inetdINTERRUPT 0 / 177000
-before RUN with inetdtimeslice 10 / 177000
-before RUN with inetdtimeslice 30 / 177000
-before RUN with inetdtimeslice 70 / 177000
-before RUN with inetdtimeslice 150 / 177000
-before RUN with inetdtimeslice 310 / 177000
-before RUN with inetdtimeslice 630 / 177000
-before RUN with inetdtimeslice 1270 / 177000
-before RUN with inetdtimeslice 2550 / 177000
-before RUN with inetdtimeslice 5110 / 177000
-before RUN with inetdtimeslice 10230 / 177000
-before RUN with inetdtimeslice 20470 / 177000
-before RUN with inetdtimeslice 40950 / 177000
 before RUN with inetd
 IO blocks left 4
-timeslice 81900 / 177000
-before RUN with inetd
+
 IO blocks left 3
 
 IO blocks left 2
-timeslice 163800 / 177000
+ 176970 / 177000
 before RUN with inetd
 IO blocks left 1
  177000 / 177000
-Pushing: inetd	start_time: 3451910	cpu_time: 177000	io_count: 26541
+Pushing: inetd	start_time: 8262253	cpu_time: 177000	io_count: 26541
 done
 This
  javabefore RUN with javaINTERRUPT 0 / 52000
-before RUN with javatimeslice 10 / 52000
-before RUN with javatimeslice 30 / 52000
-before RUN with javatimeslice 70 / 52000
-before RUN with javatimeslice 150 / 52000
-before RUN with javatimeslice 310 / 52000
-before RUN with javatimeslice 630 / 52000
-before RUN with javatimeslice 1270 / 52000
-before RUN with javatimeslice 2550 / 52000
-before RUN with javatimeslice 5110 / 52000
-before RUN with javatimeslice 10230 / 52000
-before RUN with javatimeslice 20470 / 52000
 before RUN with java
 IO blocks left 2
-timeslice 40940 / 52000
+ 51990 / 52000
 before RUN with java
 IO blocks left 1
  52000 / 52000
-Pushing: java	start_time: 3452010	cpu_time: 52000	io_count: 9244
+Pushing: java	start_time: 8262353	cpu_time: 52000	io_count: 9244
 done
 This
  sdtperfmeterbefore RUN with sdtperfmeterINTERRUPT 0 / 28000
-before RUN with sdtperfmetertimeslice 10 / 28000
-before RUN with sdtperfmetertimeslice 30 / 28000
-before RUN with sdtperfmetertimeslice 70 / 28000
-before RUN with sdtperfmetertimeslice 150 / 28000
-before RUN with sdtperfmetertimeslice 310 / 28000
-before RUN with sdtperfmetertimeslice 630 / 28000
-before RUN with sdtperfmetertimeslice 1270 / 28000
-before RUN with sdtperfmetertimeslice 2550 / 28000
-before RUN with sdtperfmetertimeslice 5110 / 28000
-before RUN with sdtperfmetertimeslice 10230 / 28000
-before RUN with sdtperfmetertimeslice 20470 / 28000
 before RUN with sdtperfmeter
 IO blocks left 1
  28000 / 28000
-Pushing: sdtperfmeter	start_time: 3452110	cpu_time: 28000	io_count: 832
+Pushing: sdtperfmeter	start_time: 8262453	cpu_time: 28000	io_count: 832
 done
 This
  run_wdb_serverbefore RUN with run_wdb_serverINTERRUPT 0 / 72000
-before RUN with run_wdb_servertimeslice 10 / 72000
-before RUN with run_wdb_servertimeslice 30 / 72000
-before RUN with run_wdb_servertimeslice 70 / 72000
-before RUN with run_wdb_servertimeslice 150 / 72000
-before RUN with run_wdb_servertimeslice 310 / 72000
-before RUN with run_wdb_servertimeslice 630 / 72000
-before RUN with run_wdb_servertimeslice 1270 / 72000
-before RUN with run_wdb_servertimeslice 2550 / 72000
-before RUN with run_wdb_servertimeslice 5110 / 72000
-before RUN with run_wdb_servertimeslice 10230 / 72000
-before RUN with run_wdb_servertimeslice 20470 / 72000
 before RUN with run_wdb_server
 IO blocks left 3
-timeslice 40940 / 72000
-before RUN with run_wdb_server
-IO blocks left 2
 
+IO blocks left 2
+ 71980 / 72000
+before RUN with run_wdb_server
 IO blocks left 1
  72000 / 72000
-Pushing: run_wdb_server	start_time: 3452210	cpu_time: 72000	io_count: 22943
+Pushing: run_wdb_server	start_time: 8262553	cpu_time: 72000	io_count: 22943
 done
 This
  httpdbefore RUN with httpdINTERRUPT 0 / 32000
-before RUN with httpdtimeslice 10 / 32000
-before RUN with httpdtimeslice 30 / 32000
-before RUN with httpdtimeslice 70 / 32000
-before RUN with httpdtimeslice 150 / 32000
-before RUN with httpdtimeslice 310 / 32000
-before RUN with httpdtimeslice 630 / 32000
-before RUN with httpdtimeslice 1270 / 32000
-before RUN with httpdtimeslice 2550 / 32000
-before RUN with httpdtimeslice 5110 / 32000
-before RUN with httpdtimeslice 10230 / 32000
-before RUN with httpdtimeslice 20470 / 32000
 before RUN with httpd
 IO blocks left 1
  32000 / 32000
-Pushing: httpd	start_time: 3452310	cpu_time: 32000	io_count: 2183
+Pushing: httpd	start_time: 8262653	cpu_time: 32000	io_count: 2183
 done
 This
  mwrpcssbefore RUN with mwrpcssINTERRUPT 0 / 73000
-before RUN with mwrpcsstimeslice 10 / 73000
-before RUN with mwrpcsstimeslice 30 / 73000
-before RUN with mwrpcsstimeslice 70 / 73000
-before RUN with mwrpcsstimeslice 150 / 73000
-before RUN with mwrpcsstimeslice 310 / 73000
-before RUN with mwrpcsstimeslice 630 / 73000
-before RUN with mwrpcsstimeslice 1270 / 73000
-before RUN with mwrpcsstimeslice 2550 / 73000
-before RUN with mwrpcsstimeslice 5110 / 73000
-before RUN with mwrpcsstimeslice 10230 / 73000
-before RUN with mwrpcsstimeslice 20470 / 73000
-before RUN with mwrpcsstimeslice 40950 / 73000
 before RUN with mwrpcss
 IO blocks left 1
  73000 / 73000
-Pushing: mwrpcss	start_time: 3452410	cpu_time: 73000	io_count: 7241
+Pushing: mwrpcss	start_time: 8262753	cpu_time: 73000	io_count: 7241
 done
 This
  httpdbefore RUN with httpdINTERRUPT 0 / 81000
-before RUN with httpdtimeslice 10 / 81000
-before RUN with httpdtimeslice 30 / 81000
-before RUN with httpdtimeslice 70 / 81000
-before RUN with httpdtimeslice 150 / 81000
-before RUN with httpdtimeslice 310 / 81000
-before RUN with httpdtimeslice 630 / 81000
-before RUN with httpdtimeslice 1270 / 81000
-before RUN with httpdtimeslice 2550 / 81000
-before RUN with httpdtimeslice 5110 / 81000
-before RUN with httpdtimeslice 10230 / 81000
-before RUN with httpdtimeslice 20470 / 81000
-before RUN with httpdtimeslice 40950 / 81000
 before RUN with httpd
 IO blocks left 1
  81000 / 81000
-Pushing: httpd	start_time: 3452510	cpu_time: 81000	io_count: 5286
+Pushing: httpd	start_time: 8262853	cpu_time: 81000	io_count: 5286
 done
 This
  cshbefore RUN with cshINTERRUPT 0 / 18000
-before RUN with cshtimeslice 10 / 18000
-before RUN with cshtimeslice 30 / 18000
-before RUN with cshtimeslice 70 / 18000
-before RUN with cshtimeslice 150 / 18000
-before RUN with cshtimeslice 310 / 18000
-before RUN with cshtimeslice 630 / 18000
-before RUN with cshtimeslice 1270 / 18000
-before RUN with cshtimeslice 2550 / 18000
-before RUN with cshtimeslice 5110 / 18000
 before RUN with csh
 IO blocks left 2
-timeslice 10220 / 18000
+ 17990 / 18000
 before RUN with csh
 IO blocks left 1
  18000 / 18000
-Pushing: csh	start_time: 3452610	cpu_time: 18000	io_count: 9031
+Pushing: csh	start_time: 8262953	cpu_time: 18000	io_count: 9031
 done
 This
  eldobefore RUN with eldoINTERRUPT 0 / 331000
-before RUN with eldotimeslice 10 / 331000
-before RUN with eldotimeslice 30 / 331000
-before RUN with eldotimeslice 70 / 331000
-before RUN with eldotimeslice 150 / 331000
-before RUN with eldotimeslice 310 / 331000
-before RUN with eldotimeslice 630 / 331000
-before RUN with eldotimeslice 1270 / 331000
-before RUN with eldotimeslice 2550 / 331000
-before RUN with eldotimeslice 5110 / 331000
-before RUN with eldotimeslice 10230 / 331000
-before RUN with eldotimeslice 20470 / 331000
-before RUN with eldotimeslice 40950 / 331000
-before RUN with eldotimeslice 81910 / 331000
 before RUN with eldo
 IO blocks left 4
-timeslice 163820 / 331000
-before RUN with eldo
+
 IO blocks left 3
 
 IO blocks left 2
-timeslice 327640 / 331000
+ 330970 / 331000
 before RUN with eldo
 IO blocks left 1
  331000 / 331000
-Pushing: eldo	start_time: 3452710	cpu_time: 331000	io_count: 27413
+Pushing: eldo	start_time: 8263053	cpu_time: 331000	io_count: 27413
 done
 This
  httpdbefore RUN with httpdINTERRUPT 0 / 27000
-before RUN with httpdtimeslice 10 / 27000
-before RUN with httpdtimeslice 30 / 27000
-before RUN with httpdtimeslice 70 / 27000
-before RUN with httpdtimeslice 150 / 27000
-before RUN with httpdtimeslice 310 / 27000
-before RUN with httpdtimeslice 630 / 27000
-before RUN with httpdtimeslice 1270 / 27000
-before RUN with httpdtimeslice 2550 / 27000
-before RUN with httpdtimeslice 5110 / 27000
-before RUN with httpdtimeslice 10230 / 27000
-before RUN with httpdtimeslice 20470 / 27000
 before RUN with httpd
 IO blocks left 1
  27000 / 27000
-Pushing: httpd	start_time: 3452810	cpu_time: 27000	io_count: 7263
+Pushing: httpd	start_time: 8263153	cpu_time: 27000	io_count: 7263
 done
 This
  shbefore RUN with shINTERRUPT 0 / 62000
-before RUN with shtimeslice 10 / 62000
-before RUN with shtimeslice 30 / 62000
-before RUN with shtimeslice 70 / 62000
-before RUN with shtimeslice 150 / 62000
-before RUN with shtimeslice 310 / 62000
-before RUN with shtimeslice 630 / 62000
-before RUN with shtimeslice 1270 / 62000
-before RUN with shtimeslice 2550 / 62000
-before RUN with shtimeslice 5110 / 62000
-before RUN with shtimeslice 10230 / 62000
-before RUN with shtimeslice 20470 / 62000
-before RUN with shtimeslice 40950 / 62000
 before RUN with sh
 IO blocks left 1
  62000 / 62000
-Pushing: sh	start_time: 3452910	cpu_time: 62000	io_count: 2841
+Pushing: sh	start_time: 8263253	cpu_time: 62000	io_count: 2841
 done
 This
  mwrpcssbefore RUN with mwrpcssINTERRUPT 0 / 32000
-before RUN with mwrpcsstimeslice 10 / 32000
-before RUN with mwrpcsstimeslice 30 / 32000
-before RUN with mwrpcsstimeslice 70 / 32000
-before RUN with mwrpcsstimeslice 150 / 32000
-before RUN with mwrpcsstimeslice 310 / 32000
-before RUN with mwrpcsstimeslice 630 / 32000
-before RUN with mwrpcsstimeslice 1270 / 32000
-before RUN with mwrpcsstimeslice 2550 / 32000
-before RUN with mwrpcsstimeslice 5110 / 32000
-before RUN with mwrpcsstimeslice 10230 / 32000
-before RUN with mwrpcsstimeslice 20470 / 32000
 before RUN with mwrpcss
 IO blocks left 1
  32000 / 32000
-Pushing: mwrpcss	start_time: 3453010	cpu_time: 32000	io_count: 3924
+Pushing: mwrpcss	start_time: 8263353	cpu_time: 32000	io_count: 3924
 done
 This
  cshbefore RUN with cshINTERRUPT 0 / 28000
-before RUN with cshtimeslice 10 / 28000
-before RUN with cshtimeslice 30 / 28000
-before RUN with cshtimeslice 70 / 28000
-before RUN with cshtimeslice 150 / 28000
-before RUN with cshtimeslice 310 / 28000
-before RUN with cshtimeslice 630 / 28000
-before RUN with cshtimeslice 1270 / 28000
-before RUN with cshtimeslice 2550 / 28000
-before RUN with cshtimeslice 5110 / 28000
-before RUN with cshtimeslice 10230 / 28000
 before RUN with csh
 IO blocks left 2
-timeslice 20460 / 28000
+ 27990 / 28000
 before RUN with csh
 IO blocks left 1
  28000 / 28000
-Pushing: csh	start_time: 3453110	cpu_time: 28000	io_count: 8271
+Pushing: csh	start_time: 8263453	cpu_time: 28000	io_count: 8271
 done
 This
  httpdbefore RUN with httpdINTERRUPT 0 / 108000
-before RUN with httpdtimeslice 10 / 108000
-before RUN with httpdtimeslice 30 / 108000
-before RUN with httpdtimeslice 70 / 108000
-before RUN with httpdtimeslice 150 / 108000
-before RUN with httpdtimeslice 310 / 108000
-before RUN with httpdtimeslice 630 / 108000
-before RUN with httpdtimeslice 1270 / 108000
-before RUN with httpdtimeslice 2550 / 108000
-before RUN with httpdtimeslice 5110 / 108000
-before RUN with httpdtimeslice 10230 / 108000
 before RUN with httpd
 IO blocks left 10
-timeslice 20460 / 108000
-before RUN with httpd
+
 IO blocks left 9
 
 IO blocks left 8
-timeslice 40920 / 108000
-before RUN with httpd
+
 IO blocks left 7
 
 IO blocks left 6
@@ -1543,211 +878,106 @@ IO blocks left 6
 IO blocks left 5
 
 IO blocks left 4
-timeslice 81840 / 108000
-before RUN with httpd
+
 IO blocks left 3
 
 IO blocks left 2
-
+ 107910 / 108000
+before RUN with httpd
 IO blocks left 1
  108000 / 108000
-Pushing: httpd	start_time: 3453210	cpu_time: 108000	io_count: 73921
+Pushing: httpd	start_time: 8263553	cpu_time: 108000	io_count: 73921
 done
 This
  shbefore RUN with shINTERRUPT 0 / 8000
-before RUN with shtimeslice 10 / 8000
-before RUN with shtimeslice 30 / 8000
-before RUN with shtimeslice 70 / 8000
-before RUN with shtimeslice 150 / 8000
-before RUN with shtimeslice 310 / 8000
-before RUN with shtimeslice 630 / 8000
-before RUN with shtimeslice 1270 / 8000
-before RUN with shtimeslice 2550 / 8000
-before RUN with shtimeslice 5110 / 8000
 before RUN with sh
 IO blocks left 1
  8000 / 8000
-Pushing: sh	start_time: 3453310	cpu_time: 8000	io_count: 3132
+Pushing: sh	start_time: 8263653	cpu_time: 8000	io_count: 3132
 done
 This
  mwrpcssbefore RUN with mwrpcssINTERRUPT 0 / 82000
-before RUN with mwrpcsstimeslice 10 / 82000
-before RUN with mwrpcsstimeslice 30 / 82000
-before RUN with mwrpcsstimeslice 70 / 82000
-before RUN with mwrpcsstimeslice 150 / 82000
-before RUN with mwrpcsstimeslice 310 / 82000
-before RUN with mwrpcsstimeslice 630 / 82000
-before RUN with mwrpcsstimeslice 1270 / 82000
-before RUN with mwrpcsstimeslice 2550 / 82000
-before RUN with mwrpcsstimeslice 5110 / 82000
-before RUN with mwrpcsstimeslice 10230 / 82000
-before RUN with mwrpcsstimeslice 20470 / 82000
 before RUN with mwrpcss
 IO blocks left 3
-timeslice 40940 / 82000
-before RUN with mwrpcss
+
 IO blocks left 2
-timeslice 81890 / 82000
+ 81980 / 82000
 before RUN with mwrpcss
 IO blocks left 1
  82000 / 82000
-Pushing: mwrpcss	start_time: 3453410	cpu_time: 82000	io_count: 18627
+Pushing: mwrpcss	start_time: 8263753	cpu_time: 82000	io_count: 18627
 done
 This
  shbefore RUN with shINTERRUPT 0 / 38000
-before RUN with shtimeslice 10 / 38000
-before RUN with shtimeslice 30 / 38000
-before RUN with shtimeslice 70 / 38000
-before RUN with shtimeslice 150 / 38000
-before RUN with shtimeslice 310 / 38000
-before RUN with shtimeslice 630 / 38000
-before RUN with shtimeslice 1270 / 38000
-before RUN with shtimeslice 2550 / 38000
-before RUN with shtimeslice 5110 / 38000
-before RUN with shtimeslice 10230 / 38000
-before RUN with shtimeslice 20470 / 38000
 before RUN with sh
 IO blocks left 1
  38000 / 38000
-Pushing: sh	start_time: 3453510	cpu_time: 38000	io_count: 6211
+Pushing: sh	start_time: 8263853	cpu_time: 38000	io_count: 6211
 done
 This
  dtsessionbefore RUN with dtsessionINTERRUPT 0 / 32000
-before RUN with dtsessiontimeslice 10 / 32000
-before RUN with dtsessiontimeslice 30 / 32000
-before RUN with dtsessiontimeslice 70 / 32000
-before RUN with dtsessiontimeslice 150 / 32000
-before RUN with dtsessiontimeslice 310 / 32000
-before RUN with dtsessiontimeslice 630 / 32000
-before RUN with dtsessiontimeslice 1270 / 32000
-before RUN with dtsessiontimeslice 2550 / 32000
-before RUN with dtsessiontimeslice 5110 / 32000
-before RUN with dtsessiontimeslice 10230 / 32000
-before RUN with dtsessiontimeslice 20470 / 32000
 before RUN with dtsession
 IO blocks left 1
  32000 / 32000
-Pushing: dtsession	start_time: 3453610	cpu_time: 32000	io_count: 2731
+Pushing: dtsession	start_time: 8263953	cpu_time: 32000	io_count: 2731
 done
 This
  sshdbefore RUN with sshdINTERRUPT 0 / 12000
-before RUN with sshdtimeslice 10 / 12000
-before RUN with sshdtimeslice 30 / 12000
-before RUN with sshdtimeslice 70 / 12000
-before RUN with sshdtimeslice 150 / 12000
-before RUN with sshdtimeslice 310 / 12000
-before RUN with sshdtimeslice 630 / 12000
-before RUN with sshdtimeslice 1270 / 12000
-before RUN with sshdtimeslice 2550 / 12000
-before RUN with sshdtimeslice 5110 / 12000
 before RUN with sshd
 IO blocks left 2
-timeslice 10220 / 12000
+ 11990 / 12000
 before RUN with sshd
 IO blocks left 1
  12000 / 12000
-Pushing: sshd	start_time: 3453710	cpu_time: 12000	io_count: 8277
+Pushing: sshd	start_time: 8264053	cpu_time: 12000	io_count: 8277
 done
 This
  bashbefore RUN with bashINTERRUPT 0 / 72000
-before RUN with bashtimeslice 10 / 72000
-before RUN with bashtimeslice 30 / 72000
-before RUN with bashtimeslice 70 / 72000
-before RUN with bashtimeslice 150 / 72000
-before RUN with bashtimeslice 310 / 72000
-before RUN with bashtimeslice 630 / 72000
-before RUN with bashtimeslice 1270 / 72000
-before RUN with bashtimeslice 2550 / 72000
-before RUN with bashtimeslice 5110 / 72000
-before RUN with bashtimeslice 10230 / 72000
-before RUN with bashtimeslice 20470 / 72000
-before RUN with bashtimeslice 40950 / 72000
 before RUN with bash
 IO blocks left 1
  72000 / 72000
-Pushing: bash	start_time: 3453810	cpu_time: 72000	io_count: 1732
+Pushing: bash	start_time: 8264153	cpu_time: 72000	io_count: 1732
 done
 This
  cshbefore RUN with cshINTERRUPT 0 / 62000
-before RUN with cshtimeslice 10 / 62000
-before RUN with cshtimeslice 30 / 62000
-before RUN with cshtimeslice 70 / 62000
-before RUN with cshtimeslice 150 / 62000
-before RUN with cshtimeslice 310 / 62000
-before RUN with cshtimeslice 630 / 62000
-before RUN with cshtimeslice 1270 / 62000
-before RUN with cshtimeslice 2550 / 62000
-before RUN with cshtimeslice 5110 / 62000
-before RUN with cshtimeslice 10230 / 62000
-before RUN with cshtimeslice 20470 / 62000
-before RUN with cshtimeslice 40950 / 62000
 before RUN with csh
 IO blocks left 1
  62000 / 62000
-Pushing: csh	start_time: 3453910	cpu_time: 62000	io_count: 1687
+Pushing: csh	start_time: 8264253	cpu_time: 62000	io_count: 1687
 done
 This
  shbefore RUN with shINTERRUPT 0 / 32000
-before RUN with shtimeslice 10 / 32000
-before RUN with shtimeslice 30 / 32000
-before RUN with shtimeslice 70 / 32000
-before RUN with shtimeslice 150 / 32000
-before RUN with shtimeslice 310 / 32000
-before RUN with shtimeslice 630 / 32000
-before RUN with shtimeslice 1270 / 32000
-before RUN with shtimeslice 2550 / 32000
-before RUN with shtimeslice 5110 / 32000
-before RUN with shtimeslice 10230 / 32000
 before RUN with sh
 IO blocks left 2
-timeslice 20460 / 32000
+ 31990 / 32000
 before RUN with sh
 IO blocks left 1
  32000 / 32000
-Pushing: sh	start_time: 3454010	cpu_time: 32000	io_count: 9271
+Pushing: sh	start_time: 8264353	cpu_time: 32000	io_count: 9271
 done
 This
  mwrpcssbefore RUN with mwrpcssINTERRUPT 0 / 17000
-before RUN with mwrpcsstimeslice 10 / 17000
-before RUN with mwrpcsstimeslice 30 / 17000
-before RUN with mwrpcsstimeslice 70 / 17000
-before RUN with mwrpcsstimeslice 150 / 17000
-before RUN with mwrpcsstimeslice 310 / 17000
-before RUN with mwrpcsstimeslice 630 / 17000
-before RUN with mwrpcsstimeslice 1270 / 17000
-before RUN with mwrpcsstimeslice 2550 / 17000
-before RUN with mwrpcsstimeslice 5110 / 17000
 before RUN with mwrpcss
 IO blocks left 2
-timeslice 10220 / 17000
+ 16990 / 17000
 before RUN with mwrpcss
 IO blocks left 1
  17000 / 17000
-Pushing: mwrpcss	start_time: 3454110	cpu_time: 17000	io_count: 8872
+Pushing: mwrpcss	start_time: 8264453	cpu_time: 17000	io_count: 8872
 done
 This
  lpdbefore RUN with lpdINTERRUPT 0 / 72000
-before RUN with lpdtimeslice 10 / 72000
-before RUN with lpdtimeslice 30 / 72000
-before RUN with lpdtimeslice 70 / 72000
-before RUN with lpdtimeslice 150 / 72000
-before RUN with lpdtimeslice 310 / 72000
-before RUN with lpdtimeslice 630 / 72000
-before RUN with lpdtimeslice 1270 / 72000
 before RUN with lpd
 IO blocks left 36
-timeslice 2540 / 72000
-before RUN with lpd
+
 IO blocks left 35
-timeslice 5090 / 72000
-before RUN with lpd
+
 IO blocks left 34
 
 IO blocks left 33
 
 IO blocks left 32
-timeslice 10180 / 72000
-before RUN with lpd
+
 IO blocks left 31
 
 IO blocks left 30
@@ -1757,8 +987,7 @@ IO blocks left 29
 IO blocks left 28
 
 IO blocks left 27
-timeslice 20370 / 72000
-before RUN with lpd
+
 IO blocks left 26
 
 IO blocks left 25
@@ -1778,8 +1007,7 @@ IO blocks left 19
 IO blocks left 18
 
 IO blocks left 17
-timeslice 40750 / 72000
-before RUN with lpd
+
 IO blocks left 16
 
 IO blocks left 15
@@ -1809,419 +1037,196 @@ IO blocks left 4
 IO blocks left 3
 
 IO blocks left 2
-
+ 71650 / 72000
+before RUN with lpd
 IO blocks left 1
  72000 / 72000
-Pushing: lpd	start_time: 3454210	cpu_time: 72000	io_count: 288476
+Pushing: lpd	start_time: 8264553	cpu_time: 72000	io_count: 288476
 done
 This
  sdt_shellbefore RUN with sdt_shellINTERRUPT 0 / 24000
-before RUN with sdt_shelltimeslice 10 / 24000
-before RUN with sdt_shelltimeslice 30 / 24000
-before RUN with sdt_shelltimeslice 70 / 24000
-before RUN with sdt_shelltimeslice 150 / 24000
-before RUN with sdt_shelltimeslice 310 / 24000
-before RUN with sdt_shelltimeslice 630 / 24000
-before RUN with sdt_shelltimeslice 1270 / 24000
-before RUN with sdt_shelltimeslice 2550 / 24000
-before RUN with sdt_shelltimeslice 5110 / 24000
-before RUN with sdt_shelltimeslice 10230 / 24000
-before RUN with sdt_shelltimeslice 20470 / 24000
 before RUN with sdt_shell
 IO blocks left 1
  24000 / 24000
-Pushing: sdt_shell	start_time: 3454310	cpu_time: 24000	io_count: 3282
+Pushing: sdt_shell	start_time: 8264653	cpu_time: 24000	io_count: 3282
 done
 This
  powerdbefore RUN with powerdINTERRUPT 0 / 72000
-before RUN with powerdtimeslice 10 / 72000
-before RUN with powerdtimeslice 30 / 72000
-before RUN with powerdtimeslice 70 / 72000
-before RUN with powerdtimeslice 150 / 72000
-before RUN with powerdtimeslice 310 / 72000
-before RUN with powerdtimeslice 630 / 72000
-before RUN with powerdtimeslice 1270 / 72000
-before RUN with powerdtimeslice 2550 / 72000
-before RUN with powerdtimeslice 5110 / 72000
-before RUN with powerdtimeslice 10230 / 72000
-before RUN with powerdtimeslice 20470 / 72000
 before RUN with powerd
 IO blocks left 2
-timeslice 40940 / 72000
+ 71990 / 72000
 before RUN with powerd
 IO blocks left 1
  72000 / 72000
-Pushing: powerd	start_time: 3454410	cpu_time: 72000	io_count: 9172
+Pushing: powerd	start_time: 8264753	cpu_time: 72000	io_count: 9172
 done
 This
  javabefore RUN with javaINTERRUPT 0 / 36000
-before RUN with javatimeslice 10 / 36000
-before RUN with javatimeslice 30 / 36000
-before RUN with javatimeslice 70 / 36000
-before RUN with javatimeslice 150 / 36000
-before RUN with javatimeslice 310 / 36000
-before RUN with javatimeslice 630 / 36000
-before RUN with javatimeslice 1270 / 36000
-before RUN with javatimeslice 2550 / 36000
-before RUN with javatimeslice 5110 / 36000
-before RUN with javatimeslice 10230 / 36000
-before RUN with javatimeslice 20470 / 36000
 before RUN with java
 IO blocks left 1
  36000 / 36000
-Pushing: java	start_time: 3454510	cpu_time: 36000	io_count: 4728
+Pushing: java	start_time: 8264853	cpu_time: 36000	io_count: 4728
 done
 This
  shbefore RUN with shINTERRUPT 0 / 28000
-before RUN with shtimeslice 10 / 28000
-before RUN with shtimeslice 30 / 28000
-before RUN with shtimeslice 70 / 28000
-before RUN with shtimeslice 150 / 28000
-before RUN with shtimeslice 310 / 28000
-before RUN with shtimeslice 630 / 28000
-before RUN with shtimeslice 1270 / 28000
-before RUN with shtimeslice 2550 / 28000
-before RUN with shtimeslice 5110 / 28000
-before RUN with shtimeslice 10230 / 28000
-before RUN with shtimeslice 20470 / 28000
 before RUN with sh
 IO blocks left 1
  28000 / 28000
-Pushing: sh	start_time: 3454610	cpu_time: 28000	io_count: 821
+Pushing: sh	start_time: 8264953	cpu_time: 28000	io_count: 821
 done
 This
  mwrpcssbefore RUN with mwrpcssINTERRUPT 0 / 123000
-before RUN with mwrpcsstimeslice 10 / 123000
-before RUN with mwrpcsstimeslice 30 / 123000
-before RUN with mwrpcsstimeslice 70 / 123000
-before RUN with mwrpcsstimeslice 150 / 123000
-before RUN with mwrpcsstimeslice 310 / 123000
-before RUN with mwrpcsstimeslice 630 / 123000
-before RUN with mwrpcsstimeslice 1270 / 123000
-before RUN with mwrpcsstimeslice 2550 / 123000
-before RUN with mwrpcsstimeslice 5110 / 123000
-before RUN with mwrpcsstimeslice 10230 / 123000
-before RUN with mwrpcsstimeslice 20470 / 123000
-before RUN with mwrpcsstimeslice 40950 / 123000
-before RUN with mwrpcsstimeslice 81910 / 123000
 before RUN with mwrpcss
 IO blocks left 1
  123000 / 123000
-Pushing: mwrpcss	start_time: 3454710	cpu_time: 123000	io_count: 7321
+Pushing: mwrpcss	start_time: 8265053	cpu_time: 123000	io_count: 7321
 done
 This
  httpdbefore RUN with httpdINTERRUPT 0 / 32000
-before RUN with httpdtimeslice 10 / 32000
-before RUN with httpdtimeslice 30 / 32000
-before RUN with httpdtimeslice 70 / 32000
-before RUN with httpdtimeslice 150 / 32000
-before RUN with httpdtimeslice 310 / 32000
-before RUN with httpdtimeslice 630 / 32000
-before RUN with httpdtimeslice 1270 / 32000
-before RUN with httpdtimeslice 2550 / 32000
-before RUN with httpdtimeslice 5110 / 32000
-before RUN with httpdtimeslice 10230 / 32000
 before RUN with httpd
 IO blocks left 2
-timeslice 20460 / 32000
+ 31990 / 32000
 before RUN with httpd
 IO blocks left 1
  32000 / 32000
-Pushing: httpd	start_time: 3454810	cpu_time: 32000	io_count: 9232
+Pushing: httpd	start_time: 8265153	cpu_time: 32000	io_count: 9232
 done
 This
  statdbefore RUN with statdINTERRUPT 0 / 17000
-before RUN with statdtimeslice 10 / 17000
-before RUN with statdtimeslice 30 / 17000
-before RUN with statdtimeslice 70 / 17000
-before RUN with statdtimeslice 150 / 17000
-before RUN with statdtimeslice 310 / 17000
-before RUN with statdtimeslice 630 / 17000
-before RUN with statdtimeslice 1270 / 17000
-before RUN with statdtimeslice 2550 / 17000
-before RUN with statdtimeslice 5110 / 17000
-before RUN with statdtimeslice 10230 / 17000
 before RUN with statd
 IO blocks left 1
  17000 / 17000
-Pushing: statd	start_time: 3454910	cpu_time: 17000	io_count: 283
+Pushing: statd	start_time: 8265253	cpu_time: 17000	io_count: 283
 done
 This
  fvwm95before RUN with fvwm95INTERRUPT 0 / 273000
-before RUN with fvwm95timeslice 10 / 273000
-before RUN with fvwm95timeslice 30 / 273000
-before RUN with fvwm95timeslice 70 / 273000
-before RUN with fvwm95timeslice 150 / 273000
-before RUN with fvwm95timeslice 310 / 273000
-before RUN with fvwm95timeslice 630 / 273000
-before RUN with fvwm95timeslice 1270 / 273000
-before RUN with fvwm95timeslice 2550 / 273000
-before RUN with fvwm95timeslice 5110 / 273000
-before RUN with fvwm95timeslice 10230 / 273000
-before RUN with fvwm95timeslice 20470 / 273000
-before RUN with fvwm95timeslice 40950 / 273000
 before RUN with fvwm95
 IO blocks left 6
-timeslice 81900 / 273000
-before RUN with fvwm95
+
 IO blocks left 5
 
 IO blocks left 4
-timeslice 163800 / 273000
-before RUN with fvwm95
+
 IO blocks left 3
 
 IO blocks left 2
-
+ 272950 / 273000
+before RUN with fvwm95
 IO blocks left 1
  273000 / 273000
-Pushing: fvwm95	start_time: 3455010	cpu_time: 273000	io_count: 42281
+Pushing: fvwm95	start_time: 8265353	cpu_time: 273000	io_count: 42281
 done
 This
  shbefore RUN with shINTERRUPT 0 / 26000
-before RUN with shtimeslice 10 / 26000
-before RUN with shtimeslice 30 / 26000
-before RUN with shtimeslice 70 / 26000
-before RUN with shtimeslice 150 / 26000
-before RUN with shtimeslice 310 / 26000
-before RUN with shtimeslice 630 / 26000
-before RUN with shtimeslice 1270 / 26000
-before RUN with shtimeslice 2550 / 26000
-before RUN with shtimeslice 5110 / 26000
-before RUN with shtimeslice 10230 / 26000
 before RUN with sh
 IO blocks left 2
-timeslice 20460 / 26000
+ 25990 / 26000
 before RUN with sh
 IO blocks left 1
  26000 / 26000
-Pushing: sh	start_time: 3455110	cpu_time: 26000	io_count: 10363
+Pushing: sh	start_time: 8265453	cpu_time: 26000	io_count: 10363
 done
 This
  mwrpcssbefore RUN with mwrpcssINTERRUPT 0 / 84000
-before RUN with mwrpcsstimeslice 10 / 84000
-before RUN with mwrpcsstimeslice 30 / 84000
-before RUN with mwrpcsstimeslice 70 / 84000
-before RUN with mwrpcsstimeslice 150 / 84000
-before RUN with mwrpcsstimeslice 310 / 84000
-before RUN with mwrpcsstimeslice 630 / 84000
-before RUN with mwrpcsstimeslice 1270 / 84000
-before RUN with mwrpcsstimeslice 2550 / 84000
-before RUN with mwrpcsstimeslice 5110 / 84000
-before RUN with mwrpcsstimeslice 10230 / 84000
-before RUN with mwrpcsstimeslice 20470 / 84000
-before RUN with mwrpcsstimeslice 40950 / 84000
-before RUN with mwrpcsstimeslice 81910 / 84000
 before RUN with mwrpcss
 IO blocks left 1
  84000 / 84000
-Pushing: mwrpcss	start_time: 3455210	cpu_time: 84000	io_count: 3748
+Pushing: mwrpcss	start_time: 8265553	cpu_time: 84000	io_count: 3748
 done
 This
  FvwmButtonsbefore RUN with FvwmButtonsINTERRUPT 0 / 143000
-before RUN with FvwmButtonstimeslice 10 / 143000
-before RUN with FvwmButtonstimeslice 30 / 143000
-before RUN with FvwmButtonstimeslice 70 / 143000
-before RUN with FvwmButtonstimeslice 150 / 143000
-before RUN with FvwmButtonstimeslice 310 / 143000
-before RUN with FvwmButtonstimeslice 630 / 143000
-before RUN with FvwmButtonstimeslice 1270 / 143000
-before RUN with FvwmButtonstimeslice 2550 / 143000
-before RUN with FvwmButtonstimeslice 5110 / 143000
-before RUN with FvwmButtonstimeslice 10230 / 143000
-before RUN with FvwmButtonstimeslice 20470 / 143000
-before RUN with FvwmButtonstimeslice 40950 / 143000
 before RUN with FvwmButtons
 IO blocks left 3
-timeslice 81900 / 143000
-before RUN with FvwmButtons
-IO blocks left 2
 
+IO blocks left 2
+ 142980 / 143000
+before RUN with FvwmButtons
 IO blocks left 1
  143000 / 143000
-Pushing: FvwmButtons	start_time: 3455310	cpu_time: 143000	io_count: 17321
+Pushing: FvwmButtons	start_time: 8265653	cpu_time: 143000	io_count: 17321
 done
 This
  xtermbefore RUN with xtermINTERRUPT 0 / 36000
-before RUN with xtermtimeslice 10 / 36000
-before RUN with xtermtimeslice 30 / 36000
-before RUN with xtermtimeslice 70 / 36000
-before RUN with xtermtimeslice 150 / 36000
-before RUN with xtermtimeslice 310 / 36000
-before RUN with xtermtimeslice 630 / 36000
-before RUN with xtermtimeslice 1270 / 36000
-before RUN with xtermtimeslice 2550 / 36000
-before RUN with xtermtimeslice 5110 / 36000
 before RUN with xterm
 IO blocks left 4
-timeslice 10220 / 36000
-before RUN with xterm
-IO blocks left 3
-timeslice 20450 / 36000
-before RUN with xterm
-IO blocks left 2
 
+IO blocks left 3
+
+IO blocks left 2
+ 35970 / 36000
+before RUN with xterm
 IO blocks left 1
  36000 / 36000
-Pushing: xterm	start_time: 3455410	cpu_time: 36000	io_count: 26883
+Pushing: xterm	start_time: 8265753	cpu_time: 36000	io_count: 26883
 done
 This
  FvwmPagerbefore RUN with FvwmPagerINTERRUPT 0 / 17000
-before RUN with FvwmPagertimeslice 10 / 17000
-before RUN with FvwmPagertimeslice 30 / 17000
-before RUN with FvwmPagertimeslice 70 / 17000
-before RUN with FvwmPagertimeslice 150 / 17000
-before RUN with FvwmPagertimeslice 310 / 17000
-before RUN with FvwmPagertimeslice 630 / 17000
-before RUN with FvwmPagertimeslice 1270 / 17000
-before RUN with FvwmPagertimeslice 2550 / 17000
-before RUN with FvwmPagertimeslice 5110 / 17000
-before RUN with FvwmPagertimeslice 10230 / 17000
 before RUN with FvwmPager
 IO blocks left 1
  17000 / 17000
-Pushing: FvwmPager	start_time: 3455510	cpu_time: 17000	io_count: 372
+Pushing: FvwmPager	start_time: 8265853	cpu_time: 17000	io_count: 372
 done
 This
  bashbefore RUN with bashINTERRUPT 0 / 82000
-before RUN with bashtimeslice 10 / 82000
-before RUN with bashtimeslice 30 / 82000
-before RUN with bashtimeslice 70 / 82000
-before RUN with bashtimeslice 150 / 82000
-before RUN with bashtimeslice 310 / 82000
-before RUN with bashtimeslice 630 / 82000
-before RUN with bashtimeslice 1270 / 82000
-before RUN with bashtimeslice 2550 / 82000
-before RUN with bashtimeslice 5110 / 82000
-before RUN with bashtimeslice 10230 / 82000
-before RUN with bashtimeslice 20470 / 82000
-before RUN with bashtimeslice 40950 / 82000
-before RUN with bashtimeslice 81910 / 82000
 before RUN with bash
 IO blocks left 1
  82000 / 82000
-Pushing: bash	start_time: 3455610	cpu_time: 82000	io_count: 2327
+Pushing: bash	start_time: 8265953	cpu_time: 82000	io_count: 2327
 done
 This
  syseventdbefore RUN with syseventdINTERRUPT 0 / 37000
-before RUN with syseventdtimeslice 10 / 37000
-before RUN with syseventdtimeslice 30 / 37000
-before RUN with syseventdtimeslice 70 / 37000
-before RUN with syseventdtimeslice 150 / 37000
-before RUN with syseventdtimeslice 310 / 37000
-before RUN with syseventdtimeslice 630 / 37000
-before RUN with syseventdtimeslice 1270 / 37000
-before RUN with syseventdtimeslice 2550 / 37000
-before RUN with syseventdtimeslice 5110 / 37000
-before RUN with syseventdtimeslice 10230 / 37000
-before RUN with syseventdtimeslice 20470 / 37000
 before RUN with syseventd
 IO blocks left 1
  37000 / 37000
-Pushing: syseventd	start_time: 3455710	cpu_time: 37000	io_count: 3281
+Pushing: syseventd	start_time: 8266053	cpu_time: 37000	io_count: 3281
 done
 This
  screenbefore RUN with screenINTERRUPT 0 / 62000
-before RUN with screentimeslice 10 / 62000
-before RUN with screentimeslice 30 / 62000
-before RUN with screentimeslice 70 / 62000
-before RUN with screentimeslice 150 / 62000
-before RUN with screentimeslice 310 / 62000
-before RUN with screentimeslice 630 / 62000
-before RUN with screentimeslice 1270 / 62000
-before RUN with screentimeslice 2550 / 62000
-before RUN with screentimeslice 5110 / 62000
-before RUN with screentimeslice 10230 / 62000
-before RUN with screentimeslice 20470 / 62000
 before RUN with screen
 IO blocks left 2
-timeslice 40940 / 62000
+ 61990 / 62000
 before RUN with screen
 IO blocks left 1
  62000 / 62000
-Pushing: screen	start_time: 3455810	cpu_time: 62000	io_count: 8936
+Pushing: screen	start_time: 8266153	cpu_time: 62000	io_count: 8936
 done
 This
  clsbdbefore RUN with clsbdINTERRUPT 0 / 23000
-before RUN with clsbdtimeslice 10 / 23000
-before RUN with clsbdtimeslice 30 / 23000
-before RUN with clsbdtimeslice 70 / 23000
-before RUN with clsbdtimeslice 150 / 23000
-before RUN with clsbdtimeslice 310 / 23000
-before RUN with clsbdtimeslice 630 / 23000
-before RUN with clsbdtimeslice 1270 / 23000
-before RUN with clsbdtimeslice 2550 / 23000
-before RUN with clsbdtimeslice 5110 / 23000
-before RUN with clsbdtimeslice 10230 / 23000
-before RUN with clsbdtimeslice 20470 / 23000
 before RUN with clsbd
 IO blocks left 1
  23000 / 23000
-Pushing: clsbd	start_time: 3455910	cpu_time: 23000	io_count: 1328
+Pushing: clsbd	start_time: 8266253	cpu_time: 23000	io_count: 1328
 done
 This
  sacbefore RUN with sacINTERRUPT 0 / 73000
-before RUN with sactimeslice 10 / 73000
-before RUN with sactimeslice 30 / 73000
-before RUN with sactimeslice 70 / 73000
-before RUN with sactimeslice 150 / 73000
-before RUN with sactimeslice 310 / 73000
-before RUN with sactimeslice 630 / 73000
-before RUN with sactimeslice 1270 / 73000
-before RUN with sactimeslice 2550 / 73000
-before RUN with sactimeslice 5110 / 73000
-before RUN with sactimeslice 10230 / 73000
-before RUN with sactimeslice 20470 / 73000
-before RUN with sactimeslice 40950 / 73000
 before RUN with sac
 IO blocks left 1
  73000 / 73000
-Pushing: sac	start_time: 3456010	cpu_time: 73000	io_count: 6612
+Pushing: sac	start_time: 8266353	cpu_time: 73000	io_count: 6612
 done
 This
  cshbefore RUN with cshINTERRUPT 0 / 25000
-before RUN with cshtimeslice 10 / 25000
-before RUN with cshtimeslice 30 / 25000
-before RUN with cshtimeslice 70 / 25000
-before RUN with cshtimeslice 150 / 25000
-before RUN with cshtimeslice 310 / 25000
-before RUN with cshtimeslice 630 / 25000
-before RUN with cshtimeslice 1270 / 25000
-before RUN with cshtimeslice 2550 / 25000
-before RUN with cshtimeslice 5110 / 25000
 before RUN with csh
 IO blocks left 3
-timeslice 10220 / 25000
-before RUN with csh
+
 IO blocks left 2
-timeslice 20450 / 25000
+ 24980 / 25000
 before RUN with csh
 IO blocks left 1
  25000 / 25000
-Pushing: csh	start_time: 3456110	cpu_time: 25000	io_count: 19837
+Pushing: csh	start_time: 8266453	cpu_time: 25000	io_count: 19837
 done
 This
  run_wdb_serverbefore RUN with run_wdb_serverINTERRUPT 0 / 177000
-before RUN with run_wdb_servertimeslice 10 / 177000
-before RUN with run_wdb_servertimeslice 30 / 177000
-before RUN with run_wdb_servertimeslice 70 / 177000
-before RUN with run_wdb_servertimeslice 150 / 177000
-before RUN with run_wdb_servertimeslice 310 / 177000
-before RUN with run_wdb_servertimeslice 630 / 177000
-before RUN with run_wdb_servertimeslice 1270 / 177000
-before RUN with run_wdb_servertimeslice 2550 / 177000
 before RUN with run_wdb_server
 IO blocks left 40
-timeslice 5100 / 177000
-before RUN with run_wdb_server
+
 IO blocks left 39
-timeslice 10210 / 177000
-before RUN with run_wdb_server
+
 IO blocks left 38
 
 IO blocks left 37
-timeslice 20430 / 177000
-before RUN with run_wdb_server
+
 IO blocks left 36
 
 IO blocks left 35
@@ -2231,8 +1236,7 @@ IO blocks left 34
 IO blocks left 33
 
 IO blocks left 32
-timeslice 40860 / 177000
-before RUN with run_wdb_server
+
 IO blocks left 31
 
 IO blocks left 30
@@ -2250,8 +1254,7 @@ IO blocks left 25
 IO blocks left 24
 
 IO blocks left 23
-timeslice 81730 / 177000
-before RUN with run_wdb_server
+
 IO blocks left 22
 
 IO blocks left 21
@@ -2287,61 +1290,38 @@ IO blocks left 7
 IO blocks left 6
 
 IO blocks left 5
-timeslice 163470 / 177000
-before RUN with run_wdb_server
+
 IO blocks left 4
 
 IO blocks left 3
 
 IO blocks left 2
-
+ 176610 / 177000
+before RUN with run_wdb_server
 IO blocks left 1
  177000 / 177000
-Pushing: run_wdb_server	start_time: 3456210	cpu_time: 177000	io_count: 321883
+Pushing: run_wdb_server	start_time: 8266553	cpu_time: 177000	io_count: 321883
 done
 This
  ezwave.cshbefore RUN with ezwave.cshINTERRUPT 0 / 32000
-before RUN with ezwave.cshtimeslice 10 / 32000
-before RUN with ezwave.cshtimeslice 30 / 32000
-before RUN with ezwave.cshtimeslice 70 / 32000
-before RUN with ezwave.cshtimeslice 150 / 32000
-before RUN with ezwave.cshtimeslice 310 / 32000
-before RUN with ezwave.cshtimeslice 630 / 32000
-before RUN with ezwave.cshtimeslice 1270 / 32000
-before RUN with ezwave.cshtimeslice 2550 / 32000
-before RUN with ezwave.cshtimeslice 5110 / 32000
-before RUN with ezwave.cshtimeslice 10230 / 32000
-before RUN with ezwave.cshtimeslice 20470 / 32000
 before RUN with ezwave.csh
 IO blocks left 1
  32000 / 32000
-Pushing: ezwave.csh	start_time: 3456310	cpu_time: 32000	io_count: 7283
+Pushing: ezwave.csh	start_time: 8266653	cpu_time: 32000	io_count: 7283
 done
 This
  dsdmbefore RUN with dsdmINTERRUPT 0 / 231000
-before RUN with dsdmtimeslice 10 / 231000
-before RUN with dsdmtimeslice 30 / 231000
-before RUN with dsdmtimeslice 70 / 231000
-before RUN with dsdmtimeslice 150 / 231000
-before RUN with dsdmtimeslice 310 / 231000
-before RUN with dsdmtimeslice 630 / 231000
-before RUN with dsdmtimeslice 1270 / 231000
-before RUN with dsdmtimeslice 2550 / 231000
-before RUN with dsdmtimeslice 5110 / 231000
 before RUN with dsdm
 IO blocks left 31
-timeslice 10220 / 231000
-before RUN with dsdm
+
 IO blocks left 30
-timeslice 20450 / 231000
-before RUN with dsdm
+
 IO blocks left 29
 
 IO blocks left 28
 
 IO blocks left 27
-timeslice 40900 / 231000
-before RUN with dsdm
+
 IO blocks left 26
 
 IO blocks left 25
@@ -2351,8 +1331,7 @@ IO blocks left 24
 IO blocks left 23
 
 IO blocks left 22
-timeslice 81810 / 231000
-before RUN with dsdm
+
 IO blocks left 21
 
 IO blocks left 20
@@ -2374,8 +1353,7 @@ IO blocks left 13
 IO blocks left 12
 
 IO blocks left 11
-timeslice 163620 / 231000
-before RUN with dsdm
+
 IO blocks left 10
 
 IO blocks left 9
@@ -2393,70 +1371,40 @@ IO blocks left 4
 IO blocks left 3
 
 IO blocks left 2
-
+ 230700 / 231000
+before RUN with dsdm
 IO blocks left 1
  231000 / 231000
-Pushing: dsdm	start_time: 3456410	cpu_time: 231000	io_count: 247267
+Pushing: dsdm	start_time: 8266753	cpu_time: 231000	io_count: 247267
 done
 This
  shbefore RUN with shINTERRUPT 0 / 18000
-before RUN with shtimeslice 10 / 18000
-before RUN with shtimeslice 30 / 18000
-before RUN with shtimeslice 70 / 18000
-before RUN with shtimeslice 150 / 18000
-before RUN with shtimeslice 310 / 18000
-before RUN with shtimeslice 630 / 18000
-before RUN with shtimeslice 1270 / 18000
-before RUN with shtimeslice 2550 / 18000
-before RUN with shtimeslice 5110 / 18000
-before RUN with shtimeslice 10230 / 18000
 before RUN with sh
 IO blocks left 1
  18000 / 18000
-Pushing: sh	start_time: 3456510	cpu_time: 18000	io_count: 3681
+Pushing: sh	start_time: 8266853	cpu_time: 18000	io_count: 3681
 done
 This
  mwrpcssbefore RUN with mwrpcssINTERRUPT 0 / 62000
-before RUN with mwrpcsstimeslice 10 / 62000
-before RUN with mwrpcsstimeslice 30 / 62000
-before RUN with mwrpcsstimeslice 70 / 62000
-before RUN with mwrpcsstimeslice 150 / 62000
-before RUN with mwrpcsstimeslice 310 / 62000
-before RUN with mwrpcsstimeslice 630 / 62000
-before RUN with mwrpcsstimeslice 1270 / 62000
-before RUN with mwrpcsstimeslice 2550 / 62000
-before RUN with mwrpcsstimeslice 5110 / 62000
-before RUN with mwrpcsstimeslice 10230 / 62000
-before RUN with mwrpcsstimeslice 20470 / 62000
 before RUN with mwrpcss
 IO blocks left 2
-timeslice 40940 / 62000
+ 61990 / 62000
 before RUN with mwrpcss
 IO blocks left 1
  62000 / 62000
-Pushing: mwrpcss	start_time: 3456610	cpu_time: 62000	io_count: 8374
+Pushing: mwrpcss	start_time: 8266953	cpu_time: 62000	io_count: 8374
 done
 This
  httpdbefore RUN with httpdINTERRUPT 0 / 27000
-before RUN with httpdtimeslice 10 / 27000
-before RUN with httpdtimeslice 30 / 27000
-before RUN with httpdtimeslice 70 / 27000
-before RUN with httpdtimeslice 150 / 27000
-before RUN with httpdtimeslice 310 / 27000
-before RUN with httpdtimeslice 630 / 27000
-before RUN with httpdtimeslice 1270 / 27000
-before RUN with httpdtimeslice 2550 / 27000
-before RUN with httpdtimeslice 5110 / 27000
 before RUN with httpd
 IO blocks left 4
-timeslice 10220 / 27000
-before RUN with httpd
+
 IO blocks left 3
 
 IO blocks left 2
-timeslice 20440 / 27000
+ 26970 / 27000
 before RUN with httpd
 IO blocks left 1
  27000 / 27000
-Pushing: httpd	start_time: 3456710	cpu_time: 27000	io_count: 32123
+Pushing: httpd	start_time: 8267053	cpu_time: 27000	io_count: 32123
 done

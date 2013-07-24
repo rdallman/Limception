@@ -107,7 +107,7 @@ void * exponentialHold() {
   }
 }
 
-void * donequeue(){
+void * done_queue(){
   while(dq.size != node_counter){
   }
   stop = 1;
@@ -122,7 +122,6 @@ void * exponentialReady() {
 
 
  // while (wq.peek(&wq) || rq.peek(&rq)) {
-  
  // if (rq.peek(&rq)) {
  //     printf("PEEK%s", rq.peek(&rq)->name);
  //   }
@@ -135,7 +134,11 @@ void * exponentialReady() {
 
       printf("before RUN with %s", worker->name);
 
+      mClock++;
+      mWait++;
       mClock = run(mClock, worker);
+      mClock++;
+      mWait++;
       printf(" %d", worker->cpu_completed);
       printf(" / %d", worker->cpu_time);
       printf("\n");
@@ -209,22 +212,6 @@ int run(int clock, Node *n) {
   return clock;
 }
 
-//Node read_trace_line() {
- // Node *n = (Node*) malloc(sizeof(Node));
-  //n.name = get(name)
-  //n.start_time = get(start)
-  //n.cpu_time = get(cpu) * 1000
-  //n.io_count = get(io)
- // n->io_blocks_left = trunc((n->io_count + 8191) / 8192);
- // n->completion_time = 0;
- // int exp = 1;
- // if (exp) {
- //   n->time_slice = 10;
- // } else {
- //   n->time_slice = n->cpu_time;
- // }
-//}
-
 int main(int argc, char *argv[]) {
   wq.size = 0;
   wq.head = NULL;
@@ -246,7 +233,6 @@ int main(int argc, char *argv[]) {
   dq.push_wait = &push_wait;
   dq.peek = &peek;
   dq.pop = &pop;
-  
   node_counter = 0;
 
 
@@ -325,8 +311,7 @@ int main(int argc, char *argv[]) {
   if (pthread_create(&ready, NULL, &exponentialReady, NULL)) {
     printf("Could not create thread \n");
   }
-  
-  if (pthread_create(&finished, NULL, &donequeue, NULL)) {
+  if (pthread_create(&finished, NULL, &done_queue, NULL)) {
     printf("Could not create thread \n");
   }
   if(pthread_join(waiting, NULL)){
