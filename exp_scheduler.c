@@ -8,6 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+int node_counter;
+int stop;
 
 typedef struct Node {
   struct Node *next;
@@ -105,6 +107,12 @@ void * exponentialHold() {
   }
 }
 
+void * donequeue(){
+  while(dq.size != node_counter){
+  }
+  stop = 1;
+}
+
 void * exponentialReady() {
   mClock = 0;
   mWait = 0;
@@ -113,10 +121,13 @@ void * exponentialReady() {
   printf("EXPO READY %s", rq.peek(&rq)->name);}
 
 
-  while (wq.peek(&wq) || rq.peek(&rq)) {
-    if (rq.peek(&rq)) {
-      printf("PEEK%s", rq.peek(&rq)->name);
-    }
+ // while (wq.peek(&wq) || rq.peek(&rq)) {
+  
+ // if (rq.peek(&rq)) {
+ //     printf("PEEK%s", rq.peek(&rq)->name);
+ //   }
+ //
+ while(!stop){
     mClock++;
     mWait++;
     if (rq.peek(&rq)) {
@@ -235,7 +246,8 @@ int main(int argc, char *argv[]) {
   dq.push_wait = &push_wait;
   dq.peek = &peek;
   dq.pop = &pop;
-
+  
+  node_counter = 0;
 
 
   FILE *file = fopen(argv[1], "r");
@@ -298,6 +310,7 @@ int main(int argc, char *argv[]) {
         printf("\nblock time: %d", n->io_blocks_left);
         n->time_slice = 10;
         wq.push_wait(&wq, n);
+        node_counter++;
       }
     }
   }
@@ -305,10 +318,15 @@ int main(int argc, char *argv[]) {
   // wait for things to go down
   pthread_t waiting;
   pthread_t ready;
+  pthread_t finished;
   if (pthread_create(&waiting, NULL, &exponentialHold, NULL)){
     printf("Could not create thread \n");
   }
   if (pthread_create(&ready, NULL, &exponentialReady, NULL)) {
+    printf("Could not create thread \n");
+  }
+  
+  if (pthread_create(&finished, NULL, &donequeue, NULL)) {
     printf("Could not create thread \n");
   }
   if(pthread_join(waiting, NULL)){
@@ -317,6 +335,10 @@ int main(int argc, char *argv[]) {
   if(pthread_join(ready, NULL)) {
     printf("Could not join thread\n");
   }
+  if(pthread_join(finished, NULL)) {
+    printf("Could not join thread\n");
+  }
+
   //printf("%s", dq.head->name);
   //pop
   //run
