@@ -114,13 +114,12 @@ void * done_queue() {
   int jobs = 0;
   int max_compl_time = 0;
   int min_compl_time = -1;
-  /*
   while (dq.peek(&dq)) {
     printf("PRINTING ");
     Node* n = dq.pop(&dq);
     total_compl_time += n->completion_time;
     jobs++;
-    if (n->completion_time > max_compl_time) {
+    if (n->completion_time > max_compl_time || max_compl_time == 0) {
       max_compl_time = n->completion_time;
     }
     if (n->completion_time < min_compl_time || min_compl_time == -1) {
@@ -128,16 +127,15 @@ void * done_queue() {
     }
   }
   printf("\n\nPERFORMANCE METRICS\n\n");
-  int avg_compl_time = total_compl_time / jobs;
-  printf("AVG COMPLETION TIME\t\t%s", avg_compl_time);
-  printf("\nMIN COMPLETION TIME\t\t%s", max_compl_time);
-  printf("\nMAX COMPLETION TIME\t\t%s", min_compl_time);
-  int jobs_per_sec = jobs / mClock;
-  printf("\nTHROUGHPUT\t\t%s", jobs_per_sec);
-  int percent_wasted = mWait / mClock;
-  printf("\nUTILIZATION\t\t%s / %s (%s%) wasted", mWait, mClock, percent_wasted);
-  */
-
+  double avg_compl_time = total_compl_time / jobs;
+  printf("AVG COMPLETION TIME\t\t%f", avg_compl_time);
+  printf("\nMIN COMPLETION TIME\t\t%d", min_compl_time);
+  printf("\nMAX COMPLETION TIME\t\t%d", max_compl_time);
+  double jobs_per_sec = jobs / mClock;
+  printf("\nTHROUGHPUT\t\t%f", jobs_per_sec);
+  printf("\nJOBS\t\t%d", jobs);
+  double percent_wasted = mWait / mClock;
+  printf("\nUTILIZATION\t\t%d / %d (%f%) wasted", mWait, mClock, percent_wasted);
 }
 
 void * stcfReady() {
