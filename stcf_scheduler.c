@@ -109,12 +109,14 @@ void * done_queue() {
   while (dq.size != node_counter) {
     //running
   }
+  stop = 1;
   int total_compl_time = 0;
   int jobs = 0;
   int max_compl_time = 0;
   int min_compl_time = -1;
+  /*
   while (dq.peek(&dq)) {
-    exit(1);
+    printf("PRINTING ");
     Node* n = dq.pop(&dq);
     total_compl_time += n->completion_time;
     jobs++;
@@ -134,8 +136,8 @@ void * done_queue() {
   printf("\nTHROUGHPUT\t\t%s", jobs_per_sec);
   int percent_wasted = mWait / mClock;
   printf("\nUTILIZATION\t\t%s / %s (%s%) wasted", mWait, mClock, percent_wasted);
+  */
 
-  stop = 1;
 }
 
 void * stcfReady() {
