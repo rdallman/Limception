@@ -94,7 +94,7 @@ void * stcfHold() {
   int time;
   while(wq.peek(&wq)){
     gettimeofday(&tv, NULL);
-    time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
+    time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
     if(time == wq.peek(&wq)->start_time) {
 
       //printf("\nThis\n %s", wq.peek(&wq)->name);
@@ -128,13 +128,13 @@ void * done_queue() {
   }
   printf("\n\nPERFORMANCE METRICS\n\n");
   double avg_compl_time = (double) total_compl_time / (double) jobs;
-  printf("AVG COMPLETION TIME\t\t%f", avg_compl_time);
-  printf("\nMIN COMPLETION TIME\t\t%d", min_compl_time);
-  printf("\nMAX COMPLETION TIME\t\t%d", max_compl_time);
-  double jobs_per_sec = (double) jobs / (double) mClock;
-  printf("\nTHROUGHPUT\t\t%d", jobs_per_sec);
-  double percent_wasted = (double) mWait / (double) mClock;
-  printf("\nUTILIZATION\t\t%d / %d (%f%) wasted", mWait, mClock, percent_wasted);
+  printf("AVG COMPLETION TIME (ms)\t\t%f", avg_compl_time);
+  printf("\nMIN COMPLETION TIME (ms)\t\t%d", min_compl_time);
+  printf("\nMAX COMPLETION TIME (ms)\t\t%d", max_compl_time);
+  double jobs_per_sec = (double) jobs / (double) (mClock / 1000);
+  printf("\nTHROUGHPUT (jobs/s)\t\t%f", jobs_per_sec);
+  double percent_wasted = ((double) mWait / (double) mClock) * 100;
+  printf("\nUTILIZATION (ms)\t\t%d / %d (%f%) wasted", mWait, mClock, percent_wasted);
 }
 
 void * stcfReady() {
@@ -163,7 +163,7 @@ void * stcfReady() {
         struct timeval tv;
         int time;
         gettimeofday(&tv, NULL);
-        time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
+        time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
         worker->completion_time = time - worker->start_time;
 
         //printf("done");
@@ -262,7 +262,7 @@ int main(int argc, char *argv[]) {
     struct timeval tv;
     int time;
     gettimeofday(&tv, NULL);
-    time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
+    time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
     //printf("current%d", time);
     time += 1000 + j*100;
 

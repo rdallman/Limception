@@ -129,13 +129,13 @@ void * done_queue(){
   }
   printf("\n\nPERFORMANCE METRICS\n\n");
   double avg_compl_time = (double) total_compl_time / (double) jobs;
-  printf("AVG COMPLETION TIME\t\t%f", avg_compl_time);
-  printf("\nMIN COMPLETION TIME\t\t%d", min_compl_time);
-  printf("\nMAX COMPLETION TIME\t\t%d", max_compl_time);
-  double jobs_per_sec = (double) jobs / (double) mClock;
-  printf("\nTHROUGHPUT\t\t%d", jobs_per_sec);
-  double percent_wasted = (double) mWait / (double) mClock;
-  printf("\nUTILIZATION\t\t%d / %d (%f%) wasted", mWait, mClock, percent_wasted);
+  printf("AVG COMPLETION TIME (ms)\t\t%f", avg_compl_time);
+  printf("\nMIN COMPLETION TIME (ms)\t\t%d", min_compl_time);
+  printf("\nMAX COMPLETION TIME (ms)\t\t%d", max_compl_time);
+  double jobs_per_sec = (double) jobs / (double) (mClock / 1000);
+  printf("\nTHROUGHPUT (jobs/s)\t\t%f", jobs_per_sec);
+  double percent_wasted = ((double) mWait / (double) mClock) * 100;
+  printf("\nUTILIZATION (ms)\t\t%d / %d (%f%) wasted", mWait, mClock, percent_wasted);
 }
 
 void * exponentialReady() {
