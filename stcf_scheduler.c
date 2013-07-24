@@ -69,7 +69,7 @@ Node * pop(Queue* q) {
 
 void * push_wait(Queue* q, Node *n){
   Node *insert = q->head; //malloc??
-  printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
+  //printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
   if(q->peek(q)) {
     int m = 0;
     while (insert->next && insert->next->start_time <= n->start_time) {
@@ -97,7 +97,7 @@ void * stcfHold() {
     time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
     if(time == wq.peek(&wq)->start_time) {
 
-      printf("\nThis\n %s", wq.peek(&wq)->name);
+      //printf("\nThis\n %s", wq.peek(&wq)->name);
 
       rq.push_stcf(&rq, wq.pop(&wq));
       new_process = 1;
@@ -115,7 +115,7 @@ void * done_queue() {
   int max_compl_time = 0;
   int min_compl_time = -1;
   while (dq.peek(&dq)) {
-    printf("PRINTING ");
+    //printf("PRINTING ");
     Node* n = dq.pop(&dq);
     total_compl_time += n->completion_time;
     jobs++;
@@ -133,7 +133,6 @@ void * done_queue() {
   printf("\nMAX COMPLETION TIME\t\t%d", max_compl_time);
   double jobs_per_sec = (double) jobs / (double) mClock;
   printf("\nTHROUGHPUT\t\t%d", jobs_per_sec);
-  printf("\nJOBS\t\t%d", jobs);
   double percent_wasted = (double) mWait / (double) mClock;
   printf("\nUTILIZATION\t\t%d / %d (%f%) wasted", mWait, mClock, percent_wasted);
 }
@@ -142,10 +141,6 @@ void * stcfReady() {
   mClock = 0;
   mWait = 0;
 
-  if (rq.peek(&rq)){
-  printf("EXPO READY %s", rq.peek(&rq)->name);}
-
-
   //while (wq.peek(&wq) || rq.peek(&rq)) {
   while (!stop) {
     mClock++;
@@ -153,16 +148,16 @@ void * stcfReady() {
     if (rq.peek(&rq)) {
       Node *worker = rq.pop(&rq);
 
-      printf("before RUN with %s", worker->name);
+      //printf("before RUN with %s", worker->name);
 
       mClock++;
       mWait++;
       mClock = run(mClock, worker);
       mClock++;
       mWait++;
-      printf(" %d", worker->cpu_completed);
-      printf(" / %d", worker->cpu_time);
-      printf("\n");
+      //printf(" %d", worker->cpu_completed);
+      //printf(" / %d", worker->cpu_time);
+      //printf("\n");
       if (worker->cpu_time == worker->cpu_completed) {
         dq.push_wait(&dq, worker);
         struct timeval tv;
@@ -171,7 +166,7 @@ void * stcfReady() {
         time = ((tv.tv_sec % 86400) * 1000 + tv.tv_usec / 1000);
         worker->completion_time = time - worker->start_time;
 
-        printf("done");
+        //printf("done");
       } else {
         rq.push_stcf(&rq, worker);
       }
@@ -187,7 +182,7 @@ int run(int clock, Node *n) {
     //interrupt
     if (new_process) {
       new_process = 0;
-      printf("INTERRUPT");
+      //printf("INTERRUPT");
       break;
     }
     if (n->cpu_completed < n->cpu_time) {
@@ -201,8 +196,8 @@ int run(int clock, Node *n) {
     if (n->io_block_next == 0 || n->cpu_completed == n->cpu_time) {
       if (n->io_blocks_left > 0) {
         int done_io = clock + 10;
-        printf("\nIO blocks left %d", n->io_blocks_left);
-        printf("\n");
+        //printf("\nIO blocks left %d", n->io_blocks_left);
+        //printf("\n");
         while (clock < done_io) {
           clock++;
         }
@@ -297,12 +292,12 @@ int main(int argc, char *argv[]) {
         a = atoi(temp);
         n->io_count = a;
         n->io_blocks_left = trunc((n->io_count + 8191) / 8192);
-        printf("io blocks left = %d+8191 div 8192 = %d", n->io_count, n->io_blocks_left);
+        //printf("io blocks left = %d+8191 div 8192 = %d", n->io_count, n->io_blocks_left);
         n->priority = 1;
         n->cpu_completed= 0;
         n->io_block_time = n->cpu_time / n->io_blocks_left;
         n->io_block_next = n->io_block_time;
-        printf("\nblock time: %d", n->io_blocks_left);
+        //printf("\nblock time: %d", n->io_blocks_left);
         wq.push_wait(&wq, n);
         node_counter++;
       }
