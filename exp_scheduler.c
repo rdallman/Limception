@@ -69,7 +69,7 @@ Node * pop(Queue* q) {
 
 void * push_wait(Queue* q, Node *n){
   Node *insert = q->head; //malloc??
-  //printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
+  printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_completed, n->io_blocks_left);
   if(q->peek(q)) {
     int m = 0;
     while (insert->next && insert->next->start_time <= n->start_time) {
@@ -92,14 +92,14 @@ int new_process;
 void * exponentialHold() {
   struct timeval tv;
   int time;
+  printf("start hold");
   while(wq.peek(&wq)){
-    gettimeofday(&tv, NULL);
-    time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
     //Node *worker = wq.pop(&wq);
     //printf("%s", worker->name);
-    if(time == wq.peek(&wq)->start_time) {
+    //printf("\nclock%d", mClock);
+    if(mClock >= wq.peek(&wq)->start_time) {
 
-      //printf("\nThis\n %s", wq.peek(&wq)->name);
+      printf("\nThis\n %s", wq.peek(&wq)->name);
 
       rq.push_exponential(&rq, wq.pop(&wq));
       new_process = 1;
@@ -147,6 +147,9 @@ void * exponentialReady() {
  //     printf("PEEK%s", rq.peek(&rq)->name);
  //   }
  //
+ while (!wq.peek(&wq)) { 
+   printf("waiting");
+}
  while(!stop){
     mClock++;
     mWait++;
@@ -165,11 +168,7 @@ void * exponentialReady() {
       //printf("\n");
       if (worker->cpu_time == worker->cpu_completed) {
         dq.push_wait(&dq, worker);
-        struct timeval tv;
-        int time;
-        gettimeofday(&tv, NULL);
-        time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
-        worker->completion_time = time;
+        worker->completion_time = mClock - worker->start_time;
 
         //printf("done");
       } else {
@@ -197,7 +196,7 @@ int run(int clock, Node *n) {
       break;
     }
     if (n->cpu_completed < n->cpu_time) {
-      //printf("total %d", n->cpu_completed);
+      //printf("\ntotal %d", n->cpu_completed);
       //printf("comp / %d", n->cpu_time);
       n->cpu_completed++;
       clock++;
@@ -277,11 +276,7 @@ int main(int argc, char *argv[]) {
     }
     //get current time + x
     struct timeval tv;
-    int time;
-    gettimeofday(&tv, NULL);
-    time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
     //printf("current%d", time);
-    time += 1000 + j*100;
 
     Node *n = (Node*)malloc(sizeof(Node));
     n->name = malloc(11);
@@ -295,11 +290,8 @@ int main(int argc, char *argv[]) {
         strcpy(n->name, temp);
       }
       else if(k == 1) {
-        /* actual
         a = atoi(temp);
         n->start_time = a;
-        *//*testing*/ 
-        n->start_time = time;
       }
       else if(k == 2) {
         a = atoi(temp);

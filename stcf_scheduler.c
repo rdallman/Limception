@@ -69,7 +69,7 @@ Node * pop(Queue* q) {
 
 void * push_wait(Queue* q, Node *n){
   Node *insert = q->head; //malloc??
-  //printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_time, n->io_count);
+  printf("pushing: %s\tstart_time: %d\tcpu_completed: %d\tio_blocks_left: %d\n", n->name, n->start_time, n->cpu_completed, n->io_blocks_left);
   if(q->peek(q)) {
     int m = 0;
     while (insert->next && insert->next->start_time <= n->start_time) {
@@ -93,9 +93,11 @@ void * stcfHold() {
   struct timeval tv;
   int time;
   while(wq.peek(&wq)){
-    gettimeofday(&tv, NULL);
-    time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
-    if(time == wq.peek(&wq)->start_time) {
+    //printf("stuff here");
+    //gettimeofday(&tv, NULL);
+    //time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
+    //printf("\nclock%d", mClock);
+    if(mClock >= wq.peek(&wq)->start_time) {
 
       //printf("\nThis\n %s", wq.peek(&wq)->name);
 
@@ -140,15 +142,18 @@ void * done_queue() {
 void * stcfReady() {
   mClock = 0;
   mWait = 0;
+  int working = 0;
 
-  //while (wq.peek(&wq) || rq.peek(&rq)) {
-  while (!stop) {
+  while (wq.peek(&wq) || rq.peek(&rq)) {
+  //while (!stop) {
+    printf("\nclock%d", mClock);
     mClock++;
     mWait++;
     if (rq.peek(&rq)) {
       Node *worker = rq.pop(&rq);
 
       //printf("before RUN with %s", worker->name);
+
 
       mClock++;
       mWait++;
@@ -159,12 +164,13 @@ void * stcfReady() {
       //printf(" / %d", worker->cpu_time);
       //printf("\n");
       if (worker->cpu_time == worker->cpu_completed) {
+        printf("done%s", worker->name);
         dq.push_wait(&dq, worker);
         struct timeval tv;
         int time;
-        gettimeofday(&tv, NULL);
-        time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
-        worker->completion_time = time - worker->start_time;
+        //gettimeofday(&tv, NULL);
+        //time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
+        worker->completion_time = mClock - worker->start_time;
 
         //printf("done");
       } else {
@@ -186,7 +192,7 @@ int run(int clock, Node *n) {
       break;
     }
     if (n->cpu_completed < n->cpu_time) {
-      //printf("total %d", n->cpu_completed);
+      //printf("\ntotal %d", n->cpu_completed);
       //printf("comp / %d", n->cpu_time);
       n->cpu_completed++;
       clock++;
@@ -278,11 +284,8 @@ int main(int argc, char *argv[]) {
         strcpy(n->name, temp);
       }
       else if(k == 1) {
-        /* actual
         a = atoi(temp);
         n->start_time = a;
-        *//*testing*/ 
-        n->start_time = time;
       }
       else if(k == 2) {
         a = atoi(temp);
