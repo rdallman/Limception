@@ -108,7 +108,7 @@ void * exponentialHold() {
 }
 
 void * done_queue(){
-  while(dq.size != node_counter){
+  while (wq.peek(&wq) || rq.peek(&rq)) {
   }
   stop = 1;
   int total_compl_time = 0;
@@ -142,15 +142,11 @@ void * exponentialReady() {
   mClock = 0;
   mWait = 0;
 
- // while (wq.peek(&wq) || rq.peek(&rq)) {
+  while (wq.peek(&wq) || rq.peek(&rq)) {
  // if (rq.peek(&rq)) {
  //     printf("PEEK%s", rq.peek(&rq)->name);
  //   }
  //
- while (!wq.peek(&wq)) { 
-   printf("waiting");
-}
- while(!stop){
     mClock++;
     mWait++;
     if (rq.peek(&rq)) {

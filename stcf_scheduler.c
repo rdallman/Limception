@@ -108,7 +108,7 @@ void * stcfHold() {
 }
 
 void * done_queue() {
-  while (dq.size != node_counter) {
+  while (wq.peek(&wq) || rq.peek(&rq)) {
     //running
   }
   stop = 1;

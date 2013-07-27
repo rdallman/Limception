@@ -129,9 +129,7 @@ This
 This
  xclock
 This
- ypbindPushing: init	start_time: 141	cpu_time: 57000	io_count: 0
-Pushing: syslogd	start_time: 1212	cpu_time: 17000	io_count: 0
-
+ ypbind
 This
  java
 This
@@ -163,13 +161,17 @@ This
 This
  httpd
 This
- FvwmTaskBar
+ FvwmTaskBarPushing: devfsadm	start_time: 2732	cpu_time: 21000	io_count: 0
+Pushing: init	start_time: 141	cpu_time: 57000	io_count: 0
+
 This
  spectre
 This
- da_ic.exe
+ da_ic.exePushing: syslogd	start_time: 1212	cpu_time: 17000	io_count: 0
+
 This
- java
+ javaPushing: keyserv	start_time: 2347	cpu_time: 48000	io_count: 0
+
 This
  Xvnc
 This
@@ -185,8 +187,7 @@ This
 This
  inetd
 This
- javaPushing: devfsadm	start_time: 2732	cpu_time: 21000	io_count: 0
-
+ java
 This
  sdtperfmeter
 This
@@ -222,7 +223,8 @@ This
 This
  sshd
 This
- bash
+ bashPushing: automountd	start_time: 2854	cpu_time: 61000	io_count: 0
+
 This
  csh
 This
@@ -248,8 +250,7 @@ This
 This
  fvwm95
 This
- shPushing: rpcbind	start_time: 8602	cpu_time: 38000	io_count: 0
-
+ sh
 This
  mwrpcss
 This
@@ -269,7 +270,7 @@ This
 This
  sac
 This
- cshPushing: keyserv	start_time: 2347	cpu_time: 48000	io_count: 0
+ cshPushing: xclock	start_time: 28723	cpu_time: 8000	io_count: 0
 
 This
  run_wdb_server
@@ -282,87 +283,98 @@ This
 This
  mwrpcss
 This
- httpdPushing: lockd	start_time: 19458	cpu_time: 12000	io_count: 0
-Pushing: xclock	start_time: 28723	cpu_time: 8000	io_count: 0
-Pushing: obServer	start_time: 15443	cpu_time: 25000	io_count: 0
-Pushing: rpc.rstatd	start_time: 14354	cpu_time: 46000	io_count: 0
-Pushing: Xsession	start_time: 19834	cpu_time: 74000	io_count: 0
-Pushing: utmpd	start_time: 4223	cpu_time: 82000	io_count: 0
-Pushing: automountd	start_time: 2854	cpu_time: 61000	io_count: 0
-Pushing: mwrpcss	start_time: 16923	cpu_time: 132000	io_count: 0
-Pushing: xload	start_time: 25447	cpu_time: 23000	io_count: 0
-Pushing: ttymon	start_time: 21273	cpu_time: 35000	io_count: 0
-Pushing: xntpd	start_time: 17587	cpu_time: 34000	io_count: 0
-Pushing: dtwm	start_time: 108254	cpu_time: 3000	io_count: 0
+ httpdPushing: dtwm	start_time: 108254	cpu_time: 3000	io_count: 0
+Pushing: rpcbind	start_time: 8602	cpu_time: 38000	io_count: 0
 Pushing: ttsession	start_time: 9631	cpu_time: 76000	io_count: 0
-Pushing: ypbind	start_time: 29943	cpu_time: 95000	io_count: 0
-Pushing: Xvnc	start_time: 16565	cpu_time: 76000	io_count: 0
+Pushing: xload	start_time: 25447	cpu_time: 23000	io_count: 0
+Pushing: rpc.rstatd	start_time: 14354	cpu_time: 46000	io_count: 0
+Pushing: lockd	start_time: 19458	cpu_time: 12000	io_count: 0
+Pushing: ttymon	start_time: 21273	cpu_time: 35000	io_count: 0
+Pushing: obServer	start_time: 15443	cpu_time: 25000	io_count: 0
+Pushing: utmpd	start_time: 4223	cpu_time: 82000	io_count: 0
 Pushing: vold	start_time: 106323	cpu_time: 12000	io_count: 0
-Pushing: sshd	start_time: 87623	cpu_time: 59000	io_count: 0
-Pushing: in.rwhod	start_time: 89336	cpu_time: 32000	io_count: 0
-Pushing: cdsNameServer	start_time: 147845	cpu_time: 12000	io_count: 0
-Pushing: csh	start_time: 88451	cpu_time: 43000	io_count: 0
-Pushing: run_wdb_server	start_time: 103235	cpu_time: 34000	io_count: 0
+Pushing: xntpd	start_time: 17587	cpu_time: 34000	io_count: 0
+Pushing: ypbind	start_time: 29943	cpu_time: 95000	io_count: 0
 Pushing: nscd	start_time: 95415	cpu_time: 54000	io_count: 0
-Pushing: sh	start_time: 202861	cpu_time: 8000	io_count: 0
-Pushing: java	start_time: 83452	cpu_time: 43000	io_count: 0
-Pushing: cron	start_time: 153842	cpu_time: 38000	io_count: 0
-Pushing: top-sun4u-5.8	start_time: 87341	cpu_time: 85000	io_count: 0
-Pushing: httpd	start_time: 169378	cpu_time: 32000	io_count: 0
-Pushing: sshd	start_time: 97362	cpu_time: 82000	io_count: 0
-Pushing: csh	start_time: 177251	cpu_time: 18000	io_count: 0
-Pushing: mwrpcss	start_time: 223876	cpu_time: 17000	io_count: 0
-Pushing: automountd	start_time: 150355	cpu_time: 73000	io_count: 0
-Pushing: color_xterm	start_time: 155733	cpu_time: 49000	io_count: 0
-Pushing: java	start_time: 159477	cpu_time: 52000	io_count: 0
-Pushing: mwrpcss	start_time: 192782	cpu_time: 32000	io_count: 0
-Pushing: spectre	start_time: 125723	cpu_time: 143000	io_count: 0
-Pushing: statd	start_time: 245372	cpu_time: 17000	io_count: 0
-Pushing: csh	start_time: 198763	cpu_time: 28000	io_count: 0
-Pushing: sdtperfmeter	start_time: 163428	cpu_time: 28000	io_count: 0
-Pushing: leonardo	start_time: 109532	cpu_time: 120000	io_count: 0
-Pushing: dtsession	start_time: 208726	cpu_time: 32000	io_count: 0
-Pushing: sshd	start_time: 209932	cpu_time: 12000	io_count: 0
-Pushing: sh	start_time: 219837	cpu_time: 32000	io_count: 0
+Pushing: run_wdb_server	start_time: 103235	cpu_time: 34000	io_count: 0
+Pushing: Xsession	start_time: 19834	cpu_time: 74000	io_count: 0
+Pushing: Xvnc	start_time: 146358	cpu_time: 23000	io_count: 0
+Pushing: cdsNameServer	start_time: 147845	cpu_time: 12000	io_count: 0
 Pushing: java	start_time: 115924	cpu_time: 41000	io_count: 0
-Pushing: FvwmPager	start_time: 274278	cpu_time: 17000	io_count: 0
-Pushing: httpd	start_time: 179234	cpu_time: 27000	io_count: 0
 Pushing: httpd	start_time: 118241	cpu_time: 62000	io_count: 0
-Pushing: sdt_shell	start_time: 233632	cpu_time: 24000	io_count: 0
+Pushing: Xvnc	start_time: 16565	cpu_time: 76000	io_count: 0
+Pushing: java	start_time: 83452	cpu_time: 43000	io_count: 0
+Pushing: csh	start_time: 88451	cpu_time: 43000	io_count: 0
+Pushing: in.rwhod	start_time: 89336	cpu_time: 32000	io_count: 0
+Pushing: cron	start_time: 153842	cpu_time: 38000	io_count: 0
+Pushing: sh	start_time: 202861	cpu_time: 8000	io_count: 0
+Pushing: color_xterm	start_time: 155733	cpu_time: 49000	io_count: 0
+Pushing: spectre	start_time: 125723	cpu_time: 143000	io_count: 0
+Pushing: top-sun4u-5.8	start_time: 87341	cpu_time: 85000	io_count: 0
+Pushing: sshd	start_time: 87623	cpu_time: 59000	io_count: 0
+Pushing: java	start_time: 144312	cpu_time: 82000	io_count: 0
+Pushing: sshd	start_time: 97362	cpu_time: 82000	io_count: 0
+Pushing: leonardo	start_time: 109532	cpu_time: 120000	io_count: 0
+Pushing: spectre	start_time: 115328	cpu_time: 261000	io_count: 0
+Pushing: automountd	start_time: 150355	cpu_time: 73000	io_count: 0
 Pushing: FvwmTaskBar	start_time: 119814	cpu_time: 84000	io_count: 0
+Pushing: mwrpcss	start_time: 16923	cpu_time: 132000	io_count: 0
+Pushing: csh	start_time: 177251	cpu_time: 18000	io_count: 0
+Pushing: sdtperfmeter	start_time: 163428	cpu_time: 28000	io_count: 0
+Pushing: httpd	start_time: 179234	cpu_time: 27000	io_count: 0
+Pushing: sshd	start_time: 209932	cpu_time: 12000	io_count: 0
+Pushing: run_wdb_server	start_time: 168274	cpu_time: 72000	io_count: 0
+Pushing: mwrpcss	start_time: 192782	cpu_time: 32000	io_count: 0
+Pushing: java	start_time: 159477	cpu_time: 52000	io_count: 0
+Pushing: httpd	start_time: 169378	cpu_time: 32000	io_count: 0
+Pushing: csh	start_time: 198763	cpu_time: 28000	io_count: 0
+Pushing: mwrpcss	start_time: 173272	cpu_time: 73000	io_count: 0
+Pushing: mwrpcss	start_time: 223876	cpu_time: 17000	io_count: 0
+Pushing: httpd	start_time: 176343	cpu_time: 81000	io_count: 0
+Pushing: statd	start_time: 245372	cpu_time: 17000	io_count: 0
+Pushing: inetd	start_time: 156832	cpu_time: 177000	io_count: 0
+Pushing: sh	start_time: 208362	cpu_time: 38000	io_count: 0
+Pushing: dtsession	start_time: 208726	cpu_time: 32000	io_count: 0
+Pushing: spectre	start_time: 148943	cpu_time: 164000	io_count: 0
+Pushing: sh	start_time: 184266	cpu_time: 62000	io_count: 0
+Pushing: sh	start_time: 219837	cpu_time: 32000	io_count: 0
+Pushing: sdt_shell	start_time: 233632	cpu_time: 24000	io_count: 0
 Pushing: java	start_time: 234687	cpu_time: 36000	io_count: 0
 Pushing: sh	start_time: 239137	cpu_time: 28000	io_count: 0
 Pushing: httpd	start_time: 239864	cpu_time: 32000	io_count: 0
+Pushing: FvwmPager	start_time: 274278	cpu_time: 17000	io_count: 0
 Pushing: sh	start_time: 248732	cpu_time: 26000	io_count: 0
-Pushing: run_wdb_server	start_time: 168274	cpu_time: 72000	io_count: 0
-Pushing: xterm	start_time: 269473	cpu_time: 36000	io_count: 0
-Pushing: sh	start_time: 208362	cpu_time: 38000	io_count: 0
-Pushing: mwrpcss	start_time: 173272	cpu_time: 73000	io_count: 0
-Pushing: java	start_time: 144312	cpu_time: 82000	io_count: 0
-Pushing: httpd	start_time: 176343	cpu_time: 81000	io_count: 0
-Pushing: bash	start_time: 212683	cpu_time: 72000	io_count: 0
 Pushing: csh	start_time: 217366	cpu_time: 62000	io_count: 0
-Pushing: sh	start_time: 361932	cpu_time: 18000	io_count: 0
-Pushing: powerd	start_time: 233862	cpu_time: 72000	io_count: 0
-Pushing: clsbd	start_time: 293271	cpu_time: 23000	io_count: 0
-Pushing: sh	start_time: 184266	cpu_time: 62000	io_count: 0
-Pushing: inetd	start_time: 156832	cpu_time: 177000	io_count: 0
-Pushing: da_ic.exe	start_time: 126438	cpu_time: 423000	io_count: 0
-Pushing: csh	start_time: 333663	cpu_time: 25000	io_count: 0
-Pushing: mwrpcss	start_time: 203472	cpu_time: 82000	io_count: 0
-Pushing: ezwave.csh	start_time: 348675	cpu_time: 32000	io_count: 0
-Pushing: spectre	start_time: 115328	cpu_time: 261000	io_count: 0
-Pushing: spectre	start_time: 148943	cpu_time: 164000	io_count: 0
-Pushing: lpd	start_time: 228372	cpu_time: 72000	io_count: 0
-Pushing: httpd	start_time: 368628	cpu_time: 27000	io_count: 0
-Pushing: syseventd	start_time: 278273	cpu_time: 37000	io_count: 0
-Pushing: screen	start_time: 279372	cpu_time: 62000	io_count: 0
-Pushing: mwrpcss	start_time: 239522	cpu_time: 123000	io_count: 0
-Pushing: sac	start_time: 328324	cpu_time: 73000	io_count: 0
 Pushing: httpd	start_time: 199732	cpu_time: 108000	io_count: 0
+Pushing: lpd	start_time: 228372	cpu_time: 72000	io_count: 0
+Pushing: powerd	start_time: 233862	cpu_time: 72000	io_count: 0
+Pushing: mwrpcss	start_time: 203472	cpu_time: 82000	io_count: 0
+Pushing: xterm	start_time: 269473	cpu_time: 36000	io_count: 0
+Pushing: eldo.exe	start_time: 85562	cpu_time: 754000	io_count: 0
+Pushing: syseventd	start_time: 278273	cpu_time: 37000	io_count: 0
+Pushing: clsbd	start_time: 293271	cpu_time: 23000	io_count: 0
+Pushing: sh	start_time: 361932	cpu_time: 18000	io_count: 0
+Pushing: bash	start_time: 212683	cpu_time: 72000	io_count: 0
+Pushing: eldo	start_time: 177661	cpu_time: 331000	io_count: 0
+Pushing: csh	start_time: 333663	cpu_time: 25000	io_count: 0
+Pushing: da_ic.exe	start_time: 126438	cpu_time: 423000	io_count: 0
+Pushing: screen	start_time: 279372	cpu_time: 62000	io_count: 0
+Pushing: ezwave.csh	start_time: 348675	cpu_time: 32000	io_count: 0
+Pushing: httpd	start_time: 368628	cpu_time: 27000	io_count: 0
 Pushing: mwrpcss	start_time: 265428	cpu_time: 84000	io_count: 0
 Pushing: FvwmButtons	start_time: 266384	cpu_time: 143000	io_count: 0
-Pushing: eldo	start_time: 177661	cpu_time: 331000	io_count: 0
+Pushing: mwrpcss	start_time: 239522	cpu_time: 123000	io_count: 0
+Pushing: sac	start_time: 328324	cpu_time: 73000	io_count: 0
 Pushing: bash	start_time: 277132	cpu_time: 82000	io_count: 0
 Pushing: mwrpcss	start_time: 365832	cpu_time: 62000	io_count: 0
-Pushing: fvwm95	start_time: 247364	cpu_time: 273
+Pushing: fvwm95	start_time: 247364	cpu_time: 273000	io_count: 0
+Pushing: run_wdb_server	start_time: 346282	cpu_time: 177000	io_count: 0
+
+
+PERFORMANCE METRICS
+
+AVG COMPLETION TIME (ms)		3274637.467391
+MIN COMPLETION TIME (ms)		118801
+MAX COMPLETION TIME (ms)		6644017
+THROUGHPUT (jobs/s)		0.013169
+UTILIZATION (ms)		6779 / 6986879 (0.097025) wastedPushing: dsdm	start_time: 351736	cpu_time: 231000	io_count: 0
