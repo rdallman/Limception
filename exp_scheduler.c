@@ -162,7 +162,7 @@ void * exponentialReady() {
       //printf(" %d", worker->cpu_completed);
       //printf(" / %d", worker->cpu_time);
       //printf("\n");
-      if (worker->cpu_time == worker->cpu_completed) {
+      if (worker->cpu_time == worker->cpu_completed && worker->io_blocks_left == 0) {
         dq.push_wait(&dq, worker);
         worker->completion_time = mClock - worker->start_time;
 
@@ -213,6 +213,7 @@ int run(int clock, Node *n) {
       if (n->io_blocks_left > 0 && n->cpu_completed == n->cpu_time) {
         return clock;
       }
+      break;
     }
     if (n->cpu_completed == n->cpu_time) {
       break;

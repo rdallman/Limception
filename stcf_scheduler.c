@@ -93,10 +93,6 @@ void * stcfHold() {
   struct timeval tv;
   int time;
   while(wq.peek(&wq)){
-    //printf("stuff here");
-    //gettimeofday(&tv, NULL);
-    //time = ((tv.tv_sec % 86400) * 100 + tv.tv_usec / 100);
-    //printf("\nclock%d", mClock);
     if(mClock >= wq.peek(&wq)->start_time) {
 
       //printf("\nThis\n %s", wq.peek(&wq)->name);
@@ -163,7 +159,7 @@ void * stcfReady() {
       //printf(" %d", worker->cpu_completed);
       //printf(" / %d", worker->cpu_time);
       //printf("\n");
-      if (worker->cpu_time == worker->cpu_completed) {
+      if (worker->cpu_time == worker->cpu_completed && worker->io_blocks_left == 0) {
         printf("done%s", worker->name);
         dq.push_wait(&dq, worker);
         struct timeval tv;
@@ -213,6 +209,7 @@ int run(int clock, Node *n) {
       if (n->io_blocks_left > 0 && n->cpu_completed == n->cpu_time) {
         return clock;
       }
+      break;
     }
     if (n->cpu_completed == n->cpu_time) {
       break;
