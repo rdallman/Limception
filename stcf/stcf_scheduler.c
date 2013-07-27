@@ -69,7 +69,7 @@ Node * pop(Queue* q) {
 
 void * push_wait(Queue* q, Node *n){
   Node *insert = q->head; //malloc??
-  printf("pushing: %s\tstart_time: %d\tcpu_completed: %d\tio_blocks_left: %d\n", n->name, n->start_time, n->cpu_completed, n->io_blocks_left);
+  //printf("pushing: %s\tstart_time: %d\tcpu_completed: %d\tio_blocks_left: %d\n", n->name, n->start_time, n->cpu_completed, n->io_blocks_left);
   if(q->peek(q)) {
     int m = 0;
     while (insert->next && insert->next->start_time <= n->start_time) {
@@ -142,7 +142,7 @@ void * stcfReady() {
 
   while (wq.peek(&wq) || rq.peek(&rq)) {
   //while (!stop) {
-    printf("\nclock%d", mClock);
+    //printf("\nclock%d", mClock);
     mClock++;
     mWait++;
     if (rq.peek(&rq)) {
@@ -160,7 +160,7 @@ void * stcfReady() {
       //printf(" / %d", worker->cpu_time);
       //printf("\n");
       if (worker->cpu_time == worker->cpu_completed && worker->io_blocks_left == 0) {
-        printf("done%s", worker->name);
+        //printf("done%s", worker->name);
         dq.push_wait(&dq, worker);
         struct timeval tv;
         int time;

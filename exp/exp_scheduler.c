@@ -69,7 +69,7 @@ Node * pop(Queue* q) {
 
 void * push_wait(Queue* q, Node *n){
   Node *insert = q->head; //malloc??
-  printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_completed, n->io_blocks_left);
+  //printf("Pushing: %s\tstart_time: %d\tcpu_time: %d\tio_count: %d\n", n->name, n->start_time, n->cpu_completed, n->io_blocks_left);
   if(q->peek(q)) {
     int m = 0;
     while (insert->next && insert->next->start_time <= n->start_time) {
@@ -92,14 +92,14 @@ int new_process;
 void * exponentialHold() {
   struct timeval tv;
   int time;
-  printf("start hold");
+  //printf("start hold");
   while(wq.peek(&wq)){
     //Node *worker = wq.pop(&wq);
     //printf("%s", worker->name);
     //printf("\nclock%d", mClock);
     if(mClock >= wq.peek(&wq)->start_time) {
 
-      printf("\nThis\n %s", wq.peek(&wq)->name);
+      //printf("\nThis\n %s", wq.peek(&wq)->name);
 
       rq.push_exponential(&rq, wq.pop(&wq));
       new_process = 1;
